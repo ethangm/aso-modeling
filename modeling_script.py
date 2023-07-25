@@ -22,12 +22,15 @@ def model(feature_data: str | Path, target_data: str | Path, output: str | Path)
     ee_df, aso_df = unpack_data(feature_data, target_data)
     print("ee data (" + str(len(ee_df.index.to_list())) + " catalysts)")
     print(ee_df)
-    print("\naso data (" + str(len(aso_df.index.to_list())) + " catalysts) (PCA projection)")
+    print("\naso data (" + str(len(aso_df.index.to_list())) + " catalysts)")
     print(aso_df)
+    Pipes.ee_transform(ee_df)
+    print("ddG data (" + str(len(ee_df.index.to_list())) + " catalysts)")
+    print(ee_df)
 
     steps = [("Power Transformer", PowerTransformer()), ("MinMax Scaler", MinMaxScaler())]
     all_pipes = Pipes(aso_df, ee_df, output, steps, n_jobs = 20)
-    
+
     start = time()
     print(all_pipes.run_all())
     end = time()
@@ -51,7 +54,7 @@ def model(feature_data: str | Path, target_data: str | Path, output: str | Path)
 if __name__ == "__main__":
 #    try:
         #temp = str(Path.cwd())
-        #model(temp + "/aso-modeling/pca_projections/aso_vt0_nocorr950pca200.csv", temp + "/aso-modeling/aso-ee-data.csv", temp + "/aso-modeling/output/OOP_rfecv_all/")
+        #model(temp + "/aso-modeling/pca_projections/aso_vt0_nocorr950pca200.csv", temp + "/aso-modeling/aso-ee-data.csv", temp + "/aso-modeling/tests/bug/")
         model(sys.argv[1], sys.argv[2], sys.argv[3])
 #    except IndexError as exp:
 #        print("Enter three inputs: feature data csv filepath, target data csv filepath, and desired directory for output (include /)"

@@ -13,6 +13,8 @@ import numpy as np
 import pandas as pd
 from helpers import pickler, to_json
 from copy import deepcopy
+from math import log
+
 
 
 default_models = [  # TO DO: initialize these correctly
@@ -26,7 +28,7 @@ default_models = [  # TO DO: initialize these correctly
 
 default_metrics = [
     ("MAE", mean_absolute_error, {}),
-    ("RMSE", mean_squared_error, {"squared": False}),
+    ("mae", mean_squared_error, {"squared": False}),
     ("R**2", r2_score, {})
 ]
 
@@ -37,7 +39,7 @@ default_cv = [
 
 default_selectors = [
     ("RFECV", RFECV, {}),
-    ("SFS", SFS, {"k_features": "best"}),
+    ("SFS", SFS, {}), # select best subset of features between 1 and 50 features (inclusive) (necessary?) k_features: best
 ]
 
 
@@ -52,7 +54,7 @@ class Pipes:    # ADD PARALLELIZATION
     def __init__(self,
                  features: pd.DataFrame,
                  target: pd.DataFrame,
-                 output: str,   # ADD MKDIR FUNCTION
+                 output: str,   
                  steps: list,   # (ALL STEPS EXCEPT FOR END MODEL)
                  metrics: list = default_metrics,
                  cvs: list = default_cv,
@@ -120,6 +122,34 @@ class Pipes:    # ADD PARALLELIZATION
             name = name.replace(" ", "_")
             pickler(ob, output + "pickled/", name + ".pickle")
 
+
+    @staticmethod
+    def ee_transform(target: pd.DataFrame) -> None: # assuming temp is room temp, 293 K
+        # delta delta G = -RTln(abs(ee))
+        # modifies in place
+        for idx, i in target.iterrows():
+            temp = log(abs(i[0])) * 293 * -0.0019872
+            target.loc[idx] = temp
+
+        target.rename(columns={"ee": "ddGTS"}, inplace=True)
+        return target
+
+    
+    @property
+    def all_pipes(self) -> dict:
+        return deepcopy(self._all_pipes)
+    
+    @all_pipes.setter
+    def all_pipes(self, new_dict: dict) -> None:
+        try:
+            for _, i in new_dict.keys():
+                if not isinstance(i, Pipeline):
+                    raise Exception
+        except Exception:
+            print("Invalid new all_pipes. Must be dict of sklearn Pipelines")
+        else:
+            self._all_pipes = new_dict
+
     
     @property
     def steps(self) -> list:
@@ -129,7 +159,7 @@ class Pipes:    # ADD PARALLELIZATION
     def steps(self, new_steps: list) -> None:
         try:
             self._steps = new_steps
-            self._all_pipes = self._init_pipelines(new_steps, self._models)
+            self.all_pipes = self._init_pipelines(new_steps, self._models)
         except Exception as exp:
             print(f"Error with setting new steps, please try again: {exp}")
     
@@ -194,10 +224,31 @@ class Pipes:    # ADD PARALLELIZATION
                 best_name + " MAE scores vs n_features",
                 self._output + "plot.png")
         return df
+    
 
+    def feat_rank_RFECV(self, features: pd.DataFrame, model, model_name: str, cv: BaseCrossValidator, selector, steps: int | float, min_feat: int, store: bool, kwargs) -> tuple:
+        select_model = selector(model, cv=cv, scoring="neg_mean_absolute_error", step=steps, min_features_to_select=min_feat, **kwargs)
+        temp = deepcopy(self._steps)
+        temp.append((model_name, select_model))
+        print(select_model) # REMOVE
 
-    def feat_rank(self, model, model_name: str, cv: BaseCrossValidator, selector, kwargs) -> tuple():
-        select_model = selector(model, cv=cv, scoring="neg_mean_absolute_error", **kwargs)
+        pipe = Pipeline(temp)
+        pipe.fit(features, self._target.values.ravel())
+
+        select_results = pipe.named_steps[model_name]
+        df = features.loc[:, select_results.support_] # selected features dataframe
+        if store:
+            mean_scores = select_results.cv_results_["mean_test_score"]   # mae of all subsets (1 through n)
+            n_feat = select_results.n_features_   # number of selected features
+            mae = mean_scores[n_feat - 1]
+        else:   # don't bother storing data from whittling features down to sample size step
+            mean_scores, n_feat, mae = None, None, None
+
+        return mae, n_feat, mean_scores, df
+    
+
+    def feat_rank_SFS(self, model, model_name: str, cv: BaseCrossValidator, selector, range: tuple, kwargs) -> tuple:
+        select_model = selector(model, cv=cv, scoring="neg_mean_absolute_error", k_features=range, **kwargs)
         temp = deepcopy(self._steps)
         temp.append((model_name, select_model))
         print(select_model) # REMOVE
@@ -206,27 +257,42 @@ class Pipes:    # ADD PARALLELIZATION
         pipe.fit(self._features, self._target.values.ravel())
 
         select_results = pipe.named_steps[model_name]
-        if isinstance(select_model, RFECV):    
-            mean_scores = select_results.cv_results_["mean_test_score"]   # rmse of all subsets (1 through n)
-            mean_scores.tofile(self._output + model_name + "_mean_scores.csv", sep = ",")
-            df = self._features.loc[:, select_results.support_] # selected features dataframe
-            n_feat = select_results.n_features_   # number of selected features
-            rmse = mean_scores[n_feat]
-        elif isinstance(select_model, SFS):
-            mean_scores = []
-            for _, subset in select_results.subsets_.items():
-                mean_scores.append(subset["avg_score"])
-            df = self._features.loc[:, select_results.k_feature_names_]
-            n_feat = len(select_results.k_feature_names_)
-            rmse = select_results.k_score_
-        else:
-            raise TypeError(f"This feature selection method is not yet implemented: {select_model}")
+        mean_scores = []
+        for _, subset in select_results.subsets_.items():
+            mean_scores.append(subset["avg_score"])
+        df = self._features.loc[:, select_results.k_feature_names_]
+        n_feat = len(select_results.k_feature_names_)
+        mae = select_results.k_score_
+
+        return mae, n_feat, mean_scores, df
+
+
+    def feat_rank(self, model, model_name: str, cv: BaseCrossValidator, selector, kwargs) -> tuple():
+        num_samples = len(self._features)
+
+        match selector.__qualname__:
+            case RFECV.__qualname__:   
+                num_feats = len(self._features.columns) 
+                if(num_feats > num_samples):
+                    _, _, _, df = self.feat_rank_RFECV(self._features, model, model_name, cv, selector, 0.1, num_samples, False, kwargs) # cut down to features to sample size, 10% at a time
+                else:
+                    df = self._features
+
+                mae, n_feat, mean_scores, subset = self.feat_rank_RFECV(df, model, model_name, cv, selector, 1, 1, True, kwargs)
+            case SFS.__qualname__:
+                range = (1, num_samples)
+                mae, n_feat, mean_scores, subset = self.feat_rank_SFS(model, model_name, cv, selector, range, kwargs)
+                mean_scores = np.array(mean_scores)
+            case _:
+                raise TypeError(f"This feature selection method is not yet implemented: {selector}")
 
 #        df = self._features.loc[:, pipe.named_steps[model_name].support_] # selected features dataframe
 #        n_feat = pipe.named_steps[model_name].n_features_   # number of selected features
-#        rmse = mean_scores[n_feat]   # mae of selected features
+#        mae = mean_scores[n_feat]   # mae of selected features
 
-        return rmse, n_feat, mean_scores, df
+        mean_scores.tofile(self._output + model_name + "_mean_scores.csv", sep = ",")
+
+        return mae, n_feat, mean_scores, subset
 
 
     def run_all(self) -> pd.DataFrame:
@@ -236,20 +302,20 @@ class Pipes:    # ADD PARALLELIZATION
         cols.extend(("train R**2", "delta R**2 (test - train)"))
         results = pd.DataFrame(columns=cols)
 
-        best_rmse = {}
+        best_mae = {}
 
         for name, model in self._models:
-            best_rmse[name] = {}
+            best_mae[name] = {}
             for cv_name, cv in self._cvs:
-                best_rmse[name][cv_name] = {}
+                best_mae[name][cv_name] = {}
                 for select_name, selector, select_kwargs in self._selectors:
+                    print(selector)     # REMOVE
                     long_name = f"{name}_{cv_name}_{select_name}"
-                    rmse, n_feat, mean_scores, df = self.feat_rank(model, long_name, cv, selector, select_kwargs)
-                    best_rmse[name][cv_name][select_name] = rmse
+                    mae, n_feat, mean_scores, df = self.feat_rank(model, long_name, cv, selector, select_kwargs)
+                    best_mae[name][cv_name][select_name] = mae
                     plotter([-x for x in mean_scores], n_feat, "MAE scores vs n features", f"{self._output}{long_name}_plot.png")
                     to_json(df.columns.to_list(), f"{self._output}{long_name}_selected_features.json")
-
-                    pipe = self._all_pipes[name]
+                    pipe = self.all_pipes[name]
 
                     if cv_name != "LOO":
                         temp_results = self.run_pipe(pipe, df, cv)
@@ -258,9 +324,9 @@ class Pipes:    # ADD PARALLELIZATION
                    
 
                     results.loc[long_name] = temp_results
+                    results.to_csv(self._output + "all_results.csv")    # continuously updating results
 
-        results.to_csv(self._output + "all_results.csv")
-        to_json(best_rmse, self._output + "feat_select_rmse_scores.json")
+        to_json(best_mae, self._output + "feat_select_mae_scores.json")
 
         return results
     
@@ -272,24 +338,24 @@ class Pipes:    # ADD PARALLELIZATION
         cols.extend(("train R**2", "delta R**2 (test - train)"))
         results = pd.DataFrame(columns=cols)
 
-        best_rmse = {}
+        best_mae = {}
 
         for name, model in self._models:
-            best_rmse[name] = {}
+            best_mae[name] = {}
             for cv_name, cv in self._cvs:
-                best_rmse[name][cv_name] = {}
+                best_mae[name][cv_name] = {}
                 best_val = -float("inf")
                 best_df = pd.DataFrame
                 for select_name, selector, select_kwargs in self._selectors:
                     long_name = f"{name}_{cv_name}_{select_name}"
-                    rmse, n_feat, mean_scores, df = self.feat_rank(model, long_name, cv, selector, select_kwargs)
-                    best_rmse[name][cv_name][select_name] = rmse
+                    mae, n_feat, mean_scores, df = self.feat_rank(model, long_name, cv, selector, select_kwargs)
+                    best_mae[name][cv_name][select_name] = mae
                     plotter([-x for x in mean_scores], n_feat, "MAE scores vs n features", f"{self._output}{long_name}_plot.png")
-                    if rmse > best_val:
-                        best_val = rmse
+                    if mae > best_val:
+                        best_val = mae
                         best_df = df
 
-                pipe = self._all_pipes[name]
+                pipe = self.all_pipes[name]
 
                 if cv_name != "LOO":
                     temp_results = self.run_pipe(pipe, best_df, cv)
@@ -300,7 +366,7 @@ class Pipes:    # ADD PARALLELIZATION
                 results.loc[long_name] = temp_results
 
         results.to_csv(self._output + "all_results.csv")
-        to_json(best_rmse, self._output + "feat_select_rmse_scores.json")
+        to_json(best_mae, self._output + "feat_select_mae_scores.json")
 
         return results
 
@@ -363,9 +429,6 @@ class Pipes:    # ADD PARALLELIZATION
                     
 
 
-
-
-
 def plotter(values: list, selected: int, name: str, savepath: str):
     fig = plt.figure()
 
@@ -383,7 +446,6 @@ def plotter(values: list, selected: int, name: str, savepath: str):
             ax.scatter([i], score, c="red", alpha=1, zorder=1)
 
     fig.savefig(savepath)
-
 
 
     # TO-DO: Functionality for sorting and cleaning feature/target data
