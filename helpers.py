@@ -1,8 +1,9 @@
 import pandas as pd
+import numpy as np
 from pathlib import Path
 import pickle
 import json
-from os import makedirs, getcwd
+from os import makedirs
 from os.path import isdir
 
 
@@ -14,7 +15,7 @@ def unpack_data(aso_path: str | Path, ee_path: str | Path) -> tuple: # returns t
     edf = edf.sort_index(axis=0)
     adf = adf.sort_index(axis=0)
 
-    return edf, adf
+    return adf, edf
 
         
 def _unpack_aso(aso_path: str | Path, catalysts: list) -> pd.DataFrame:
@@ -88,3 +89,4 @@ def rename_target(target: pd.DataFrame) -> pd.DataFrame:
     df = target.rename(index=new_names)
 
     return df
+
