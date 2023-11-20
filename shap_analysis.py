@@ -5,6 +5,7 @@ from pathlib import Path
 from sklearn.model_selection import BaseCrossValidator, LeaveOneOut
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import Ridge, Lasso, ElasticNet
+from sklearn.svm import SVR
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -18,14 +19,14 @@ import csv
 
 
 
-def shap_analysis(model, name: str, cv: BaseCrossValidator, steps: list, features: pd.DataFrame, target: pd.DataFrame, selected: list, outliers: list, save_path: str | Path):
+def shap_analysis(model, name: str, cv, features: pd.DataFrame, target: pd.DataFrame, selected: list, outliers: list, save_path: str | Path):
     """
     Change implementation later, when saving all parts correctly. Also add in outlier detection part too.
     """
     # For some of these I forgot to save entire pipeline, but I have the preprocessing steps,
     # train/test splitter, and selected features saved and can recreate estimator
-    steps.append((name, model))
-    pipe = Pipeline(steps)
+#    steps.append((name, model))
+#    pipe = Pipeline(steps)
 
     df = features.loc[:, selected]
     df = df.drop(outliers)
@@ -34,7 +35,7 @@ def shap_analysis(model, name: str, cv: BaseCrossValidator, steps: list, feature
 
     print(df)
     print(t_df)
-    print(cv)
+#    print(cv)
     all_values = []
     ix_test = []
     for train, test in cv.split(df, t_df):    # gives out train/test indices
@@ -45,10 +46,13 @@ def shap_analysis(model, name: str, cv: BaseCrossValidator, steps: list, feature
         test_X = df.iloc[test, :]
         test_y = t_df.iloc[test, :]
 
+    
+
         pipe.fit(train_X, train_y)
         explainer = shap.Explainer(pipe.predict, train_X)
         shap_values = explainer.shap_values(test_X)
-        print(shap_values)
+        #shap_values = explainer(test_X)
+        #print(shap_values)
         for val in shap_values:
             all_values.append(val)
 
@@ -66,15 +70,22 @@ def shap_analysis(model, name: str, cv: BaseCrossValidator, steps: list, feature
         i += 1
 
 
-    scores = save_path.split(".")[0]
-    scores += "_scores.json"
-    with open(scores, 'w') as f:   #TEMPORARY
-        json.dump(shap_scores, f, indent=2)
+    scores_path = save_path.split(".")[:-1]
+    scores_path = ".".join(scores_path)
+    scores_path += "_scores.json"
+    print(scores_path)
+    with open(scores_path, 'w') as f:   #TEMPORARY
+        json.dump(shap_scores, f)
 
     #new_index = [i for i_fold in ix_test for i in i_fold]
     #print(new_index)
+
     shap.summary_plot(np.array(all_values), df) # df.reindex(new_index)
     plt.savefig(save_path)
+    plt.close()
+    shap.plots.waterfall(explainer(test_X)[-2], max_display=20) # for our go-to example, aa_1 and last cv test X split
+    #shap.plots.waterfall(explainer(df.loc["aa_1", :])[-2], max_display=20)
+    plt.savefig(".".join(save_path.split(".")[:-1]) + "_waterfall.png", bbox_inches='tight')
     plt.close()
 
 
@@ -185,22 +196,46 @@ def correct_pickled_unpack(pickled: list, selected_features: str):
     name = split[1]
 
     return model, cv, steps, name
+
+
+def pipeline_unpack(pickled: str | Path):
+    with open(pickled, "rb") as f:
+        pipe = pickle.load(f)
+    name = pickled.split("/")[-1]
+    name = name.split(".")[0]
+    return name, pipe
+
+
+def cv_unpack(pickled: str | Path):
+    cv_name = pickled.split("_")[-2]
+    directory = pickled.split("/")[:-2]
+    directory = "/".join(directory)
+
+    for file in listdir(directory):
+        name = file.split(".")[0]
+        if name == cv_name:
+            with open(directory + "/" + file, "rb") as f:
+                return pickle.load(f)
+    
+    print("CV Not Found!")
+    return None
+
+
+if __name__ == "__main__":  
+    # filepath to pickled pipeline, fp of selected features,
+    # fp of outliers, filepath of aso and ee data, savepath of png
     
 
-
-if __name__ == "__main__":  # directory of pickled, filepath of selected features, fp of outliers, filepath of aso and ee data, savepath of png
-#    print(pd.read_csv("real_output/ensembles_redo/all_results.csv"))
-    
-
-
-    pickled = unpickler(sys.argv[1])
+    #pickled = unpickler(sys.argv[1])
+    name, pipe = pipeline_unpack(sys.argv[1])
+    cv = cv_unpack(sys.argv[1])
     selected = selected_features(sys.argv[2])
     outliers = detected_outliers(sys.argv[3])
-    model, cv, steps, name = correct_pickled_unpack(pickled, sys.argv[2])
+    #model, cv, steps, name = correct_pickled_unpack(pickled, sys.argv[2])
     
 
     features, target = helpers.unpack_data(sys.argv[4], sys.argv[5])
     features = features.astype(float)
 
-    shap_analysis(model, name, cv, steps, features, target, selected, outliers, sys.argv[6])
+    shap_analysis(pipe, name, cv, features, target, selected, outliers, sys.argv[6])
 

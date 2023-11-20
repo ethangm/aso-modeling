@@ -59,6 +59,8 @@ def all_models(features: pd.DataFrame, target: pd.DataFrame, cv, output: str | P
     return all_results
 
 
+# I don't think I ever used this specific file?
+
 '''         Need fix for LOO r^2 if I want to go this way, easier to just use sklearn cross_val_score
 def all_models(features: pd.DataFrame, target: pd.DataFrame, split: dict) -> dict:
 

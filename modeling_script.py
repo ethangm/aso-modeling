@@ -33,8 +33,8 @@ def model(feature_data: str | Path, target_data: str | Path, output: str | Path)
     all_pipes = Pipes(aso_df, ee_df, output, steps, n_jobs = 20)
 
     start = time()
-#    print(all_pipes.run_all())                 
-    print(all_pipes.hyperparam_tuning())
+    print(all_pipes.run_all())                 
+#    print(all_pipes.hyperparam_tuning())
     end = time()
     total = end - start
 

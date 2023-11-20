@@ -16,32 +16,34 @@ def scrape_selected(directory: str | Path) -> np.ndarray:
 
     selected = []
     for file in listdir(directory):
-        split = file.split(".")
-        if split[-1] == "json":
-            underscore = split[0].split("_")
-            if(underscore[-1] != "scores"):  # only json files in directory should be feat_select_mae_scores and all selected feat
-                path = join(directory, file)
-                with open(path, "r") as f:
-                    temp = json.load(f)
-                if len(selected) == 0:
-                    for mol in temp:
-                        selected.append([mol, 1])
-                else:
-                    for mol in temp:
-                        for set in selected:
-                            add = True
-                            if mol == set[0]:
-                                set[1] += 1
-                                add = False
-                                break
-                        if add:
+        if file.split("/")[-1][0] != "_": # ONLY IF LOF DOESNT DETECT OUTLIERS
+            split = file.split(".")
+            if split[-1] == "json":
+                underscore = split[0].split("_")
+                if(underscore[-1] != "scores"):  # only json files in directory should be feat_select_mae_scores and all selected feat
+                    path = join(directory, file)
+                    with open(path, "r") as f:
+                        temp = json.load(f)
+                    if len(selected) == 0:
+                        for mol in temp:
                             selected.append([mol, 1])
+                    else:
+                        for mol in temp:
+                            for set in selected:
+                                add = True
+                                if mol == set[0]:
+                                    set[1] += 1
+                                    add = False
+                                    break
+                            if add:
+                                selected.append([mol, 1])
+                                
  
     selected = sorted(selected, key=lambda x: int(x[0]))
 
 
     result = np.array(selected, np.int32)
-    np.save(directory + "all_features.npy", result)
+    np.save(directory + "all_features_skip.npy", result)    # _SKIP FOR SKIPPING NO OUTLIER RUN
     return result
 
 
@@ -75,7 +77,7 @@ def feature_region_selectivity(features: np.ndarray, grid: np.ndarray, directory
         temp = numer / denom
         regional_feats[i][1] = weight + temp
 
-    np.save(directory + f"all_features_IDW_{power_factor}.npy", regional_feats)
+    np.save(directory + f"all_features_IDW_{power_factor}_skip.npy", regional_feats) # # _SKIP FOR SKIPPING NO OUTLIER RUN
         
     return regional_feats
 
@@ -151,7 +153,7 @@ def plot_elbow(distortions: list, elbow: int, directory: str | Path):
 
     
 
-if __name__ == "__main__":  # directory of pipes.py output, filepath to grid.np
+if __name__ == "__main__":  # idw/kmeans, directory of pipes.py output, filepath to grid.np
     features = scrape_selected(sys.argv[2])
     print(features)
     print(len(features))
@@ -161,15 +163,15 @@ if __name__ == "__main__":  # directory of pipes.py output, filepath to grid.np
             bar_chart(features, sys.argv[2], cutoff=5)
 
             region_1 = feature_region_selectivity(features, grid, sys.argv[2], 1)
-            bar_chart(region_1, sys.argv[2], "feature_selection_IDW_1", 7)
+            bar_chart(region_1, sys.argv[2], "feature_selection_IDW_1_skip", 7)  # _SKIP FOR SKIPPING NO OUTLIER RUN
             print(region_1)
 
             region_2 = feature_region_selectivity(features, grid, sys.argv[2])
-            bar_chart(region_2, sys.argv[2], "feature_selection_IDW_2", 7)
+            bar_chart(region_2, sys.argv[2], "feature_selection_IDW_2_skip", 7)  # _SKIP FOR SKIPPING NO OUTLIER RUN
             print(region_2)
 
             region_3 = feature_region_selectivity(features, grid, sys.argv[2], 3)
-            bar_chart(region_3, sys.argv[2], "feature_selection_IDW_3", 7)
+            bar_chart(region_3, sys.argv[2], "feature_selection_IDW_3_skip", 7)  # _SKIP FOR SKIPPING NO OUTLIER RUN
             print(region_3)
 
             differences = []

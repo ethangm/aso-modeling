@@ -3,8 +3,8 @@ import numpy as np
 from pathlib import Path
 import pickle
 import json
-from os import makedirs
-from os.path import isdir
+from os import makedirs, listdir
+from os.path import isdir, join
 
 
 def unpack_data(aso_path: str | Path, ee_path: str | Path) -> tuple: # returns target, then feature dataframes
@@ -90,3 +90,40 @@ def rename_target(target: pd.DataFrame) -> pd.DataFrame:
 
     return df
 
+
+def scrape_selected_model(directory: str | Path, model_name: str) -> np.ndarray:
+    # returns an array of shape (all selected features, 2), where second entry is frequency of selection
+
+    selected = []
+    for file in listdir(directory):
+        split = file.split(".")
+        if split[-1] == "json":
+            underscore = split[0].split("_")
+            if(underscore[-1] != "scores" and underscore[1] == model_name):  # only json files in directory should be feat_select_mae_scores and all selected feat
+                path = join(directory, file)
+                with open(path, "r") as f:
+                    temp = json.load(f)
+                if len(selected) == 0:
+                    for mol in temp:
+                        selected.append([mol, 1])
+                else:
+                    for mol in temp:
+                        for set in selected:
+                            add = True
+                            if mol == set[0]:
+                                set[1] += 1
+                                add = False
+                                break
+                        if add:
+                            selected.append([mol, 1])
+ 
+    selected = sorted(selected, key=lambda x: int(x[0]))
+
+
+    result = np.array(selected, np.int32)
+    #np.save(directory + "all_features.npy", result)
+    return result
+
+
+def filter_feats(feats: np.ndarray, threshold: int=2) -> np.ndarray:
+    return np.array([i for i in feats if i[1] >= threshold])

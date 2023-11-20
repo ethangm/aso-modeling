@@ -1,0 +1,2077 @@
+halved_aso/halved_aso_vt0_nocorr950_caseys_grid.csv
+halved_aso/halved_aso_vt0_nocorr950_redone_grid.csv
+nocorr_extracted_aso/aso_vt0_nocorr500.csv
+nocorr_extracted_aso/aso_vt0_nocorr600.csv
+nocorr_extracted_aso/aso_vt0_nocorr700.csv
+nocorr_extracted_aso/aso_vt0_nocorr800.csv
+nocorr_extracted_aso/aso_vt0_nocorr900.csv
+nocorr_extracted_aso/aso_vt0_nocorr950.csv
+output/OOP_attempt/all_results.csv
+output/OOP_attempt/Gradient Boosting.pickle
+output/OOP_attempt/Lasso.pickle
+output/OOP_attempt/MinMax Scaler.pickle
+output/OOP_attempt/Partial Least Squares.pickle
+output/OOP_attempt/Power Transformer.pickle
+output/OOP_attempt/Random Forest.pickle
+output/OOP_attempt/Ridge.pickle
+output/OOP_attempt/Support Vector Machine.pickle
+output/OOP_rfe/all_results.csv
+output/OOP_rfe/Gradient Boosting_RFECV_mean_scores.csv
+output/OOP_rfe/Gradient Boosting.pickle
+output/OOP_rfe/Lasso_RFECV_mean_scores.csv
+output/OOP_rfe/Lasso.pickle
+output/OOP_rfe/MinMax Scaler.pickle
+output/OOP_rfe/Partial Least Squares_RFECV_mean_scores.csv
+output/OOP_rfe/Partial Least Squares.pickle
+output/OOP_rfe/plot.png
+output/OOP_rfe/Power Transformer.pickle
+output/OOP_rfe/Random Forest_RFECV_mean_scores.csv
+output/OOP_rfe/Random Forest.pickle
+output/OOP_rfe/Ridge_RFECV_mean_scores.csv
+output/OOP_rfe/Ridge.pickle
+output/OOP_rfe/Support Vector Machine_RFECV_mean_scores.csv
+output/OOP_rfe/Support Vector Machine.pickle
+output/OOP_rfecv_all/all_results.csv
+output/OOP_rfecv_all/Gradient Boosting_RFECV_mean_scores.csv
+output/OOP_rfecv_all/Gradient Boosting.pickle
+output/OOP_rfecv_all/Lasso_RFECV_mean_scores.csv
+output/OOP_rfecv_all/Lasso.pickle
+output/OOP_rfecv_all/MinMax Scaler.pickle
+output/OOP_rfecv_all/Partial Least Squares_RFECV_mean_scores.csv
+output/OOP_rfecv_all/Partial Least Squares.pickle
+output/OOP_rfecv_all/plot.png
+output/OOP_rfecv_all/Power Transformer.pickle
+output/OOP_rfecv_all/Random Forest_RFECV_mean_scores.csv
+output/OOP_rfecv_all/Random Forest.pickle
+output/OOP_rfecv_all/Ridge_RFECV_mean_scores.csv
+output/OOP_rfecv_all/Ridge.pickle
+output/OOP_rfecv_all/Support Vector Machine_RFECV_mean_scores.csv
+output/OOP_rfecv_all/Support Vector Machine.pickle
+output/OOP_rfecv_shuffled/all_results.csv
+output/OOP_rfecv_shuffled/Gradient Boosting_RFECV_mean_scores.csv
+output/OOP_rfecv_shuffled/Gradient Boosting.pickle
+output/OOP_rfecv_shuffled/Lasso_RFECV_mean_scores.csv
+output/OOP_rfecv_shuffled/Lasso.pickle
+output/OOP_rfecv_shuffled/MinMax Scaler.pickle
+output/OOP_rfecv_shuffled/Partial Least Squares_RFECV_mean_scores.csv
+output/OOP_rfecv_shuffled/Partial Least Squares.pickle
+output/OOP_rfecv_shuffled/plot.png
+output/OOP_rfecv_shuffled/Power Transformer.pickle
+output/OOP_rfecv_shuffled/Random Forest_RFECV_mean_scores.csv
+output/OOP_rfecv_shuffled/Random Forest.pickle
+output/OOP_rfecv_shuffled/Ridge_RFECV_mean_scores.csv
+output/OOP_rfecv_shuffled/Ridge.pickle
+output/OOP_rfecv_shuffled/Support Vector Machine_RFECV_mean_scores.csv
+output/OOP_rfecv_shuffled/Support Vector Machine.pickle
+output/OOP_sep_feat_both_cv/all_results.csv
+output/OOP_sep_feat_both_cv/Gradient Boosting_RFECV_3-Fold_mean_scores.csv
+output/OOP_sep_feat_both_cv/Gradient Boosting_RFECV_LOO_mean_scores.csv
+output/OOP_sep_feat_both_cv/Gradient Boosting.pickle
+output/OOP_sep_feat_both_cv/Lasso_RFECV_3-Fold_mean_scores.csv
+output/OOP_sep_feat_both_cv/Lasso_RFECV_LOO_mean_scores.csv
+output/OOP_sep_feat_both_cv/Lasso.pickle
+output/OOP_sep_feat_both_cv/MinMax Scaler.pickle
+output/OOP_sep_feat_both_cv/Partial Least Squares_RFECV_3-Fold_mean_scores.csv
+output/OOP_sep_feat_both_cv/Partial Least Squares_RFECV_LOO_mean_scores.csv
+output/OOP_sep_feat_both_cv/Partial Least Squares.pickle
+output/OOP_sep_feat_both_cv/plot.png
+output/OOP_sep_feat_both_cv/Power Transformer.pickle
+output/OOP_sep_feat_both_cv/Random Forest_RFECV_3-Fold_mean_scores.csv
+output/OOP_sep_feat_both_cv/Random Forest_RFECV_LOO_mean_scores.csv
+output/OOP_sep_feat_both_cv/Random Forest.pickle
+output/OOP_sep_feat_both_cv/Ridge_RFECV_3-Fold_mean_scores.csv
+output/OOP_sep_feat_both_cv/Ridge_RFECV_LOO_mean_scores.csv
+output/OOP_sep_feat_both_cv/Ridge.pickle
+output/OOP_sep_feat_both_cv/Support Vector Machine_RFECV_3-Fold_mean_scores.csv
+output/OOP_sep_feat_both_cv/Support Vector Machine_RFECV_LOO_mean_scores.csv
+output/OOP_sep_feat_both_cv/Support Vector Machine.pickle
+output/OOP_separate_feats/all_results.csv
+output/OOP_separate_feats/Gradient Boosting_mean_scores.csv
+output/OOP_separate_feats/Gradient Boosting.pickle
+output/OOP_separate_feats/Lasso_mean_scores.csv
+output/OOP_separate_feats/Lasso.pickle
+output/OOP_separate_feats/MinMax Scaler.pickle
+output/OOP_separate_feats/Partial Least Squares_mean_scores.csv
+output/OOP_separate_feats/Partial Least Squares.pickle
+output/OOP_separate_feats/Power Transformer.pickle
+output/OOP_separate_feats/Random Forest_mean_scores.csv
+output/OOP_separate_feats/Random Forest.pickle
+output/OOP_separate_feats/Ridge_mean_scores.csv
+output/OOP_separate_feats/Ridge.pickle
+output/OOP_separate_feats/Support Vector Machine_mean_scores.csv
+output/OOP_separate_feats/Support Vector Machine.pickle
+output/best_select/all_results.csv
+output/best_select/feat_select_rmse_scores.json
+output/best_select/Ridge_3-Fold_RFECV_mean_scores.csv
+output/best_select/Ridge_3-Fold_RFECV_plot.png
+output/best_select/Ridge_3-Fold_SFS_plot.png
+output/best_select/Ridge_LOO_RFECV_mean_scores.csv
+output/best_select/Ridge_LOO_RFECV_plot.png
+output/best_select/Ridge_LOO_SFS_plot.png
+output/best_select/pickled/3-Fold.pickle
+output/best_select/pickled/LOO.pickle
+output/best_select/pickled/MinMax Scaler.pickle
+output/best_select/pickled/Power Transformer.pickle
+output/best_select/pickled/Ridge.pickle
+output/last_test/all_results.csv
+output/last_test/feat_select_rmse_scores.json
+output/last_test/Ridge_3-Fold_RFECV_mean_scores.csv
+output/last_test/Ridge_3-Fold_RFECV_plot.png
+output/last_test/Ridge_3-Fold_RFECV_selected_features
+output/last_test/Ridge_3-Fold_RFECV_selected_features.json
+output/last_test/Ridge_3-Fold_SFS_plot.png
+output/last_test/Ridge_3-Fold_SFS_selected_features
+output/last_test/Ridge_LOO_RFECV_mean_scores.csv
+output/last_test/Ridge_LOO_RFECV_plot.png
+output/last_test/Ridge_LOO_RFECV_selected_features
+output/last_test/Ridge_LOO_SFS_plot.png
+output/last_test/Ridge_LOO_SFS_selected_features
+output/last_test/pickled/3-Fold.pickle
+output/last_test/pickled/LOO.pickle
+output/last_test/pickled/MinMax Scaler.pickle
+output/last_test/pickled/Power Transformer.pickle
+output/last_test/pickled/Ridge.pickle
+output/p-value-selected/anova.json
+output/p-value-selected/kfold.pickle
+output/p-value-selected/kfolds_regression_scores.json
+output/p-value-selected/left_out.json
+output/p-value-selected/loo_regression_scores.json
+output/p-value-selected/LOO.pickle
+output/p-value-selected/scaler.pickle
+output/p-value-selected/splits.json
+output/p-value-selected/test.csv
+output/p-value-selected/yeo_johnson.pickle
+output/real_deal/all_results.csv
+output/real_deal/feat_select_rmse_scores.json
+output/real_deal/Gradient Boosting_3-Fold_RFECV_mean_scores.csv
+output/real_deal/Gradient Boosting_3-Fold_RFECV_plot.png
+output/real_deal/Gradient Boosting_LOO_RFECV_mean_scores.csv
+output/real_deal/Gradient Boosting_LOO_RFECV_plot.png
+output/real_deal/Gradient Boosting.pickle
+output/real_deal/Lasso_3-Fold_RFECV_mean_scores.csv
+output/real_deal/Lasso_3-Fold_RFECV_plot.png
+output/real_deal/Lasso_LOO_RFECV_mean_scores.csv
+output/real_deal/Lasso_LOO_RFECV_plot.png
+output/real_deal/Lasso.pickle
+output/real_deal/MinMax Scaler.pickle
+output/real_deal/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+output/real_deal/Partial Least Squares_3-Fold_RFECV_plot.png
+output/real_deal/Partial Least Squares_LOO_RFECV_mean_scores.csv
+output/real_deal/Partial Least Squares_LOO_RFECV_plot.png
+output/real_deal/Partial Least Squares.pickle
+output/real_deal/Power Transformer.pickle
+output/real_deal/Random Forest_3-Fold_RFECV_mean_scores.csv
+output/real_deal/Random Forest_3-Fold_RFECV_plot.png
+output/real_deal/Random Forest_LOO_RFECV_mean_scores.csv
+output/real_deal/Random Forest_LOO_RFECV_plot.png
+output/real_deal/Random Forest.pickle
+output/real_deal/Ridge_3-Fold_RFECV_mean_scores.csv
+output/real_deal/Ridge_3-Fold_RFECV_plot.png
+output/real_deal/Ridge_LOO_RFECV_mean_scores.csv
+output/real_deal/Ridge_LOO_RFECV_plot.png
+output/real_deal/Ridge.pickle
+output/real_deal/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+output/real_deal/Support Vector Machine_3-Fold_RFECV_plot.png
+output/real_deal/Support Vector Machine_LOO_RFECV_mean_scores.csv
+output/real_deal/Support Vector Machine_LOO_RFECV_plot.png
+output/real_deal/Support Vector Machine.pickle
+output/real_deal_shuffled/all_results.csv
+output/real_deal_shuffled/feat_select_rmse_scores.json
+output/real_deal_shuffled/Gradient Boosting_3-Fold_RFECV_mean_scores.csv
+output/real_deal_shuffled/Gradient Boosting_3-Fold_RFECV_plot.png
+output/real_deal_shuffled/Gradient Boosting_LOO_RFECV_mean_scores.csv
+output/real_deal_shuffled/Gradient Boosting_LOO_RFECV_plot.png
+output/real_deal_shuffled/Gradient Boosting.pickle
+output/real_deal_shuffled/Lasso_3-Fold_RFECV_mean_scores.csv
+output/real_deal_shuffled/Lasso_3-Fold_RFECV_plot.png
+output/real_deal_shuffled/Lasso_LOO_RFECV_mean_scores.csv
+output/real_deal_shuffled/Lasso_LOO_RFECV_plot.png
+output/real_deal_shuffled/Lasso.pickle
+output/real_deal_shuffled/MinMax Scaler.pickle
+output/real_deal_shuffled/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+output/real_deal_shuffled/Partial Least Squares_3-Fold_RFECV_plot.png
+output/real_deal_shuffled/Partial Least Squares_LOO_RFECV_mean_scores.csv
+output/real_deal_shuffled/Partial Least Squares_LOO_RFECV_plot.png
+output/real_deal_shuffled/Partial Least Squares.pickle
+output/real_deal_shuffled/Power Transformer.pickle
+output/real_deal_shuffled/Random Forest_3-Fold_RFECV_mean_scores.csv
+output/real_deal_shuffled/Random Forest_3-Fold_RFECV_plot.png
+output/real_deal_shuffled/Random Forest_LOO_RFECV_mean_scores.csv
+output/real_deal_shuffled/Random Forest_LOO_RFECV_plot.png
+output/real_deal_shuffled/Random Forest.pickle
+output/real_deal_shuffled/Ridge_3-Fold_RFECV_mean_scores.csv
+output/real_deal_shuffled/Ridge_3-Fold_RFECV_plot.png
+output/real_deal_shuffled/Ridge_LOO_RFECV_mean_scores.csv
+output/real_deal_shuffled/Ridge_LOO_RFECV_plot.png
+output/real_deal_shuffled/Ridge.pickle
+output/real_deal_shuffled/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+output/real_deal_shuffled/Support Vector Machine_3-Fold_RFECV_plot.png
+output/real_deal_shuffled/Support Vector Machine_LOO_RFECV_mean_scores.csv
+output/real_deal_shuffled/Support Vector Machine_LOO_RFECV_plot.png
+output/real_deal_shuffled/Support Vector Machine.pickle
+output/regression_scores_outdated/Fold_0_scores.json
+output/regression_scores_outdated/Fold_1_scores.json
+output/regression_scores_outdated/Fold_2_scores.json
+output/regression_scores_outdated/mean_scores.json
+output/regression_scores_outdated/kfolds/Fold_0_scores.json
+output/regression_scores_outdated/kfolds/Fold_1_scores.json
+output/regression_scores_outdated/kfolds/Fold_2_scores.json
+output/regression_scores_outdated/kfolds/mean_scores.json
+output/regression_scores_outdated/loo/Fold_0_scores.json
+output/regression_scores_outdated/loo/Fold_1_scores.json
+output/regression_scores_outdated/loo/Fold_2_scores.json
+output/regression_scores_outdated/loo/Fold_3_scores.json
+output/regression_scores_outdated/loo/Fold_4_scores.json
+output/regression_scores_outdated/loo/Fold_5_scores.json
+output/regression_scores_outdated/loo/Fold_6_scores.json
+output/regression_scores_outdated/loo/Fold_7_scores.json
+output/regression_scores_outdated/loo/Fold_8_scores.json
+output/regression_scores_outdated/loo/Fold_9_scores.json
+output/regression_scores_outdated/loo/Fold_10_scores.json
+output/regression_scores_outdated/loo/Fold_11_scores.json
+output/regression_scores_outdated/loo/Fold_12_scores.json
+output/regression_scores_outdated/loo/Fold_13_scores.json
+output/regression_scores_outdated/loo/Fold_14_scores.json
+output/regression_scores_outdated/loo/Fold_15_scores.json
+output/regression_scores_outdated/loo/Fold_16_scores.json
+output/regression_scores_outdated/loo/Fold_17_scores.json
+output/regression_scores_outdated/loo/Fold_18_scores.json
+output/regression_scores_outdated/loo/Fold_19_scores.json
+output/regression_scores_outdated/loo/Fold_20_scores.json
+output/regression_scores_outdated/loo/Fold_21_scores.json
+output/regression_scores_outdated/loo/Fold_22_scores.json
+output/regression_scores_outdated/loo/Fold_23_scores.json
+output/regression_scores_outdated/loo/Fold_24_scores.json
+output/regression_scores_outdated/loo/Fold_25_scores.json
+output/regression_scores_outdated/loo/Fold_26_scores.json
+output/regression_scores_outdated/loo/Fold_27_scores.json
+output/regression_scores_outdated/loo/Fold_28_scores.json
+output/regression_scores_outdated/loo/Fold_29_scores.json
+output/regression_scores_outdated/loo/Fold_30_scores.json
+output/regression_scores_outdated/loo/Fold_31_scores.json
+output/regression_scores_outdated/loo/Fold_32_scores.json
+output/regression_scores_outdated/loo/Fold_33_scores.json
+output/regression_scores_outdated/loo/Fold_34_scores.json
+output/regression_scores_outdated/loo/Fold_35_scores.json
+output/regression_scores_outdated/loo/Fold_36_scores.json
+output/regression_scores_outdated/loo/Fold_37_scores.json
+output/regression_scores_outdated/loo/Fold_38_scores.json
+output/regression_scores_outdated/loo/Fold_39_scores.json
+output/regression_scores_outdated/loo/Fold_40_scores.json
+output/regression_scores_outdated/loo/Fold_41_scores.json
+output/regression_scores_outdated/loo/Fold_42_scores.json
+output/regression_scores_outdated/loo/Fold_43_scores.json
+output/regression_scores_outdated/loo/Fold_44_scores.json
+output/regression_scores_outdated/loo/Fold_45_scores.json
+output/regression_scores_outdated/loo/Fold_46_scores.json
+output/regression_scores_outdated/loo/mean_scores.json
+output/sfs_loo/all_results.csv
+output/sfs_loo/feat_select_rmse_scores.json
+output/sfs_loo/Lasso_3-Fold_RFECV_mean_scores.csv
+output/sfs_loo/Lasso_3-Fold_RFECV_plot.png
+output/sfs_loo/Lasso_3-Fold_SFS_plot.png
+output/sfs_loo/Lasso_LOO_RFECV_mean_scores.csv
+output/sfs_loo/Lasso_LOO_RFECV_plot.png
+output/sfs_loo/Lasso_LOO_SFS_plot.png
+output/sfs_loo/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+output/sfs_loo/Partial Least Squares_3-Fold_RFECV_plot.png
+output/sfs_loo/Partial Least Squares_3-Fold_SFS_plot.png
+output/sfs_loo/Partial Least Squares_LOO_RFECV_mean_scores.csv
+output/sfs_loo/Partial Least Squares_LOO_RFECV_plot.png
+output/sfs_loo/Partial Least Squares_LOO_SFS_plot.png
+output/sfs_loo/Ridge_3-Fold_RFECV_mean_scores.csv
+output/sfs_loo/Ridge_3-Fold_RFECV_plot.png
+output/sfs_loo/Ridge_3-Fold_SFS_plot.png
+output/sfs_loo/Ridge_LOO_RFECV_mean_scores.csv
+output/sfs_loo/Ridge_LOO_RFECV_plot.png
+output/sfs_loo/Ridge_LOO_SFS_plot.png
+output/sfs_loo/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+output/sfs_loo/Support Vector Machine_3-Fold_RFECV_plot.png
+output/sfs_loo/Support Vector Machine_3-Fold_SFS_plot.png
+output/sfs_loo/Support Vector Machine_LOO_RFECV_mean_scores.csv
+output/sfs_loo/Support Vector Machine_LOO_RFECV_plot.png
+output/sfs_loo/Support Vector Machine_LOO_SFS_plot.png
+output/sfs_loo/pickled/3-Fold.pickle
+output/sfs_loo/pickled/Lasso.pickle
+output/sfs_loo/pickled/LOO.pickle
+output/sfs_loo/pickled/MinMax Scaler.pickle
+output/sfs_loo/pickled/Partial Least Squares.pickle
+output/sfs_loo/pickled/Power Transformer.pickle
+output/sfs_loo/pickled/Ridge.pickle
+output/sfs_loo/pickled/Support Vector Machine.pickle
+output/sfs_quick/all_results.csv
+output/sfs_quick/feat_select_rmse_scores.json
+output/sfs_quick/Lasso_3-Fold_RFECV_mean_scores.csv
+output/sfs_quick/Lasso_3-Fold_RFECV_plot.png
+output/sfs_quick/Lasso_3-Fold_SFS_plot.png
+output/sfs_quick/Lasso_LOO_RFECV_mean_scores.csv
+output/sfs_quick/Lasso_LOO_RFECV_plot.png
+output/sfs_quick/Lasso_LOO_SFS_plot.png
+output/sfs_quick/Lasso.pickle
+output/sfs_quick/MinMax Scaler.pickle
+output/sfs_quick/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+output/sfs_quick/Partial Least Squares_3-Fold_RFECV_plot.png
+output/sfs_quick/Partial Least Squares_3-Fold_SFS_plot.png
+output/sfs_quick/Partial Least Squares_LOO_RFECV_mean_scores.csv
+output/sfs_quick/Partial Least Squares_LOO_RFECV_plot.png
+output/sfs_quick/Partial Least Squares_LOO_SFS_plot.png
+output/sfs_quick/Partial Least Squares.pickle
+output/sfs_quick/Power Transformer.pickle
+output/sfs_quick/Ridge_3-Fold_RFECV_mean_scores.csv
+output/sfs_quick/Ridge_3-Fold_RFECV_plot.png
+output/sfs_quick/Ridge_3-Fold_SFS_plot.png
+output/sfs_quick/Ridge_LOO_RFECV_mean_scores.csv
+output/sfs_quick/Ridge_LOO_RFECV_plot.png
+output/sfs_quick/Ridge_LOO_SFS_plot.png
+output/sfs_quick/Ridge.pickle
+output/sfs_quick/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+output/sfs_quick/Support Vector Machine_3-Fold_RFECV_plot.png
+output/sfs_quick/Support Vector Machine_3-Fold_SFS_plot.png
+output/sfs_quick/Support Vector Machine_LOO_RFECV_mean_scores.csv
+output/sfs_quick/Support Vector Machine_LOO_RFECV_plot.png
+output/sfs_quick/Support Vector Machine_LOO_SFS_plot.png
+output/sfs_quick/Support Vector Machine.pickle
+output/train_scores/all_results.csv
+output/train_scores/feat_select_rmse_scores.json
+output/train_scores/Lasso_3-Fold_RFECV_mean_scores.csv
+output/train_scores/Lasso_3-Fold_RFECV_plot.png
+output/train_scores/Lasso_3-Fold_SFS_plot.png
+output/train_scores/Lasso_LOO_RFECV_mean_scores.csv
+output/train_scores/Lasso_LOO_RFECV_plot.png
+output/train_scores/Lasso_LOO_SFS_plot.png
+output/train_scores/Ridge_3-Fold_RFECV_mean_scores.csv
+output/train_scores/Ridge_3-Fold_RFECV_plot.png
+output/train_scores/Ridge_3-Fold_SFS_plot.png
+output/train_scores/Ridge_LOO_RFECV_mean_scores.csv
+output/train_scores/Ridge_LOO_RFECV_plot.png
+output/train_scores/Ridge_LOO_SFS_plot.png
+output/train_scores/pickled/3-Fold.pickle
+output/train_scores/pickled/Lasso.pickle
+output/train_scores/pickled/LOO.pickle
+output/train_scores/pickled/MinMax Scaler.pickle
+output/train_scores/pickled/Partial Least Squares.pickle
+output/train_scores/pickled/Power Transformer.pickle
+output/train_scores/pickled/Ridge.pickle
+output/train_scores/pickled/Support Vector Machine.pickle
+output/train_scores_2/all_results.csv
+output/train_scores_2/feat_select_rmse_scores.json
+output/train_scores_2/Ridge_3-Fold_RFECV_mean_scores.csv
+output/train_scores_2/Ridge_3-Fold_RFECV_plot.png
+output/train_scores_2/Ridge_3-Fold_SFS_plot.png
+output/train_scores_2/Ridge_LOO_RFECV_mean_scores.csv
+output/train_scores_2/Ridge_LOO_RFECV_plot.png
+output/train_scores_2/Ridge_LOO_SFS_plot.png
+output/train_scores_2/pickled/3-Fold.pickle
+output/train_scores_2/pickled/LOO.pickle
+output/train_scores_2/pickled/MinMax Scaler.pickle
+output/train_scores_2/pickled/Power Transformer.pickle
+output/train_scores_2/pickled/Ridge.pickle
+pca_projections/aso_vt0_nocorr500pca200.csv
+pca_projections/aso_vt0_nocorr600pca200.csv
+pca_projections/aso_vt0_nocorr700pca200.csv
+pca_projections/aso_vt0_nocorr800pca200.csv
+pca_projections/aso_vt0_nocorr900pca200.csv
+pca_projections/aso_vt0_nocorr950pca200.csv
+tests/bug/all_results.csv
+tests/bug/Partial Least Squares Scaled_3-Fold_RFECV_mean_scores.csv
+tests/bug/Partial Least Squares Scaled_3-Fold_RFECV_plot.png
+tests/bug/Partial Least Squares Scaled_3-Fold_RFECV_selected_features.json
+tests/bug/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+tests/bug/Partial Least Squares_3-Fold_RFECV_plot.png
+tests/bug/Partial Least Squares_3-Fold_RFECV_selected_features.json
+tests/bug/Partial Least Squares_3-Fold_SFS_mean_scores.csv
+tests/bug/Partial Least Squares_3-Fold_SFS_plot.png
+tests/bug/Partial Least Squares_3-Fold_SFS_selected_features.json
+tests/bug/Partial Least Squares_LOO_RFECV_mean_scores.csv
+tests/bug/Partial Least Squares_LOO_RFECV_plot.png
+tests/bug/Partial Least Squares_LOO_RFECV_selected_features.json
+tests/bug/Partial Least Squares_LOO_SFS_mean_scores.csv
+tests/bug/Partial Least Squares_LOO_SFS_plot.png
+tests/bug/Partial Least Squares_LOO_SFS_selected_features.json
+tests/bug/pickled/3-Fold.pickle
+tests/bug/pickled/Lasso.pickle
+tests/bug/pickled/LOO.pickle
+tests/bug/pickled/MinMax_Scaler.pickle
+tests/bug/pickled/Partial_Least_Squares_Scaled.pickle
+tests/bug/pickled/Partial_Least_Squares.pickle
+tests/bug/pickled/Power_Transformer.pickle
+tests/bug/pickled/Ridge.pickle
+tests/bug/pickled/Support_Vector_Machine.pickle
+tests/bug_real/all_results.csv
+tests/bug_real/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+tests/bug_real/Partial Least Squares_3-Fold_RFECV_plot.png
+tests/bug_real/Partial Least Squares_3-Fold_RFECV_selected_features.json
+tests/bug_real/pickled/3-Fold.pickle
+tests/bug_real/pickled/LOO.pickle
+tests/bug_real/pickled/MinMax_Scaler.pickle
+tests/bug_real/pickled/Partial_Least_Squares_Scaled.pickle
+tests/bug_real/pickled/Partial_Least_Squares.pickle
+tests/bug_real/pickled/Power_Transformer.pickle
+tests/elastic_no_feat/all_results.csv
+tests/elastic_no_feat/Elastic Net_3-Fold_RFECV_mean_scores.csv
+tests/elastic_no_feat/Elastic Net_3-Fold_RFECV_plot.png
+tests/elastic_no_feat/Elastic Net_3-Fold_RFECV_selected_features.json
+tests/elastic_no_feat/Elastic Net_3-Fold_SFS_mean_scores.csv
+tests/elastic_no_feat/Elastic Net_3-Fold_SFS_plot.png
+tests/elastic_no_feat/Elastic Net_3-Fold_SFS_selected_features.json
+tests/elastic_no_feat/Elastic Net_LOO_RFECV_mean_scores.csv
+tests/elastic_no_feat/Elastic Net_LOO_RFECV_plot.png
+tests/elastic_no_feat/Elastic Net_LOO_RFECV_selected_features.json
+tests/elastic_no_feat/Elastic Net_LOO_SFS_mean_scores.csv
+tests/elastic_no_feat/Elastic Net_LOO_SFS_plot.png
+tests/elastic_no_feat/Elastic Net_LOO_SFS_selected_features.json
+tests/elastic_no_feat/feat_select_mae_scores.json
+tests/elastic_no_feat/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/elastic_no_feat/Lasso_3-Fold_RFECV_plot.png
+tests/elastic_no_feat/Lasso_3-Fold_RFECV_selected_features.json
+tests/elastic_no_feat/Lasso_3-Fold_SFS_mean_scores.csv
+tests/elastic_no_feat/Lasso_3-Fold_SFS_plot.png
+tests/elastic_no_feat/Lasso_3-Fold_SFS_selected_features.json
+tests/elastic_no_feat/Lasso_LOO_RFECV_mean_scores.csv
+tests/elastic_no_feat/Lasso_LOO_RFECV_plot.png
+tests/elastic_no_feat/Lasso_LOO_RFECV_selected_features.json
+tests/elastic_no_feat/Lasso_LOO_SFS_mean_scores.csv
+tests/elastic_no_feat/Lasso_LOO_SFS_plot.png
+tests/elastic_no_feat/Lasso_LOO_SFS_selected_features.json
+tests/elastic_no_feat/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+tests/elastic_no_feat/Partial Least Squares_3-Fold_RFECV_plot.png
+tests/elastic_no_feat/Partial Least Squares_3-Fold_RFECV_selected_features.json
+tests/elastic_no_feat/Partial Least Squares_3-Fold_SFS_mean_scores.csv
+tests/elastic_no_feat/Partial Least Squares_3-Fold_SFS_plot.png
+tests/elastic_no_feat/Partial Least Squares_3-Fold_SFS_selected_features.json
+tests/elastic_no_feat/Partial Least Squares_LOO_RFECV_mean_scores.csv
+tests/elastic_no_feat/Partial Least Squares_LOO_RFECV_plot.png
+tests/elastic_no_feat/Partial Least Squares_LOO_RFECV_selected_features.json
+tests/elastic_no_feat/Partial Least Squares_LOO_SFS_mean_scores.csv
+tests/elastic_no_feat/Partial Least Squares_LOO_SFS_plot.png
+tests/elastic_no_feat/Partial Least Squares_LOO_SFS_selected_features.json
+tests/elastic_no_feat/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/elastic_no_feat/Ridge_3-Fold_RFECV_plot.png
+tests/elastic_no_feat/Ridge_3-Fold_RFECV_selected_features.json
+tests/elastic_no_feat/Ridge_3-Fold_SFS_mean_scores.csv
+tests/elastic_no_feat/Ridge_3-Fold_SFS_plot.png
+tests/elastic_no_feat/Ridge_3-Fold_SFS_selected_features.json
+tests/elastic_no_feat/Ridge_LOO_RFECV_mean_scores.csv
+tests/elastic_no_feat/Ridge_LOO_RFECV_plot.png
+tests/elastic_no_feat/Ridge_LOO_RFECV_selected_features.json
+tests/elastic_no_feat/Ridge_LOO_SFS_mean_scores.csv
+tests/elastic_no_feat/Ridge_LOO_SFS_plot.png
+tests/elastic_no_feat/Ridge_LOO_SFS_selected_features.json
+tests/elastic_no_feat/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/elastic_no_feat/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/elastic_no_feat/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/elastic_no_feat/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/elastic_no_feat/Support Vector Machine_3-Fold_SFS_plot.png
+tests/elastic_no_feat/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/elastic_no_feat/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/elastic_no_feat/Support Vector Machine_LOO_RFECV_plot.png
+tests/elastic_no_feat/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/elastic_no_feat/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/elastic_no_feat/Support Vector Machine_LOO_SFS_plot.png
+tests/elastic_no_feat/Support Vector Machine_LOO_SFS_selected_features.json
+tests/elastic_no_feat/time.txt
+tests/elastic_no_feat/pickled/3-Fold.pickle
+tests/elastic_no_feat/pickled/Elastic_Net.pickle
+tests/elastic_no_feat/pickled/Lasso.pickle
+tests/elastic_no_feat/pickled/LOO.pickle
+tests/elastic_no_feat/pickled/MinMax_Scaler.pickle
+tests/elastic_no_feat/pickled/Partial_Least_Squares.pickle
+tests/elastic_no_feat/pickled/Power_Transformer.pickle
+tests/elastic_no_feat/pickled/Ridge.pickle
+tests/elastic_no_feat/pickled/Support_Vector_Machine.pickle
+tests/ensembles/all_results.csv
+tests/ensembles/Isolation Forest_outliers.csv
+tests/ensembles/Isolation Forest_Random Forest_3-Fold_RFECV_mean_scores.csv
+tests/ensembles/Isolation Forest_Random Forest_3-Fold_RFECV_plot.png
+tests/ensembles/Isolation Forest_Random Forest_3-Fold_RFECV_selected_features.json
+tests/ensembles/Isolation Forest_Random Forest_3-Fold_SFS_mean_scores.csv
+tests/ensembles/Isolation Forest_Random Forest_3-Fold_SFS_plot.png
+tests/ensembles/Isolation Forest_Random Forest_3-Fold_SFS_selected_features.json
+tests/ensembles/Isolation Forest_Random Forest_LOO_RFECV_mean_scores.csv
+tests/ensembles/Isolation Forest_Random Forest_LOO_RFECV_plot.png
+tests/ensembles/Isolation Forest_Random Forest_LOO_RFECV_selected_features.json
+tests/ensembles/pickled/3-Fold.pickle
+tests/ensembles/pickled/Gaussian_Process.pickle
+tests/ensembles/pickled/Gradient_Boosting.pickle
+tests/ensembles/pickled/LOO.pickle
+tests/ensembles/pickled/MinMax_Scaler.pickle
+tests/ensembles/pickled/Random_Forest.pickle
+tests/index_changed/all_results.csv
+tests/index_changed/Elastic Net_3-Fold_RFECV_mean_scores.csv
+tests/index_changed/Elastic Net_3-Fold_RFECV_plot.png
+tests/index_changed/Elastic Net_3-Fold_RFECV_selected_features.json
+tests/index_changed/Elastic Net_3-Fold_SFS_mean_scores.csv
+tests/index_changed/Elastic Net_3-Fold_SFS_plot.png
+tests/index_changed/Elastic Net_3-Fold_SFS_selected_features.json
+tests/index_changed/Elastic Net_LOO_RFECV_mean_scores.csv
+tests/index_changed/Elastic Net_LOO_RFECV_plot.png
+tests/index_changed/Elastic Net_LOO_RFECV_selected_features.json
+tests/index_changed/Elastic Net_LOO_SFS_mean_scores.csv
+tests/index_changed/Elastic Net_LOO_SFS_plot.png
+tests/index_changed/Elastic Net_LOO_SFS_selected_features.json
+tests/index_changed/feat_select_mae_scores.json
+tests/index_changed/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/index_changed/Lasso_3-Fold_RFECV_plot.png
+tests/index_changed/Lasso_3-Fold_RFECV_selected_features.json
+tests/index_changed/Lasso_3-Fold_SFS_mean_scores.csv
+tests/index_changed/Lasso_3-Fold_SFS_plot.png
+tests/index_changed/Lasso_3-Fold_SFS_selected_features.json
+tests/index_changed/Lasso_LOO_RFECV_mean_scores.csv
+tests/index_changed/Lasso_LOO_RFECV_plot.png
+tests/index_changed/Lasso_LOO_RFECV_selected_features.json
+tests/index_changed/Lasso_LOO_SFS_mean_scores.csv
+tests/index_changed/Lasso_LOO_SFS_plot.png
+tests/index_changed/Lasso_LOO_SFS_selected_features.json
+tests/index_changed/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/index_changed/Ridge_3-Fold_RFECV_plot.png
+tests/index_changed/Ridge_3-Fold_RFECV_selected_features.json
+tests/index_changed/Ridge_3-Fold_SFS_mean_scores.csv
+tests/index_changed/Ridge_3-Fold_SFS_plot.png
+tests/index_changed/Ridge_3-Fold_SFS_selected_features.json
+tests/index_changed/Ridge_LOO_RFECV_mean_scores.csv
+tests/index_changed/Ridge_LOO_RFECV_plot.png
+tests/index_changed/Ridge_LOO_RFECV_selected_features.json
+tests/index_changed/Ridge_LOO_SFS_mean_scores.csv
+tests/index_changed/Ridge_LOO_SFS_plot.png
+tests/index_changed/Ridge_LOO_SFS_selected_features.json
+tests/index_changed/time.txt
+tests/index_changed/pickled/3-Fold.pickle
+tests/index_changed/pickled/LOO.pickle
+tests/index_changed/pickled/MinMax_Scaler.pickle
+tests/index_changed/pickled/Power_Transformer.pickle
+tests/index_error/all_results.csv
+tests/index_error/Elastic Net_3-Fold_RFECV_mean_scores.csv
+tests/index_error/Elastic Net_3-Fold_RFECV_plot.png
+tests/index_error/Elastic Net_3-Fold_RFECV_selected_features.json
+tests/index_error/Elastic Net_3-Fold_SFS_mean_scores.csv
+tests/index_error/Elastic Net_3-Fold_SFS_plot.png
+tests/index_error/Elastic Net_3-Fold_SFS_selected_features.json
+tests/index_error/Elastic Net_LOO_RFECV_mean_scores.csv
+tests/index_error/Elastic Net_LOO_RFECV_plot.png
+tests/index_error/Elastic Net_LOO_RFECV_selected_features.json
+tests/index_error/Elastic Net_LOO_SFS_mean_scores.csv
+tests/index_error/Elastic Net_LOO_SFS_plot.png
+tests/index_error/Elastic Net_LOO_SFS_selected_features.json
+tests/index_error/feat_select_mae_scores.json
+tests/index_error/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/index_error/Lasso_3-Fold_RFECV_plot.png
+tests/index_error/Lasso_3-Fold_RFECV_selected_features.json
+tests/index_error/Lasso_3-Fold_SFS_mean_scores.csv
+tests/index_error/Lasso_3-Fold_SFS_plot.png
+tests/index_error/Lasso_3-Fold_SFS_selected_features.json
+tests/index_error/Lasso_LOO_RFECV_mean_scores.csv
+tests/index_error/Lasso_LOO_RFECV_plot.png
+tests/index_error/Lasso_LOO_RFECV_selected_features.json
+tests/index_error/Lasso_LOO_SFS_mean_scores.csv
+tests/index_error/Lasso_LOO_SFS_plot.png
+tests/index_error/Lasso_LOO_SFS_selected_features.json
+tests/index_error/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/index_error/Ridge_3-Fold_RFECV_plot.png
+tests/index_error/Ridge_3-Fold_RFECV_selected_features.json
+tests/index_error/Ridge_3-Fold_SFS_mean_scores.csv
+tests/index_error/Ridge_3-Fold_SFS_plot.png
+tests/index_error/Ridge_3-Fold_SFS_selected_features.json
+tests/index_error/Ridge_LOO_RFECV_mean_scores.csv
+tests/index_error/Ridge_LOO_RFECV_plot.png
+tests/index_error/Ridge_LOO_RFECV_selected_features.json
+tests/index_error/Ridge_LOO_SFS_mean_scores.csv
+tests/index_error/Ridge_LOO_SFS_plot.png
+tests/index_error/Ridge_LOO_SFS_selected_features.json
+tests/index_error/time.txt
+tests/index_error/pickled/3-Fold.pickle
+tests/index_error/pickled/LOO.pickle
+tests/index_error/pickled/MinMax_Scaler.pickle
+tests/index_error/pickled/Power_Transformer.pickle
+tests/just_ridge_no_opt/all_results.csv
+tests/just_ridge_no_opt/feat_select_mae_scores.json
+tests/just_ridge_no_opt/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/just_ridge_no_opt/Lasso_3-Fold_RFECV_plot.png
+tests/just_ridge_no_opt/Lasso_3-Fold_RFECV_selected_features.json
+tests/just_ridge_no_opt/Lasso_3-Fold_SFS_mean_scores.csv
+tests/just_ridge_no_opt/Lasso_3-Fold_SFS_plot.png
+tests/just_ridge_no_opt/Lasso_3-Fold_SFS_selected_features.json
+tests/just_ridge_no_opt/Lasso_LOO_RFECV_mean_scores.csv
+tests/just_ridge_no_opt/Lasso_LOO_RFECV_plot.png
+tests/just_ridge_no_opt/Lasso_LOO_RFECV_selected_features.json
+tests/just_ridge_no_opt/Lasso_LOO_SFS_mean_scores.csv
+tests/just_ridge_no_opt/Lasso_LOO_SFS_plot.png
+tests/just_ridge_no_opt/Lasso_LOO_SFS_selected_features.json
+tests/just_ridge_no_opt/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/just_ridge_no_opt/Ridge_3-Fold_RFECV_plot.png
+tests/just_ridge_no_opt/Ridge_3-Fold_RFECV_selected_features.json
+tests/just_ridge_no_opt/Ridge_3-Fold_SFS_mean_scores.csv
+tests/just_ridge_no_opt/Ridge_3-Fold_SFS_plot.png
+tests/just_ridge_no_opt/Ridge_3-Fold_SFS_selected_features.json
+tests/just_ridge_no_opt/Ridge_LOO_RFECV_mean_scores.csv
+tests/just_ridge_no_opt/Ridge_LOO_RFECV_plot.png
+tests/just_ridge_no_opt/Ridge_LOO_RFECV_selected_features.json
+tests/just_ridge_no_opt/Ridge_LOO_SFS_mean_scores.csv
+tests/just_ridge_no_opt/Ridge_LOO_SFS_plot.png
+tests/just_ridge_no_opt/Ridge_LOO_SFS_selected_features.json
+tests/just_ridge_no_opt/time.txt
+tests/just_ridge_no_opt/pickled/3-Fold.pickle
+tests/just_ridge_no_opt/pickled/Lasso.pickle
+tests/just_ridge_no_opt/pickled/LOO.pickle
+tests/just_ridge_no_opt/pickled/MinMax_Scaler.pickle
+tests/just_ridge_no_opt/pickled/Power_Transformer.pickle
+tests/just_ridge_no_opt/pickled/Ridge.pickle
+tests/lasso_and_elastic/all_results.csv
+tests/lasso_and_elastic/Elastic Net_3-Fold_RFECV_mean_scores.csv
+tests/lasso_and_elastic/Elastic Net_3-Fold_RFECV_plot.png
+tests/lasso_and_elastic/Elastic Net_3-Fold_RFECV_selected_features.json
+tests/lasso_and_elastic/Elastic Net_3-Fold_SFS_mean_scores.csv
+tests/lasso_and_elastic/Elastic Net_3-Fold_SFS_plot.png
+tests/lasso_and_elastic/Elastic Net_3-Fold_SFS_selected_features.json
+tests/lasso_and_elastic/Elastic Net_LOO_RFECV_mean_scores.csv
+tests/lasso_and_elastic/Elastic Net_LOO_RFECV_plot.png
+tests/lasso_and_elastic/Elastic Net_LOO_RFECV_selected_features.json
+tests/lasso_and_elastic/Elastic Net_LOO_SFS_mean_scores.csv
+tests/lasso_and_elastic/Elastic Net_LOO_SFS_plot.png
+tests/lasso_and_elastic/Elastic Net_LOO_SFS_selected_features.json
+tests/lasso_and_elastic/feat_select_mae_scores.json
+tests/lasso_and_elastic/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/lasso_and_elastic/Lasso_3-Fold_RFECV_plot.png
+tests/lasso_and_elastic/Lasso_3-Fold_RFECV_selected_features.json
+tests/lasso_and_elastic/Lasso_3-Fold_SFS_mean_scores.csv
+tests/lasso_and_elastic/Lasso_3-Fold_SFS_plot.png
+tests/lasso_and_elastic/Lasso_3-Fold_SFS_selected_features.json
+tests/lasso_and_elastic/Lasso_LOO_RFECV_mean_scores.csv
+tests/lasso_and_elastic/Lasso_LOO_RFECV_plot.png
+tests/lasso_and_elastic/Lasso_LOO_RFECV_selected_features.json
+tests/lasso_and_elastic/Lasso_LOO_SFS_mean_scores.csv
+tests/lasso_and_elastic/Lasso_LOO_SFS_plot.png
+tests/lasso_and_elastic/Lasso_LOO_SFS_selected_features.json
+tests/lasso_and_elastic/time.txt
+tests/lasso_and_elastic/pickled/3-Fold.pickle
+tests/lasso_and_elastic/pickled/Elastic_Net.pickle
+tests/lasso_and_elastic/pickled/Lasso.pickle
+tests/lasso_and_elastic/pickled/LOO.pickle
+tests/lasso_and_elastic/pickled/MinMax_Scaler.pickle
+tests/lasso_and_elastic/pickled/Power_Transformer.pickle
+tests/lasso_elastic_0.01_alpha/all_results.csv
+tests/lasso_elastic_0.01_alpha/Elastic Net_3-Fold_RFECV_mean_scores.csv
+tests/lasso_elastic_0.01_alpha/Elastic Net_3-Fold_RFECV_plot.png
+tests/lasso_elastic_0.01_alpha/Elastic Net_3-Fold_RFECV_selected_features.json
+tests/lasso_elastic_0.01_alpha/Elastic Net_3-Fold_SFS_mean_scores.csv
+tests/lasso_elastic_0.01_alpha/Elastic Net_3-Fold_SFS_plot.png
+tests/lasso_elastic_0.01_alpha/Elastic Net_3-Fold_SFS_selected_features.json
+tests/lasso_elastic_0.01_alpha/Elastic Net_LOO_RFECV_mean_scores.csv
+tests/lasso_elastic_0.01_alpha/Elastic Net_LOO_RFECV_plot.png
+tests/lasso_elastic_0.01_alpha/Elastic Net_LOO_RFECV_selected_features.json
+tests/lasso_elastic_0.01_alpha/Elastic Net_LOO_SFS_mean_scores.csv
+tests/lasso_elastic_0.01_alpha/Elastic Net_LOO_SFS_plot.png
+tests/lasso_elastic_0.01_alpha/Elastic Net_LOO_SFS_selected_features.json
+tests/lasso_elastic_0.01_alpha/feat_select_mae_scores.json
+tests/lasso_elastic_0.01_alpha/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/lasso_elastic_0.01_alpha/Lasso_3-Fold_RFECV_plot.png
+tests/lasso_elastic_0.01_alpha/Lasso_3-Fold_RFECV_selected_features.json
+tests/lasso_elastic_0.01_alpha/Lasso_3-Fold_SFS_mean_scores.csv
+tests/lasso_elastic_0.01_alpha/Lasso_3-Fold_SFS_plot.png
+tests/lasso_elastic_0.01_alpha/Lasso_3-Fold_SFS_selected_features.json
+tests/lasso_elastic_0.01_alpha/Lasso_LOO_RFECV_mean_scores.csv
+tests/lasso_elastic_0.01_alpha/Lasso_LOO_RFECV_plot.png
+tests/lasso_elastic_0.01_alpha/Lasso_LOO_RFECV_selected_features.json
+tests/lasso_elastic_0.01_alpha/Lasso_LOO_SFS_mean_scores.csv
+tests/lasso_elastic_0.01_alpha/Lasso_LOO_SFS_plot.png
+tests/lasso_elastic_0.01_alpha/Lasso_LOO_SFS_selected_features.json
+tests/lasso_elastic_0.01_alpha/time.txt
+tests/lasso_elastic_0.01_alpha/pickled/3-Fold.pickle
+tests/lasso_elastic_0.01_alpha/pickled/Elastic_Net.pickle
+tests/lasso_elastic_0.01_alpha/pickled/Lasso.pickle
+tests/lasso_elastic_0.01_alpha/pickled/LOO.pickle
+tests/lasso_elastic_0.01_alpha/pickled/MinMax_Scaler.pickle
+tests/lasso_elastic_0.01_alpha/pickled/Power_Transformer.pickle
+tests/lasso_elastic_0.1_alpha/all_results.csv
+tests/lasso_elastic_0.1_alpha/Elastic Net_3-Fold_RFECV_mean_scores.csv
+tests/lasso_elastic_0.1_alpha/Elastic Net_3-Fold_RFECV_plot.png
+tests/lasso_elastic_0.1_alpha/Elastic Net_3-Fold_RFECV_selected_features.json
+tests/lasso_elastic_0.1_alpha/Elastic Net_3-Fold_SFS_mean_scores.csv
+tests/lasso_elastic_0.1_alpha/Elastic Net_3-Fold_SFS_plot.png
+tests/lasso_elastic_0.1_alpha/Elastic Net_3-Fold_SFS_selected_features.json
+tests/lasso_elastic_0.1_alpha/Elastic Net_LOO_RFECV_mean_scores.csv
+tests/lasso_elastic_0.1_alpha/Elastic Net_LOO_RFECV_plot.png
+tests/lasso_elastic_0.1_alpha/Elastic Net_LOO_RFECV_selected_features.json
+tests/lasso_elastic_0.1_alpha/Elastic Net_LOO_SFS_mean_scores.csv
+tests/lasso_elastic_0.1_alpha/Elastic Net_LOO_SFS_plot.png
+tests/lasso_elastic_0.1_alpha/Elastic Net_LOO_SFS_selected_features.json
+tests/lasso_elastic_0.1_alpha/feat_select_mae_scores.json
+tests/lasso_elastic_0.1_alpha/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/lasso_elastic_0.1_alpha/Lasso_3-Fold_RFECV_plot.png
+tests/lasso_elastic_0.1_alpha/Lasso_3-Fold_RFECV_selected_features.json
+tests/lasso_elastic_0.1_alpha/Lasso_3-Fold_SFS_mean_scores.csv
+tests/lasso_elastic_0.1_alpha/Lasso_3-Fold_SFS_plot.png
+tests/lasso_elastic_0.1_alpha/Lasso_3-Fold_SFS_selected_features.json
+tests/lasso_elastic_0.1_alpha/Lasso_LOO_RFECV_mean_scores.csv
+tests/lasso_elastic_0.1_alpha/Lasso_LOO_RFECV_plot.png
+tests/lasso_elastic_0.1_alpha/Lasso_LOO_RFECV_selected_features.json
+tests/lasso_elastic_0.1_alpha/Lasso_LOO_SFS_mean_scores.csv
+tests/lasso_elastic_0.1_alpha/Lasso_LOO_SFS_plot.png
+tests/lasso_elastic_0.1_alpha/Lasso_LOO_SFS_selected_features.json
+tests/lasso_elastic_0.1_alpha/time.txt
+tests/lasso_elastic_0.1_alpha/pickled/3-Fold.pickle
+tests/lasso_elastic_0.1_alpha/pickled/Elastic_Net.pickle
+tests/lasso_elastic_0.1_alpha/pickled/Lasso.pickle
+tests/lasso_elastic_0.1_alpha/pickled/LOO.pickle
+tests/lasso_elastic_0.1_alpha/pickled/MinMax_Scaler.pickle
+tests/lasso_elastic_0.1_alpha/pickled/Power_Transformer.pickle
+tests/linearSVR/all_results.csv
+tests/linearSVR/Elastic Net_3-Fold_RFECV_mean_scores.csv
+tests/linearSVR/Elastic Net_3-Fold_RFECV_plot.png
+tests/linearSVR/Elastic Net_3-Fold_RFECV_selected_features.json
+tests/linearSVR/Elastic Net_3-Fold_SFS_mean_scores.csv
+tests/linearSVR/Elastic Net_3-Fold_SFS_plot.png
+tests/linearSVR/Elastic Net_3-Fold_SFS_selected_features.json
+tests/linearSVR/Elastic Net_LOO_RFECV_mean_scores.csv
+tests/linearSVR/Elastic Net_LOO_RFECV_plot.png
+tests/linearSVR/Elastic Net_LOO_RFECV_selected_features.json
+tests/linearSVR/Elastic Net_LOO_SFS_mean_scores.csv
+tests/linearSVR/Elastic Net_LOO_SFS_plot.png
+tests/linearSVR/Elastic Net_LOO_SFS_selected_features.json
+tests/linearSVR/feat_select_mae_scores.json
+tests/linearSVR/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/linearSVR/Lasso_3-Fold_RFECV_plot.png
+tests/linearSVR/Lasso_3-Fold_RFECV_selected_features.json
+tests/linearSVR/Lasso_3-Fold_SFS_mean_scores.csv
+tests/linearSVR/Lasso_3-Fold_SFS_plot.png
+tests/linearSVR/Lasso_3-Fold_SFS_selected_features.json
+tests/linearSVR/Lasso_LOO_RFECV_mean_scores.csv
+tests/linearSVR/Lasso_LOO_RFECV_plot.png
+tests/linearSVR/Lasso_LOO_RFECV_selected_features.json
+tests/linearSVR/Lasso_LOO_SFS_mean_scores.csv
+tests/linearSVR/Lasso_LOO_SFS_plot.png
+tests/linearSVR/Lasso_LOO_SFS_selected_features.json
+tests/linearSVR/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+tests/linearSVR/Partial Least Squares_3-Fold_RFECV_plot.png
+tests/linearSVR/Partial Least Squares_3-Fold_RFECV_selected_features.json
+tests/linearSVR/Partial Least Squares_3-Fold_SFS_mean_scores.csv
+tests/linearSVR/Partial Least Squares_3-Fold_SFS_plot.png
+tests/linearSVR/Partial Least Squares_3-Fold_SFS_selected_features.json
+tests/linearSVR/Partial Least Squares_LOO_RFECV_mean_scores.csv
+tests/linearSVR/Partial Least Squares_LOO_RFECV_plot.png
+tests/linearSVR/Partial Least Squares_LOO_RFECV_selected_features.json
+tests/linearSVR/Partial Least Squares_LOO_SFS_mean_scores.csv
+tests/linearSVR/Partial Least Squares_LOO_SFS_plot.png
+tests/linearSVR/Partial Least Squares_LOO_SFS_selected_features.json
+tests/linearSVR/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/linearSVR/Ridge_3-Fold_RFECV_plot.png
+tests/linearSVR/Ridge_3-Fold_RFECV_selected_features.json
+tests/linearSVR/Ridge_3-Fold_SFS_mean_scores.csv
+tests/linearSVR/Ridge_3-Fold_SFS_plot.png
+tests/linearSVR/Ridge_3-Fold_SFS_selected_features.json
+tests/linearSVR/Ridge_LOO_RFECV_mean_scores.csv
+tests/linearSVR/Ridge_LOO_RFECV_plot.png
+tests/linearSVR/Ridge_LOO_RFECV_selected_features.json
+tests/linearSVR/Ridge_LOO_SFS_mean_scores.csv
+tests/linearSVR/Ridge_LOO_SFS_plot.png
+tests/linearSVR/Ridge_LOO_SFS_selected_features.json
+tests/linearSVR/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/linearSVR/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/linearSVR/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/linearSVR/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/linearSVR/Support Vector Machine_3-Fold_SFS_plot.png
+tests/linearSVR/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/linearSVR/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/linearSVR/Support Vector Machine_LOO_RFECV_plot.png
+tests/linearSVR/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/linearSVR/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/linearSVR/Support Vector Machine_LOO_SFS_plot.png
+tests/linearSVR/Support Vector Machine_LOO_SFS_selected_features.json
+tests/linearSVR/time.txt
+tests/linearSVR/pickled/3-Fold.pickle
+tests/linearSVR/pickled/Elastic_Net_3-Fold_first_tune.pickle
+tests/linearSVR/pickled/Elastic_Net_LOO_first_tune.pickle
+tests/linearSVR/pickled/Lasso_3-Fold_first_tune.pickle
+tests/linearSVR/pickled/Lasso_LOO_first_tune.pickle
+tests/linearSVR/pickled/LOO.pickle
+tests/linearSVR/pickled/MinMax_Scaler.pickle
+tests/linearSVR/pickled/Partial_Least_Squares_3-Fold_first_tune.pickle
+tests/linearSVR/pickled/Partial_Least_Squares_LOO_first_tune.pickle
+tests/linearSVR/pickled/Power_Transformer.pickle
+tests/linearSVR/pickled/Ridge_3-Fold_first_tune.pickle
+tests/linearSVR/pickled/Ridge_LOO_first_tune.pickle
+tests/linearSVR/pickled/Support_Vector_Machine_3-Fold_first_tune.pickle
+tests/linearSVR/pickled/Support_Vector_Machine_LOO_first_tune.pickle
+tests/model_save/_Gradient Boosting_3-Fold_RFECV_mean_scores.csv
+tests/model_save/_Gradient Boosting_3-Fold_RFECV_plot.png
+tests/model_save/_Gradient Boosting_3-Fold_RFECV_selected_features.json
+tests/model_save/_Gradient Boosting_3-Fold_SFS_mean_scores.csv
+tests/model_save/_Gradient Boosting_3-Fold_SFS_plot.png
+tests/model_save/_Gradient Boosting_3-Fold_SFS_selected_features.json
+tests/model_save/_Gradient Boosting_LOO_RFECV_mean_scores.csv
+tests/model_save/_Gradient Boosting_LOO_RFECV_plot.png
+tests/model_save/_Gradient Boosting_LOO_RFECV_selected_features.json
+tests/model_save/_Gradient Boosting_LOO_SFS_mean_scores.csv
+tests/model_save/_Gradient Boosting_LOO_SFS_plot.png
+tests/model_save/_Gradient Boosting_LOO_SFS_selected_features.json
+tests/model_save/_Random Forest_3-Fold_RFECV_mean_scores.csv
+tests/model_save/_Random Forest_3-Fold_RFECV_plot.png
+tests/model_save/_Random Forest_3-Fold_RFECV_selected_features.json
+tests/model_save/_Random Forest_3-Fold_SFS_mean_scores.csv
+tests/model_save/_Random Forest_3-Fold_SFS_plot.png
+tests/model_save/_Random Forest_3-Fold_SFS_selected_features.json
+tests/model_save/_Random Forest_LOO_RFECV_mean_scores.csv
+tests/model_save/_Random Forest_LOO_RFECV_plot.png
+tests/model_save/_Random Forest_LOO_RFECV_selected_features.json
+tests/model_save/_Random Forest_LOO_SFS_mean_scores.csv
+tests/model_save/_Random Forest_LOO_SFS_plot.png
+tests/model_save/_Random Forest_LOO_SFS_selected_features.json
+tests/model_save/all_results.csv
+tests/model_save/feat_select_mae_scores.json
+tests/model_save/Isolation Forest_Gradient Boosting_3-Fold_RFECV_mean_scores.csv
+tests/model_save/Isolation Forest_Gradient Boosting_3-Fold_RFECV_plot.png
+tests/model_save/Isolation Forest_Gradient Boosting_3-Fold_RFECV_selected_features.json
+tests/model_save/Isolation Forest_Gradient Boosting_3-Fold_SFS_mean_scores.csv
+tests/model_save/Isolation Forest_Gradient Boosting_3-Fold_SFS_plot.png
+tests/model_save/Isolation Forest_Gradient Boosting_3-Fold_SFS_selected_features.json
+tests/model_save/Isolation Forest_Gradient Boosting_LOO_RFECV_mean_scores.csv
+tests/model_save/Isolation Forest_Gradient Boosting_LOO_RFECV_plot.png
+tests/model_save/Isolation Forest_Gradient Boosting_LOO_RFECV_selected_features.json
+tests/model_save/Isolation Forest_Gradient Boosting_LOO_SFS_mean_scores.csv
+tests/model_save/Isolation Forest_Gradient Boosting_LOO_SFS_plot.png
+tests/model_save/Isolation Forest_Gradient Boosting_LOO_SFS_selected_features.json
+tests/model_save/Isolation Forest_outliers.csv
+tests/model_save/Isolation Forest_Random Forest_3-Fold_RFECV_mean_scores.csv
+tests/model_save/Isolation Forest_Random Forest_3-Fold_RFECV_plot.png
+tests/model_save/Isolation Forest_Random Forest_3-Fold_RFECV_selected_features.json
+tests/model_save/Isolation Forest_Random Forest_3-Fold_SFS_mean_scores.csv
+tests/model_save/Isolation Forest_Random Forest_3-Fold_SFS_plot.png
+tests/model_save/Isolation Forest_Random Forest_3-Fold_SFS_selected_features.json
+tests/model_save/Isolation Forest_Random Forest_LOO_RFECV_mean_scores.csv
+tests/model_save/Isolation Forest_Random Forest_LOO_RFECV_plot.png
+tests/model_save/Isolation Forest_Random Forest_LOO_RFECV_selected_features.json
+tests/model_save/Isolation Forest_Random Forest_LOO_SFS_mean_scores.csv
+tests/model_save/Isolation Forest_Random Forest_LOO_SFS_plot.png
+tests/model_save/Isolation Forest_Random Forest_LOO_SFS_selected_features.json
+tests/model_save/LOF_Gradient Boosting_3-Fold_RFECV_mean_scores.csv
+tests/model_save/LOF_Gradient Boosting_3-Fold_RFECV_plot.png
+tests/model_save/LOF_Gradient Boosting_3-Fold_RFECV_selected_features.json
+tests/model_save/LOF_Gradient Boosting_3-Fold_SFS_mean_scores.csv
+tests/model_save/LOF_Gradient Boosting_3-Fold_SFS_plot.png
+tests/model_save/LOF_Gradient Boosting_3-Fold_SFS_selected_features.json
+tests/model_save/LOF_Gradient Boosting_LOO_RFECV_mean_scores.csv
+tests/model_save/LOF_Gradient Boosting_LOO_RFECV_plot.png
+tests/model_save/LOF_Gradient Boosting_LOO_RFECV_selected_features.json
+tests/model_save/LOF_Gradient Boosting_LOO_SFS_mean_scores.csv
+tests/model_save/LOF_Gradient Boosting_LOO_SFS_plot.png
+tests/model_save/LOF_Gradient Boosting_LOO_SFS_selected_features.json
+tests/model_save/LOF_outliers.csv
+tests/model_save/LOF_Random Forest_3-Fold_RFECV_mean_scores.csv
+tests/model_save/LOF_Random Forest_3-Fold_RFECV_plot.png
+tests/model_save/LOF_Random Forest_3-Fold_RFECV_selected_features.json
+tests/model_save/LOF_Random Forest_3-Fold_SFS_mean_scores.csv
+tests/model_save/LOF_Random Forest_3-Fold_SFS_plot.png
+tests/model_save/LOF_Random Forest_3-Fold_SFS_selected_features.json
+tests/model_save/LOF_Random Forest_LOO_RFECV_mean_scores.csv
+tests/model_save/LOF_Random Forest_LOO_RFECV_plot.png
+tests/model_save/LOF_Random Forest_LOO_RFECV_selected_features.json
+tests/model_save/LOF_Random Forest_LOO_SFS_mean_scores.csv
+tests/model_save/LOF_Random Forest_LOO_SFS_plot.png
+tests/model_save/LOF_Random Forest_LOO_SFS_selected_features.json
+tests/model_save/time.txt
+tests/model_save/pickled/3-Fold.pickle
+tests/model_save/pickled/Gradient_Boosting.pickle
+tests/model_save/pickled/LOO.pickle
+tests/model_save/pickled/MinMax_Scaler.pickle
+tests/model_save/pickled/Power_Transformer.pickle
+tests/model_save/pickled/Random_Forest.pickle
+tests/model_save/pickled/pipes/_Gradient_Boosting_3-Fold_RFECV.pickle
+tests/model_save/pickled/pipes/_Gradient_Boosting_3-Fold_SFS.pickle
+tests/model_save/pickled/pipes/_Gradient_Boosting_LOO_RFECV.pickle
+tests/model_save/pickled/pipes/_Gradient_Boosting_LOO_SFS.pickle
+tests/model_save/pickled/pipes/_Random_Forest_3-Fold_RFECV.pickle
+tests/model_save/pickled/pipes/_Random_Forest_3-Fold_SFS.pickle
+tests/model_save/pickled/pipes/_Random_Forest_LOO_RFECV.pickle
+tests/model_save/pickled/pipes/_Random_Forest_LOO_SFS.pickle
+tests/model_save/pickled/pipes/Isolation_Forest_Gradient_Boosting_3-Fold_RFECV.pickle
+tests/model_save/pickled/pipes/Isolation_Forest_Gradient_Boosting_3-Fold_SFS.pickle
+tests/model_save/pickled/pipes/Isolation_Forest_Gradient_Boosting_LOO_RFECV.pickle
+tests/model_save/pickled/pipes/Isolation_Forest_Gradient_Boosting_LOO_SFS.pickle
+tests/model_save/pickled/pipes/Isolation_Forest_Random_Forest_3-Fold_RFECV.pickle
+tests/model_save/pickled/pipes/Isolation_Forest_Random_Forest_3-Fold_SFS.pickle
+tests/model_save/pickled/pipes/Isolation_Forest_Random_Forest_LOO_RFECV.pickle
+tests/model_save/pickled/pipes/Isolation_Forest_Random_Forest_LOO_SFS.pickle
+tests/model_save/pickled/pipes/LOF_Gradient_Boosting_3-Fold_RFECV.pickle
+tests/model_save/pickled/pipes/LOF_Gradient_Boosting_3-Fold_SFS.pickle
+tests/model_save/pickled/pipes/LOF_Gradient_Boosting_LOO_RFECV.pickle
+tests/model_save/pickled/pipes/LOF_Gradient_Boosting_LOO_SFS.pickle
+tests/model_save/pickled/pipes/LOF_Random_Forest_3-Fold_RFECV.pickle
+tests/model_save/pickled/pipes/LOF_Random_Forest_3-Fold_SFS.pickle
+tests/model_save/pickled/pipes/LOF_Random_Forest_LOO_RFECV.pickle
+tests/model_save/pickled/pipes/LOF_Random_Forest_LOO_SFS.pickle
+tests/no_feat_select/all_results.csv
+tests/no_feat_select/time.txt
+tests/no_feat_select/pickled/3-Fold.pickle
+tests/no_feat_select/pickled/Lasso.pickle
+tests/no_feat_select/pickled/LOO.pickle
+tests/no_feat_select/pickled/MinMax_Scaler.pickle
+tests/no_feat_select/pickled/Partial_Least_Squares.pickle
+tests/no_feat_select/pickled/Power_Transformer.pickle
+tests/no_feat_select/pickled/Ridge.pickle
+tests/no_feat_select/pickled/Support_Vector_Machine.pickle
+tests/outlier/all_results.csv
+tests/outlier/feat_select_mae_scores.json
+tests/outlier/Isolation Forest_outliers.csv
+tests/outlier/Isolation Forest_Partial Least Squares Scaled_3-Fold_RFECV_mean_scores.csv
+tests/outlier/Isolation Forest_Partial Least Squares Scaled_3-Fold_RFECV_plot.png
+tests/outlier/Isolation Forest_Partial Least Squares Scaled_3-Fold_RFECV_selected_features.json
+tests/outlier/Isolation Forest_Partial Least Squares Scaled_3-Fold_SFS_mean_scores.csv
+tests/outlier/Isolation Forest_Partial Least Squares Scaled_3-Fold_SFS_plot.png
+tests/outlier/Isolation Forest_Partial Least Squares Scaled_3-Fold_SFS_selected_features.json
+tests/outlier/Isolation Forest_Partial Least Squares Scaled_LOO_RFECV_mean_scores.csv
+tests/outlier/Isolation Forest_Partial Least Squares Scaled_LOO_RFECV_plot.png
+tests/outlier/Isolation Forest_Partial Least Squares Scaled_LOO_RFECV_selected_features.json
+tests/outlier/Isolation Forest_Partial Least Squares Scaled_LOO_SFS_mean_scores.csv
+tests/outlier/Isolation Forest_Partial Least Squares Scaled_LOO_SFS_plot.png
+tests/outlier/Isolation Forest_Partial Least Squares Scaled_LOO_SFS_selected_features.json
+tests/outlier/Isolation Forest_Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+tests/outlier/Isolation Forest_Partial Least Squares_3-Fold_RFECV_plot.png
+tests/outlier/Isolation Forest_Partial Least Squares_3-Fold_RFECV_selected_features.json
+tests/outlier/Isolation Forest_Partial Least Squares_3-Fold_SFS_mean_scores.csv
+tests/outlier/Isolation Forest_Partial Least Squares_3-Fold_SFS_plot.png
+tests/outlier/Isolation Forest_Partial Least Squares_3-Fold_SFS_selected_features.json
+tests/outlier/Isolation Forest_Partial Least Squares_LOO_RFECV_mean_scores.csv
+tests/outlier/Isolation Forest_Partial Least Squares_LOO_RFECV_plot.png
+tests/outlier/Isolation Forest_Partial Least Squares_LOO_RFECV_selected_features.json
+tests/outlier/Isolation Forest_Partial Least Squares_LOO_SFS_mean_scores.csv
+tests/outlier/Isolation Forest_Partial Least Squares_LOO_SFS_plot.png
+tests/outlier/Isolation Forest_Partial Least Squares_LOO_SFS_selected_features.json
+tests/outlier/LOF_outliers.csv
+tests/outlier/LOF_Partial Least Squares Scaled_3-Fold_RFECV_mean_scores.csv
+tests/outlier/LOF_Partial Least Squares Scaled_3-Fold_RFECV_plot.png
+tests/outlier/LOF_Partial Least Squares Scaled_3-Fold_RFECV_selected_features.json
+tests/outlier/LOF_Partial Least Squares Scaled_3-Fold_SFS_mean_scores.csv
+tests/outlier/LOF_Partial Least Squares Scaled_3-Fold_SFS_plot.png
+tests/outlier/LOF_Partial Least Squares Scaled_3-Fold_SFS_selected_features.json
+tests/outlier/LOF_Partial Least Squares Scaled_LOO_RFECV_mean_scores.csv
+tests/outlier/LOF_Partial Least Squares Scaled_LOO_RFECV_plot.png
+tests/outlier/LOF_Partial Least Squares Scaled_LOO_RFECV_selected_features.json
+tests/outlier/LOF_Partial Least Squares Scaled_LOO_SFS_mean_scores.csv
+tests/outlier/LOF_Partial Least Squares Scaled_LOO_SFS_plot.png
+tests/outlier/LOF_Partial Least Squares Scaled_LOO_SFS_selected_features.json
+tests/outlier/LOF_Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+tests/outlier/LOF_Partial Least Squares_3-Fold_RFECV_plot.png
+tests/outlier/LOF_Partial Least Squares_3-Fold_RFECV_selected_features.json
+tests/outlier/LOF_Partial Least Squares_3-Fold_SFS_mean_scores.csv
+tests/outlier/LOF_Partial Least Squares_3-Fold_SFS_plot.png
+tests/outlier/LOF_Partial Least Squares_3-Fold_SFS_selected_features.json
+tests/outlier/LOF_Partial Least Squares_LOO_RFECV_mean_scores.csv
+tests/outlier/LOF_Partial Least Squares_LOO_RFECV_plot.png
+tests/outlier/LOF_Partial Least Squares_LOO_RFECV_selected_features.json
+tests/outlier/LOF_Partial Least Squares_LOO_SFS_mean_scores.csv
+tests/outlier/LOF_Partial Least Squares_LOO_SFS_plot.png
+tests/outlier/LOF_Partial Least Squares_LOO_SFS_selected_features.json
+tests/outlier/time.txt
+tests/outlier/pickled/3-Fold.pickle
+tests/outlier/pickled/LOO.pickle
+tests/outlier/pickled/MinMax_Scaler.pickle
+tests/outlier/pickled/Partial_Least_Squares_Scaled.pickle
+tests/outlier/pickled/Partial_Least_Squares.pickle
+tests/outlier/pickled/Power_Transformer.pickle
+tests/overflow/all_results.csv
+tests/overflow/feat_select_mae_scores.json
+tests/overflow/None_Ridge_3-Fold_RFECV_mean_scores.csv
+tests/overflow/None_Ridge_3-Fold_RFECV_plot.png
+tests/overflow/None_Ridge_3-Fold_RFECV_selected_features.json
+tests/overflow/None_Ridge_3-Fold_SFS_mean_scores.csv
+tests/overflow/None_Ridge_3-Fold_SFS_plot.png
+tests/overflow/None_Ridge_3-Fold_SFS_selected_features.json
+tests/overflow/None_Ridge_LOO_RFECV_mean_scores.csv
+tests/overflow/None_Ridge_LOO_RFECV_plot.png
+tests/overflow/None_Ridge_LOO_RFECV_selected_features.json
+tests/overflow/None_Ridge_LOO_SFS_mean_scores.csv
+tests/overflow/None_Ridge_LOO_SFS_plot.png
+tests/overflow/None_Ridge_LOO_SFS_selected_features.json
+tests/overflow/time.txt
+tests/overflow/pickled/3-Fold.pickle
+tests/overflow/pickled/LOO.pickle
+tests/overflow/pickled/MinMax_Scaler.pickle
+tests/overflow/pickled/Power_Transformer.pickle
+tests/overflow/pickled/Ridge.pickle
+tests/power_transform_overflow/all_results.csv
+tests/power_transform_overflow/feat_select_mae_scores.json
+tests/power_transform_overflow/None_Ridge_3-Fold_RFECV_mean_scores.csv
+tests/power_transform_overflow/None_Ridge_3-Fold_RFECV_plot.png
+tests/power_transform_overflow/None_Ridge_3-Fold_RFECV_selected_features.json
+tests/power_transform_overflow/None_Ridge_3-Fold_SFS_mean_scores.csv
+tests/power_transform_overflow/None_Ridge_3-Fold_SFS_plot.png
+tests/power_transform_overflow/None_Ridge_3-Fold_SFS_selected_features.json
+tests/power_transform_overflow/None_Ridge_LOO_RFECV_mean_scores.csv
+tests/power_transform_overflow/None_Ridge_LOO_RFECV_plot.png
+tests/power_transform_overflow/None_Ridge_LOO_RFECV_selected_features.json
+tests/power_transform_overflow/None_Ridge_LOO_SFS_mean_scores.csv
+tests/power_transform_overflow/None_Ridge_LOO_SFS_plot.png
+tests/power_transform_overflow/None_Ridge_LOO_SFS_selected_features.json
+tests/power_transform_overflow/time.txt
+tests/power_transform_overflow/pickled/3-Fold.pickle
+tests/power_transform_overflow/pickled/LOO.pickle
+tests/power_transform_overflow/pickled/MinMax_Scaler.pickle
+tests/power_transform_overflow/pickled/Ridge.pickle
+tests/r_0.5_le_0.02_e_0.5/all_results.csv
+tests/r_0.5_le_0.02_e_0.5/Elastic Net_3-Fold_RFECV_mean_scores.csv
+tests/r_0.5_le_0.02_e_0.5/Elastic Net_3-Fold_RFECV_plot.png
+tests/r_0.5_le_0.02_e_0.5/Elastic Net_3-Fold_RFECV_selected_features.json
+tests/r_0.5_le_0.02_e_0.5/Elastic Net_3-Fold_SFS_mean_scores.csv
+tests/r_0.5_le_0.02_e_0.5/Elastic Net_3-Fold_SFS_plot.png
+tests/r_0.5_le_0.02_e_0.5/Elastic Net_3-Fold_SFS_selected_features.json
+tests/r_0.5_le_0.02_e_0.5/Elastic Net_LOO_RFECV_mean_scores.csv
+tests/r_0.5_le_0.02_e_0.5/Elastic Net_LOO_RFECV_plot.png
+tests/r_0.5_le_0.02_e_0.5/Elastic Net_LOO_RFECV_selected_features.json
+tests/r_0.5_le_0.02_e_0.5/Elastic Net_LOO_SFS_mean_scores.csv
+tests/r_0.5_le_0.02_e_0.5/Elastic Net_LOO_SFS_plot.png
+tests/r_0.5_le_0.02_e_0.5/Elastic Net_LOO_SFS_selected_features.json
+tests/r_0.5_le_0.02_e_0.5/feat_select_mae_scores.json
+tests/r_0.5_le_0.02_e_0.5/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/r_0.5_le_0.02_e_0.5/Lasso_3-Fold_RFECV_plot.png
+tests/r_0.5_le_0.02_e_0.5/Lasso_3-Fold_RFECV_selected_features.json
+tests/r_0.5_le_0.02_e_0.5/Lasso_3-Fold_SFS_mean_scores.csv
+tests/r_0.5_le_0.02_e_0.5/Lasso_3-Fold_SFS_plot.png
+tests/r_0.5_le_0.02_e_0.5/Lasso_3-Fold_SFS_selected_features.json
+tests/r_0.5_le_0.02_e_0.5/Lasso_LOO_RFECV_mean_scores.csv
+tests/r_0.5_le_0.02_e_0.5/Lasso_LOO_RFECV_plot.png
+tests/r_0.5_le_0.02_e_0.5/Lasso_LOO_RFECV_selected_features.json
+tests/r_0.5_le_0.02_e_0.5/Lasso_LOO_SFS_mean_scores.csv
+tests/r_0.5_le_0.02_e_0.5/Lasso_LOO_SFS_plot.png
+tests/r_0.5_le_0.02_e_0.5/Lasso_LOO_SFS_selected_features.json
+tests/r_0.5_le_0.02_e_0.5/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/r_0.5_le_0.02_e_0.5/Ridge_3-Fold_RFECV_plot.png
+tests/r_0.5_le_0.02_e_0.5/Ridge_3-Fold_RFECV_selected_features.json
+tests/r_0.5_le_0.02_e_0.5/Ridge_3-Fold_SFS_mean_scores.csv
+tests/r_0.5_le_0.02_e_0.5/Ridge_3-Fold_SFS_plot.png
+tests/r_0.5_le_0.02_e_0.5/Ridge_3-Fold_SFS_selected_features.json
+tests/r_0.5_le_0.02_e_0.5/Ridge_LOO_RFECV_mean_scores.csv
+tests/r_0.5_le_0.02_e_0.5/Ridge_LOO_RFECV_plot.png
+tests/r_0.5_le_0.02_e_0.5/Ridge_LOO_RFECV_selected_features.json
+tests/r_0.5_le_0.02_e_0.5/Ridge_LOO_SFS_mean_scores.csv
+tests/r_0.5_le_0.02_e_0.5/Ridge_LOO_SFS_plot.png
+tests/r_0.5_le_0.02_e_0.5/Ridge_LOO_SFS_selected_features.json
+tests/r_0.5_le_0.02_e_0.5/time.txt
+tests/r_0.5_le_0.02_e_0.5/pickled/3-Fold.pickle
+tests/r_0.5_le_0.02_e_0.5/pickled/LOO.pickle
+tests/r_0.5_le_0.02_e_0.5/pickled/MinMax_Scaler.pickle
+tests/r_0.5_le_0.02_e_0.5/pickled/Power_Transformer.pickle
+tests/r_1_l_0.005_e_0.0001/all_results.csv
+tests/r_1_l_0.005_e_0.0001/Elastic Net_3-Fold_RFECV_mean_scores.csv
+tests/r_1_l_0.005_e_0.0001/Elastic Net_3-Fold_RFECV_plot.png
+tests/r_1_l_0.005_e_0.0001/Elastic Net_3-Fold_RFECV_selected_features.json
+tests/r_1_l_0.005_e_0.0001/Elastic Net_3-Fold_SFS_mean_scores.csv
+tests/r_1_l_0.005_e_0.0001/Elastic Net_3-Fold_SFS_plot.png
+tests/r_1_l_0.005_e_0.0001/Elastic Net_3-Fold_SFS_selected_features.json
+tests/r_1_l_0.005_e_0.0001/Elastic Net_LOO_RFECV_mean_scores.csv
+tests/r_1_l_0.005_e_0.0001/Elastic Net_LOO_RFECV_plot.png
+tests/r_1_l_0.005_e_0.0001/Elastic Net_LOO_RFECV_selected_features.json
+tests/r_1_l_0.005_e_0.0001/Elastic Net_LOO_SFS_mean_scores.csv
+tests/r_1_l_0.005_e_0.0001/Elastic Net_LOO_SFS_plot.png
+tests/r_1_l_0.005_e_0.0001/Elastic Net_LOO_SFS_selected_features.json
+tests/r_1_l_0.005_e_0.0001/feat_select_mae_scores.json
+tests/r_1_l_0.005_e_0.0001/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/r_1_l_0.005_e_0.0001/Lasso_3-Fold_RFECV_plot.png
+tests/r_1_l_0.005_e_0.0001/Lasso_3-Fold_RFECV_selected_features.json
+tests/r_1_l_0.005_e_0.0001/Lasso_3-Fold_SFS_mean_scores.csv
+tests/r_1_l_0.005_e_0.0001/Lasso_3-Fold_SFS_plot.png
+tests/r_1_l_0.005_e_0.0001/Lasso_3-Fold_SFS_selected_features.json
+tests/r_1_l_0.005_e_0.0001/Lasso_LOO_RFECV_mean_scores.csv
+tests/r_1_l_0.005_e_0.0001/Lasso_LOO_RFECV_plot.png
+tests/r_1_l_0.005_e_0.0001/Lasso_LOO_RFECV_selected_features.json
+tests/r_1_l_0.005_e_0.0001/Lasso_LOO_SFS_mean_scores.csv
+tests/r_1_l_0.005_e_0.0001/Lasso_LOO_SFS_plot.png
+tests/r_1_l_0.005_e_0.0001/Lasso_LOO_SFS_selected_features.json
+tests/r_1_l_0.005_e_0.0001/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/r_1_l_0.005_e_0.0001/Ridge_3-Fold_RFECV_plot.png
+tests/r_1_l_0.005_e_0.0001/Ridge_3-Fold_RFECV_selected_features.json
+tests/r_1_l_0.005_e_0.0001/Ridge_3-Fold_SFS_mean_scores.csv
+tests/r_1_l_0.005_e_0.0001/Ridge_3-Fold_SFS_plot.png
+tests/r_1_l_0.005_e_0.0001/Ridge_3-Fold_SFS_selected_features.json
+tests/r_1_l_0.005_e_0.0001/Ridge_LOO_RFECV_mean_scores.csv
+tests/r_1_l_0.005_e_0.0001/Ridge_LOO_RFECV_plot.png
+tests/r_1_l_0.005_e_0.0001/Ridge_LOO_RFECV_selected_features.json
+tests/r_1_l_0.005_e_0.0001/Ridge_LOO_SFS_mean_scores.csv
+tests/r_1_l_0.005_e_0.0001/Ridge_LOO_SFS_plot.png
+tests/r_1_l_0.005_e_0.0001/Ridge_LOO_SFS_selected_features.json
+tests/r_1_l_0.005_e_0.0001/time.txt
+tests/r_1_l_0.005_e_0.0001/pickled/3-Fold.pickle
+tests/r_1_l_0.005_e_0.0001/pickled/LOO.pickle
+tests/r_1_l_0.005_e_0.0001/pickled/MinMax_Scaler.pickle
+tests/r_1_l_0.005_e_0.0001/pickled/Power_Transformer.pickle
+tests/r_2_le_0.005_e_0.5/all_results.csv
+tests/r_2_le_0.005_e_0.5/Elastic Net_3-Fold_RFECV_mean_scores.csv
+tests/r_2_le_0.005_e_0.5/Elastic Net_3-Fold_RFECV_plot.png
+tests/r_2_le_0.005_e_0.5/Elastic Net_3-Fold_RFECV_selected_features.json
+tests/r_2_le_0.005_e_0.5/Elastic Net_3-Fold_SFS_mean_scores.csv
+tests/r_2_le_0.005_e_0.5/Elastic Net_3-Fold_SFS_plot.png
+tests/r_2_le_0.005_e_0.5/Elastic Net_3-Fold_SFS_selected_features.json
+tests/r_2_le_0.005_e_0.5/Elastic Net_LOO_RFECV_mean_scores.csv
+tests/r_2_le_0.005_e_0.5/Elastic Net_LOO_RFECV_plot.png
+tests/r_2_le_0.005_e_0.5/Elastic Net_LOO_RFECV_selected_features.json
+tests/r_2_le_0.005_e_0.5/Elastic Net_LOO_SFS_mean_scores.csv
+tests/r_2_le_0.005_e_0.5/Elastic Net_LOO_SFS_plot.png
+tests/r_2_le_0.005_e_0.5/Elastic Net_LOO_SFS_selected_features.json
+tests/r_2_le_0.005_e_0.5/feat_select_mae_scores.json
+tests/r_2_le_0.005_e_0.5/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/r_2_le_0.005_e_0.5/Lasso_3-Fold_RFECV_plot.png
+tests/r_2_le_0.005_e_0.5/Lasso_3-Fold_RFECV_selected_features.json
+tests/r_2_le_0.005_e_0.5/Lasso_3-Fold_SFS_mean_scores.csv
+tests/r_2_le_0.005_e_0.5/Lasso_3-Fold_SFS_plot.png
+tests/r_2_le_0.005_e_0.5/Lasso_3-Fold_SFS_selected_features.json
+tests/r_2_le_0.005_e_0.5/Lasso_LOO_RFECV_mean_scores.csv
+tests/r_2_le_0.005_e_0.5/Lasso_LOO_RFECV_plot.png
+tests/r_2_le_0.005_e_0.5/Lasso_LOO_RFECV_selected_features.json
+tests/r_2_le_0.005_e_0.5/Lasso_LOO_SFS_mean_scores.csv
+tests/r_2_le_0.005_e_0.5/Lasso_LOO_SFS_plot.png
+tests/r_2_le_0.005_e_0.5/Lasso_LOO_SFS_selected_features.json
+tests/r_2_le_0.005_e_0.5/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/r_2_le_0.005_e_0.5/Ridge_3-Fold_RFECV_plot.png
+tests/r_2_le_0.005_e_0.5/Ridge_3-Fold_RFECV_selected_features.json
+tests/r_2_le_0.005_e_0.5/Ridge_3-Fold_SFS_mean_scores.csv
+tests/r_2_le_0.005_e_0.5/Ridge_3-Fold_SFS_plot.png
+tests/r_2_le_0.005_e_0.5/Ridge_3-Fold_SFS_selected_features.json
+tests/r_2_le_0.005_e_0.5/Ridge_LOO_RFECV_mean_scores.csv
+tests/r_2_le_0.005_e_0.5/Ridge_LOO_RFECV_plot.png
+tests/r_2_le_0.005_e_0.5/Ridge_LOO_RFECV_selected_features.json
+tests/r_2_le_0.005_e_0.5/Ridge_LOO_SFS_mean_scores.csv
+tests/r_2_le_0.005_e_0.5/Ridge_LOO_SFS_plot.png
+tests/r_2_le_0.005_e_0.5/Ridge_LOO_SFS_selected_features.json
+tests/r_2_le_0.005_e_0.5/time.txt
+tests/r_2_le_0.005_e_0.5/pickled/3-Fold.pickle
+tests/r_2_le_0.005_e_0.5/pickled/LOO.pickle
+tests/r_2_le_0.005_e_0.5/pickled/MinMax_Scaler.pickle
+tests/r_2_le_0.005_e_0.5/pickled/Power_Transformer.pickle
+tests/rearranged_order/all_results.csv
+tests/rearranged_order/feat_select_mae_scores.json
+tests/rearranged_order/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/rearranged_order/Lasso_3-Fold_RFECV_plot.png
+tests/rearranged_order/Lasso_3-Fold_RFECV_selected_features.json
+tests/rearranged_order/Lasso_3-Fold_SFS_mean_scores.csv
+tests/rearranged_order/Lasso_3-Fold_SFS_plot.png
+tests/rearranged_order/Lasso_3-Fold_SFS_selected_features.json
+tests/rearranged_order/Lasso_LOO_RFECV_mean_scores.csv
+tests/rearranged_order/Lasso_LOO_RFECV_plot.png
+tests/rearranged_order/Lasso_LOO_RFECV_selected_features.json
+tests/rearranged_order/Lasso_LOO_SFS_mean_scores.csv
+tests/rearranged_order/Lasso_LOO_SFS_plot.png
+tests/rearranged_order/Lasso_LOO_SFS_selected_features.json
+tests/rearranged_order/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+tests/rearranged_order/Partial Least Squares_3-Fold_RFECV_plot.png
+tests/rearranged_order/Partial Least Squares_3-Fold_RFECV_selected_features.json
+tests/rearranged_order/Partial Least Squares_3-Fold_SFS_mean_scores.csv
+tests/rearranged_order/Partial Least Squares_3-Fold_SFS_plot.png
+tests/rearranged_order/Partial Least Squares_3-Fold_SFS_selected_features.json
+tests/rearranged_order/Partial Least Squares_LOO_RFECV_mean_scores.csv
+tests/rearranged_order/Partial Least Squares_LOO_RFECV_plot.png
+tests/rearranged_order/Partial Least Squares_LOO_RFECV_selected_features.json
+tests/rearranged_order/Partial Least Squares_LOO_SFS_mean_scores.csv
+tests/rearranged_order/Partial Least Squares_LOO_SFS_plot.png
+tests/rearranged_order/Partial Least Squares_LOO_SFS_selected_features.json
+tests/rearranged_order/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/rearranged_order/Ridge_3-Fold_RFECV_plot.png
+tests/rearranged_order/Ridge_3-Fold_RFECV_selected_features.json
+tests/rearranged_order/Ridge_3-Fold_SFS_mean_scores.csv
+tests/rearranged_order/Ridge_3-Fold_SFS_plot.png
+tests/rearranged_order/Ridge_3-Fold_SFS_selected_features.json
+tests/rearranged_order/Ridge_LOO_RFECV_mean_scores.csv
+tests/rearranged_order/Ridge_LOO_RFECV_plot.png
+tests/rearranged_order/Ridge_LOO_RFECV_selected_features.json
+tests/rearranged_order/Ridge_LOO_SFS_mean_scores.csv
+tests/rearranged_order/Ridge_LOO_SFS_plot.png
+tests/rearranged_order/Ridge_LOO_SFS_selected_features.json
+tests/rearranged_order/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/rearranged_order/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/rearranged_order/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/rearranged_order/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/rearranged_order/Support Vector Machine_3-Fold_SFS_plot.png
+tests/rearranged_order/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/rearranged_order/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/rearranged_order/Support Vector Machine_LOO_RFECV_plot.png
+tests/rearranged_order/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/rearranged_order/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/rearranged_order/Support Vector Machine_LOO_SFS_plot.png
+tests/rearranged_order/Support Vector Machine_LOO_SFS_selected_features.json
+tests/rearranged_order/time.txt
+tests/rearranged_order/pickled/3-Fold.pickle
+tests/rearranged_order/pickled/Lasso.pickle
+tests/rearranged_order/pickled/LOO.pickle
+tests/rearranged_order/pickled/MinMax_Scaler.pickle
+tests/rearranged_order/pickled/Partial_Least_Squares.pickle
+tests/rearranged_order/pickled/Power_Transformer.pickle
+tests/rearranged_order/pickled/Ridge.pickle
+tests/rearranged_order/pickled/Support_Vector_Machine.pickle
+tests/svr_0.01_0.1/all_results.csv
+tests/svr_0.01_0.1/feat_select_mae_scores.json
+tests/svr_0.01_0.1/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/svr_0.01_0.1/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/svr_0.01_0.1/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/svr_0.01_0.1/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/svr_0.01_0.1/Support Vector Machine_3-Fold_SFS_plot.png
+tests/svr_0.01_0.1/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/svr_0.01_0.1/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/svr_0.01_0.1/Support Vector Machine_LOO_RFECV_plot.png
+tests/svr_0.01_0.1/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/svr_0.01_0.1/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/svr_0.01_0.1/Support Vector Machine_LOO_SFS_plot.png
+tests/svr_0.01_0.1/Support Vector Machine_LOO_SFS_selected_features.json
+tests/svr_0.01_0.1/time.txt
+tests/svr_0.01_0.1/pickled/3-Fold.pickle
+tests/svr_0.01_0.1/pickled/LOO.pickle
+tests/svr_0.01_0.1/pickled/MinMax_Scaler.pickle
+tests/svr_0.01_0.1/pickled/Power_Transformer.pickle
+tests/svr_0.01_0.1/pickled/Support_Vector_Machine.pickle
+tests/svr_0.01_0.1_2/all_results.csv
+tests/svr_0.01_0.1_2/feat_select_mae_scores.json
+tests/svr_0.01_0.1_2/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/svr_0.01_0.1_2/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/svr_0.01_0.1_2/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/svr_0.01_0.1_2/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/svr_0.01_0.1_2/Support Vector Machine_3-Fold_SFS_plot.png
+tests/svr_0.01_0.1_2/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/svr_0.01_0.1_2/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/svr_0.01_0.1_2/Support Vector Machine_LOO_RFECV_plot.png
+tests/svr_0.01_0.1_2/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/svr_0.01_0.1_2/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/svr_0.01_0.1_2/Support Vector Machine_LOO_SFS_plot.png
+tests/svr_0.01_0.1_2/Support Vector Machine_LOO_SFS_selected_features.json
+tests/svr_0.01_0.1_2/time.txt
+tests/svr_0.01_0.1_2/pickled/3-Fold.pickle
+tests/svr_0.01_0.1_2/pickled/LOO.pickle
+tests/svr_0.01_0.1_2/pickled/MinMax_Scaler.pickle
+tests/svr_0.01_0.1_2/pickled/Power_Transformer.pickle
+tests/svr_0.01_0.1_2/pickled/Support_Vector_Machine.pickle
+tests/svr_0.01_0.2/all_results.csv
+tests/svr_0.01_0.2/feat_select_mae_scores.json
+tests/svr_0.01_0.2/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/svr_0.01_0.2/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/svr_0.01_0.2/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/svr_0.01_0.2/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/svr_0.01_0.2/Support Vector Machine_3-Fold_SFS_plot.png
+tests/svr_0.01_0.2/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/svr_0.01_0.2/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/svr_0.01_0.2/Support Vector Machine_LOO_RFECV_plot.png
+tests/svr_0.01_0.2/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/svr_0.01_0.2/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/svr_0.01_0.2/Support Vector Machine_LOO_SFS_plot.png
+tests/svr_0.01_0.2/Support Vector Machine_LOO_SFS_selected_features.json
+tests/svr_0.01_0.2/time.txt
+tests/svr_0.01_0.2/pickled/3-Fold.pickle
+tests/svr_0.01_0.2/pickled/LOO.pickle
+tests/svr_0.01_0.2/pickled/MinMax_Scaler.pickle
+tests/svr_0.01_0.2/pickled/Power_Transformer.pickle
+tests/svr_0.01_0.2/pickled/Support_Vector_Machine.pickle
+tests/svr_0.05_0.1/all_results.csv
+tests/svr_0.05_0.1/feat_select_mae_scores.json
+tests/svr_0.05_0.1/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/svr_0.05_0.1/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/svr_0.05_0.1/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/svr_0.05_0.1/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/svr_0.05_0.1/Support Vector Machine_3-Fold_SFS_plot.png
+tests/svr_0.05_0.1/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/svr_0.05_0.1/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/svr_0.05_0.1/Support Vector Machine_LOO_RFECV_plot.png
+tests/svr_0.05_0.1/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/svr_0.05_0.1/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/svr_0.05_0.1/Support Vector Machine_LOO_SFS_plot.png
+tests/svr_0.05_0.1/Support Vector Machine_LOO_SFS_selected_features.json
+tests/svr_0.05_0.1/time.txt
+tests/svr_0.05_0.1/pickled/3-Fold.pickle
+tests/svr_0.05_0.1/pickled/LOO.pickle
+tests/svr_0.05_0.1/pickled/MinMax_Scaler.pickle
+tests/svr_0.05_0.1/pickled/Power_Transformer.pickle
+tests/svr_0.05_0.1/pickled/Support_Vector_Machine.pickle
+tests/svr_0.1_0.001/all_results.csv
+tests/svr_0.1_0.001/feat_select_mae_scores.json
+tests/svr_0.1_0.001/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/svr_0.1_0.001/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/svr_0.1_0.001/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/svr_0.1_0.001/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/svr_0.1_0.001/Support Vector Machine_3-Fold_SFS_plot.png
+tests/svr_0.1_0.001/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/svr_0.1_0.001/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/svr_0.1_0.001/Support Vector Machine_LOO_RFECV_plot.png
+tests/svr_0.1_0.001/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/svr_0.1_0.001/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/svr_0.1_0.001/Support Vector Machine_LOO_SFS_plot.png
+tests/svr_0.1_0.001/Support Vector Machine_LOO_SFS_selected_features.json
+tests/svr_0.1_0.001/time.txt
+tests/svr_0.1_0.001/pickled/3-Fold.pickle
+tests/svr_0.1_0.001/pickled/LOO.pickle
+tests/svr_0.1_0.001/pickled/MinMax_Scaler.pickle
+tests/svr_0.1_0.001/pickled/Power_Transformer.pickle
+tests/svr_0.1_0.001/pickled/Support_Vector_Machine.pickle
+tests/svr_0.1_0.01/all_results.csv
+tests/svr_0.1_0.01/feat_select_mae_scores.json
+tests/svr_0.1_0.01/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/svr_0.1_0.01/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/svr_0.1_0.01/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/svr_0.1_0.01/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/svr_0.1_0.01/Support Vector Machine_3-Fold_SFS_plot.png
+tests/svr_0.1_0.01/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/svr_0.1_0.01/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/svr_0.1_0.01/Support Vector Machine_LOO_RFECV_plot.png
+tests/svr_0.1_0.01/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/svr_0.1_0.01/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/svr_0.1_0.01/Support Vector Machine_LOO_SFS_plot.png
+tests/svr_0.1_0.01/Support Vector Machine_LOO_SFS_selected_features.json
+tests/svr_0.1_0.01/time.txt
+tests/svr_0.1_0.01/pickled/3-Fold.pickle
+tests/svr_0.1_0.01/pickled/LOO.pickle
+tests/svr_0.1_0.01/pickled/MinMax_Scaler.pickle
+tests/svr_0.1_0.01/pickled/Power_Transformer.pickle
+tests/svr_0.1_0.01/pickled/Support_Vector_Machine.pickle
+tests/svr_0.1_0.1/all_results.csv
+tests/svr_0.1_0.1/feat_select_mae_scores.json
+tests/svr_0.1_0.1/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/svr_0.1_0.1/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/svr_0.1_0.1/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/svr_0.1_0.1/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/svr_0.1_0.1/Support Vector Machine_3-Fold_SFS_plot.png
+tests/svr_0.1_0.1/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/svr_0.1_0.1/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/svr_0.1_0.1/Support Vector Machine_LOO_RFECV_plot.png
+tests/svr_0.1_0.1/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/svr_0.1_0.1/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/svr_0.1_0.1/Support Vector Machine_LOO_SFS_plot.png
+tests/svr_0.1_0.1/Support Vector Machine_LOO_SFS_selected_features.json
+tests/svr_0.1_0.1/time.txt
+tests/svr_0.1_0.1/pickled/3-Fold.pickle
+tests/svr_0.1_0.1/pickled/LOO.pickle
+tests/svr_0.1_0.1/pickled/MinMax_Scaler.pickle
+tests/svr_0.1_0.1/pickled/Power_Transformer.pickle
+tests/svr_0.1_0.1/pickled/Support_Vector_Machine.pickle
+tests/svr_0.1_0.1_sq/all_results.csv
+tests/svr_0.1_0.1_sq/feat_select_mae_scores.json
+tests/svr_0.1_0.1_sq/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/svr_0.1_0.1_sq/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/svr_0.1_0.1_sq/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/svr_0.1_0.1_sq/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/svr_0.1_0.1_sq/Support Vector Machine_3-Fold_SFS_plot.png
+tests/svr_0.1_0.1_sq/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/svr_0.1_0.1_sq/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/svr_0.1_0.1_sq/Support Vector Machine_LOO_RFECV_plot.png
+tests/svr_0.1_0.1_sq/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/svr_0.1_0.1_sq/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/svr_0.1_0.1_sq/Support Vector Machine_LOO_SFS_plot.png
+tests/svr_0.1_0.1_sq/Support Vector Machine_LOO_SFS_selected_features.json
+tests/svr_0.1_0.1_sq/time.txt
+tests/svr_0.1_0.1_sq/pickled/3-Fold.pickle
+tests/svr_0.1_0.1_sq/pickled/LOO.pickle
+tests/svr_0.1_0.1_sq/pickled/MinMax_Scaler.pickle
+tests/svr_0.1_0.1_sq/pickled/Power_Transformer.pickle
+tests/svr_0.1_0.1_sq/pickled/Support_Vector_Machine.pickle
+tests/svr_0.1_0.2/all_results.csv
+tests/svr_0.1_0.2/feat_select_mae_scores.json
+tests/svr_0.1_0.2/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/svr_0.1_0.2/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/svr_0.1_0.2/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/svr_0.1_0.2/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/svr_0.1_0.2/Support Vector Machine_3-Fold_SFS_plot.png
+tests/svr_0.1_0.2/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/svr_0.1_0.2/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/svr_0.1_0.2/Support Vector Machine_LOO_RFECV_plot.png
+tests/svr_0.1_0.2/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/svr_0.1_0.2/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/svr_0.1_0.2/Support Vector Machine_LOO_SFS_plot.png
+tests/svr_0.1_0.2/Support Vector Machine_LOO_SFS_selected_features.json
+tests/svr_0.1_0.2/time.txt
+tests/svr_0.1_0.2/pickled/3-Fold.pickle
+tests/svr_0.1_0.2/pickled/LOO.pickle
+tests/svr_0.1_0.2/pickled/MinMax_Scaler.pickle
+tests/svr_0.1_0.2/pickled/Power_Transformer.pickle
+tests/svr_0.1_0.2/pickled/Support_Vector_Machine.pickle
+tests/svr_0.1_0.25/all_results.csv
+tests/svr_0.1_0.25/feat_select_mae_scores.json
+tests/svr_0.1_0.25/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/svr_0.1_0.25/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/svr_0.1_0.25/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/svr_0.1_0.25/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/svr_0.1_0.25/Support Vector Machine_3-Fold_SFS_plot.png
+tests/svr_0.1_0.25/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/svr_0.1_0.25/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/svr_0.1_0.25/Support Vector Machine_LOO_RFECV_plot.png
+tests/svr_0.1_0.25/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/svr_0.1_0.25/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/svr_0.1_0.25/Support Vector Machine_LOO_SFS_plot.png
+tests/svr_0.1_0.25/Support Vector Machine_LOO_SFS_selected_features.json
+tests/svr_0.1_0.25/time.txt
+tests/svr_0.1_0.25/pickled/3-Fold.pickle
+tests/svr_0.1_0.25/pickled/LOO.pickle
+tests/svr_0.1_0.25/pickled/MinMax_Scaler.pickle
+tests/svr_0.1_0.25/pickled/Power_Transformer.pickle
+tests/svr_0.1_0.25/pickled/Support_Vector_Machine.pickle
+tests/svr_0.1_0.5/all_results.csv
+tests/svr_0.1_0.5/feat_select_mae_scores.json
+tests/svr_0.1_0.5/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/svr_0.1_0.5/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/svr_0.1_0.5/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/svr_0.1_0.5/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/svr_0.1_0.5/Support Vector Machine_3-Fold_SFS_plot.png
+tests/svr_0.1_0.5/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/svr_0.1_0.5/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/svr_0.1_0.5/Support Vector Machine_LOO_RFECV_plot.png
+tests/svr_0.1_0.5/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/svr_0.1_0.5/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/svr_0.1_0.5/Support Vector Machine_LOO_SFS_plot.png
+tests/svr_0.1_0.5/Support Vector Machine_LOO_SFS_selected_features.json
+tests/svr_0.1_0.5/time.txt
+tests/svr_0.1_0.5/pickled/3-Fold.pickle
+tests/svr_0.1_0.5/pickled/LOO.pickle
+tests/svr_0.1_0.5/pickled/MinMax_Scaler.pickle
+tests/svr_0.1_0.5/pickled/Power_Transformer.pickle
+tests/svr_0.1_0.5/pickled/Support_Vector_Machine.pickle
+tests/svr_0.1_1/all_results.csv
+tests/svr_0.1_1/feat_select_mae_scores.json
+tests/svr_0.1_1/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/svr_0.1_1/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/svr_0.1_1/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/svr_0.1_1/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/svr_0.1_1/Support Vector Machine_3-Fold_SFS_plot.png
+tests/svr_0.1_1/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/svr_0.1_1/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/svr_0.1_1/Support Vector Machine_LOO_RFECV_plot.png
+tests/svr_0.1_1/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/svr_0.1_1/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/svr_0.1_1/Support Vector Machine_LOO_SFS_plot.png
+tests/svr_0.1_1/Support Vector Machine_LOO_SFS_selected_features.json
+tests/svr_0.1_1/time.txt
+tests/svr_0.1_1/pickled/3-Fold.pickle
+tests/svr_0.1_1/pickled/LOO.pickle
+tests/svr_0.1_1/pickled/MinMax_Scaler.pickle
+tests/svr_0.1_1/pickled/Power_Transformer.pickle
+tests/svr_0.1_1/pickled/Support_Vector_Machine.pickle
+tests/svr_0.1_pls_true/all_results.csv
+tests/svr_0.1_pls_true/feat_select_mae_scores.json
+tests/svr_0.1_pls_true/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+tests/svr_0.1_pls_true/Partial Least Squares_3-Fold_RFECV_plot.png
+tests/svr_0.1_pls_true/Partial Least Squares_3-Fold_RFECV_selected_features.json
+tests/svr_0.1_pls_true/Partial Least Squares_3-Fold_SFS_mean_scores.csv
+tests/svr_0.1_pls_true/Partial Least Squares_3-Fold_SFS_plot.png
+tests/svr_0.1_pls_true/Partial Least Squares_3-Fold_SFS_selected_features.json
+tests/svr_0.1_pls_true/Partial Least Squares_LOO_RFECV_mean_scores.csv
+tests/svr_0.1_pls_true/Partial Least Squares_LOO_RFECV_plot.png
+tests/svr_0.1_pls_true/Partial Least Squares_LOO_RFECV_selected_features.json
+tests/svr_0.1_pls_true/Partial Least Squares_LOO_SFS_mean_scores.csv
+tests/svr_0.1_pls_true/Partial Least Squares_LOO_SFS_plot.png
+tests/svr_0.1_pls_true/Partial Least Squares_LOO_SFS_selected_features.json
+tests/svr_0.1_pls_true/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/svr_0.1_pls_true/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/svr_0.1_pls_true/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/svr_0.1_pls_true/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/svr_0.1_pls_true/Support Vector Machine_3-Fold_SFS_plot.png
+tests/svr_0.1_pls_true/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/svr_0.1_pls_true/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/svr_0.1_pls_true/Support Vector Machine_LOO_RFECV_plot.png
+tests/svr_0.1_pls_true/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/svr_0.1_pls_true/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/svr_0.1_pls_true/Support Vector Machine_LOO_SFS_plot.png
+tests/svr_0.1_pls_true/Support Vector Machine_LOO_SFS_selected_features.json
+tests/svr_0.1_pls_true/time.txt
+tests/svr_0.1_pls_true/pickled/3-Fold.pickle
+tests/svr_0.1_pls_true/pickled/LOO.pickle
+tests/svr_0.1_pls_true/pickled/MinMax_Scaler.pickle
+tests/svr_0.1_pls_true/pickled/Partial_Least_Squares.pickle
+tests/svr_0.1_pls_true/pickled/Power_Transformer.pickle
+tests/svr_0.1_pls_true/pickled/Support_Vector_Machine.pickle
+tests/svr_0.5_0.1/all_results.csv
+tests/svr_0.5_0.1/feat_select_mae_scores.json
+tests/svr_0.5_0.1/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/svr_0.5_0.1/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/svr_0.5_0.1/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/svr_0.5_0.1/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/svr_0.5_0.1/Support Vector Machine_3-Fold_SFS_plot.png
+tests/svr_0.5_0.1/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/svr_0.5_0.1/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/svr_0.5_0.1/Support Vector Machine_LOO_RFECV_plot.png
+tests/svr_0.5_0.1/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/svr_0.5_0.1/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/svr_0.5_0.1/Support Vector Machine_LOO_SFS_plot.png
+tests/svr_0.5_0.1/Support Vector Machine_LOO_SFS_selected_features.json
+tests/svr_0.5_0.1/time.txt
+tests/svr_0.5_0.1/pickled/3-Fold.pickle
+tests/svr_0.5_0.1/pickled/LOO.pickle
+tests/svr_0.5_0.1/pickled/MinMax_Scaler.pickle
+tests/svr_0.5_0.1/pickled/Power_Transformer.pickle
+tests/svr_0.5_0.1/pickled/Support_Vector_Machine.pickle
+tests/svr_0.5_0.15/all_results.csv
+tests/svr_0.5_0.15/feat_select_mae_scores.json
+tests/svr_0.5_0.15/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/svr_0.5_0.15/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/svr_0.5_0.15/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/svr_0.5_0.15/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/svr_0.5_0.15/Support Vector Machine_3-Fold_SFS_plot.png
+tests/svr_0.5_0.15/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/svr_0.5_0.15/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/svr_0.5_0.15/Support Vector Machine_LOO_RFECV_plot.png
+tests/svr_0.5_0.15/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/svr_0.5_0.15/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/svr_0.5_0.15/Support Vector Machine_LOO_SFS_plot.png
+tests/svr_0.5_0.15/Support Vector Machine_LOO_SFS_selected_features.json
+tests/svr_0.5_0.15/time.txt
+tests/svr_0.5_0.15/pickled/3-Fold.pickle
+tests/svr_0.5_0.15/pickled/LOO.pickle
+tests/svr_0.5_0.15/pickled/MinMax_Scaler.pickle
+tests/svr_0.5_0.15/pickled/Power_Transformer.pickle
+tests/svr_0.5_0.15/pickled/Support_Vector_Machine.pickle
+tests/svr_pls/all_results.csv
+tests/svr_pls/feat_select_mae_scores.json
+tests/svr_pls/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+tests/svr_pls/Partial Least Squares_3-Fold_RFECV_plot.png
+tests/svr_pls/Partial Least Squares_3-Fold_RFECV_selected_features.json
+tests/svr_pls/Partial Least Squares_3-Fold_SFS_mean_scores.csv
+tests/svr_pls/Partial Least Squares_3-Fold_SFS_plot.png
+tests/svr_pls/Partial Least Squares_3-Fold_SFS_selected_features.json
+tests/svr_pls/Partial Least Squares_LOO_RFECV_mean_scores.csv
+tests/svr_pls/Partial Least Squares_LOO_RFECV_plot.png
+tests/svr_pls/Partial Least Squares_LOO_RFECV_selected_features.json
+tests/svr_pls/Partial Least Squares_LOO_SFS_mean_scores.csv
+tests/svr_pls/Partial Least Squares_LOO_SFS_plot.png
+tests/svr_pls/Partial Least Squares_LOO_SFS_selected_features.json
+tests/svr_pls/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/svr_pls/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/svr_pls/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/svr_pls/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/svr_pls/Support Vector Machine_3-Fold_SFS_plot.png
+tests/svr_pls/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/svr_pls/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/svr_pls/Support Vector Machine_LOO_RFECV_plot.png
+tests/svr_pls/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/svr_pls/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/svr_pls/Support Vector Machine_LOO_SFS_plot.png
+tests/svr_pls/Support Vector Machine_LOO_SFS_selected_features.json
+tests/svr_pls/time.txt
+tests/svr_pls/pickled/3-Fold.pickle
+tests/svr_pls/pickled/LOO.pickle
+tests/svr_pls/pickled/MinMax_Scaler.pickle
+tests/svr_pls/pickled/Partial_Least_Squares.pickle
+tests/svr_pls/pickled/Power_Transformer.pickle
+tests/svr_pls/pickled/Support_Vector_Machine.pickle
+tests/test/all_results.csv
+tests/test/feat_select_rmse_scores.json
+tests/test/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/test/Lasso_3-Fold_RFECV_plot.png
+tests/test/Lasso_3-Fold_RFECV_selected_features.json
+tests/test/Lasso_3-Fold_SFS_mean_scores.csv
+tests/test/Lasso_3-Fold_SFS_plot.png
+tests/test/Lasso_3-Fold_SFS_selected_features.json
+tests/test/Lasso_LOO_RFECV_mean_scores.csv
+tests/test/Lasso_LOO_RFECV_plot.png
+tests/test/Lasso_LOO_RFECV_selected_features.json
+tests/test/Lasso_LOO_SFS_mean_scores.csv
+tests/test/Lasso_LOO_SFS_plot.png
+tests/test/Lasso_LOO_SFS_selected_features.json
+tests/test/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+tests/test/Partial Least Squares_3-Fold_RFECV_plot.png
+tests/test/Partial Least Squares_3-Fold_RFECV_selected_features.json
+tests/test/Partial Least Squares_3-Fold_SFS_mean_scores.csv
+tests/test/Partial Least Squares_3-Fold_SFS_plot.png
+tests/test/Partial Least Squares_3-Fold_SFS_selected_features.json
+tests/test/Partial Least Squares_LOO_RFECV_mean_scores.csv
+tests/test/Partial Least Squares_LOO_RFECV_plot.png
+tests/test/Partial Least Squares_LOO_RFECV_selected_features.json
+tests/test/Partial Least Squares_LOO_SFS_mean_scores.csv
+tests/test/Partial Least Squares_LOO_SFS_plot.png
+tests/test/Partial Least Squares_LOO_SFS_selected_features.json
+tests/test/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/test/Ridge_3-Fold_RFECV_plot.png
+tests/test/Ridge_3-Fold_RFECV_selected_features.json
+tests/test/Ridge_3-Fold_SFS_mean_scores.csv
+tests/test/Ridge_3-Fold_SFS_plot.png
+tests/test/Ridge_3-Fold_SFS_selected_features.json
+tests/test/Ridge_LOO_RFECV_mean_scores.csv
+tests/test/Ridge_LOO_RFECV_plot.png
+tests/test/Ridge_LOO_RFECV_selected_features.json
+tests/test/Ridge_LOO_SFS_mean_scores.csv
+tests/test/Ridge_LOO_SFS_plot.png
+tests/test/Ridge_LOO_SFS_selected_features.json
+tests/test/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/test/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/test/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/test/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/test/Support Vector Machine_3-Fold_SFS_plot.png
+tests/test/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/test/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/test/Support Vector Machine_LOO_RFECV_plot.png
+tests/test/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/test/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/test/Support Vector Machine_LOO_SFS_plot.png
+tests/test/Support Vector Machine_LOO_SFS_selected_features.json
+tests/test/time.txt
+tests/test/pickled/3-Fold.pickle
+tests/test/pickled/Lasso.pickle
+tests/test/pickled/LOO.pickle
+tests/test/pickled/MinMax_Scaler.pickle
+tests/test/pickled/Partial_Least_Squares.pickle
+tests/test/pickled/Power_Transformer.pickle
+tests/test/pickled/Ridge.pickle
+tests/test/pickled/Support_Vector_Machine.pickle
+tests/test_0.1/all_results.csv
+tests/test_0.1/feat_select_rmse_scores.json
+tests/test_0.1/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/test_0.1/Lasso_3-Fold_RFECV_plot.png
+tests/test_0.1/Lasso_3-Fold_RFECV_selected_features.json
+tests/test_0.1/Lasso_3-Fold_SFS_mean_scores.csv
+tests/test_0.1/Lasso_3-Fold_SFS_plot.png
+tests/test_0.1/Lasso_3-Fold_SFS_selected_features.json
+tests/test_0.1/Lasso_LOO_RFECV_mean_scores.csv
+tests/test_0.1/Lasso_LOO_RFECV_plot.png
+tests/test_0.1/Lasso_LOO_RFECV_selected_features.json
+tests/test_0.1/Lasso_LOO_SFS_mean_scores.csv
+tests/test_0.1/Lasso_LOO_SFS_plot.png
+tests/test_0.1/Lasso_LOO_SFS_selected_features.json
+tests/test_0.1/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+tests/test_0.1/Partial Least Squares_3-Fold_RFECV_plot.png
+tests/test_0.1/Partial Least Squares_3-Fold_RFECV_selected_features.json
+tests/test_0.1/Partial Least Squares_3-Fold_SFS_mean_scores.csv
+tests/test_0.1/Partial Least Squares_3-Fold_SFS_plot.png
+tests/test_0.1/Partial Least Squares_3-Fold_SFS_selected_features.json
+tests/test_0.1/Partial Least Squares_LOO_RFECV_mean_scores.csv
+tests/test_0.1/Partial Least Squares_LOO_RFECV_plot.png
+tests/test_0.1/Partial Least Squares_LOO_RFECV_selected_features.json
+tests/test_0.1/Partial Least Squares_LOO_SFS_mean_scores.csv
+tests/test_0.1/Partial Least Squares_LOO_SFS_plot.png
+tests/test_0.1/Partial Least Squares_LOO_SFS_selected_features.json
+tests/test_0.1/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/test_0.1/Ridge_3-Fold_RFECV_plot.png
+tests/test_0.1/Ridge_3-Fold_RFECV_selected_features.json
+tests/test_0.1/Ridge_3-Fold_SFS_mean_scores.csv
+tests/test_0.1/Ridge_3-Fold_SFS_plot.png
+tests/test_0.1/Ridge_3-Fold_SFS_selected_features.json
+tests/test_0.1/Ridge_LOO_RFECV_mean_scores.csv
+tests/test_0.1/Ridge_LOO_RFECV_plot.png
+tests/test_0.1/Ridge_LOO_RFECV_selected_features.json
+tests/test_0.1/Ridge_LOO_SFS_mean_scores.csv
+tests/test_0.1/Ridge_LOO_SFS_plot.png
+tests/test_0.1/Ridge_LOO_SFS_selected_features.json
+tests/test_0.1/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/test_0.1/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/test_0.1/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/test_0.1/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/test_0.1/Support Vector Machine_3-Fold_SFS_plot.png
+tests/test_0.1/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/test_0.1/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/test_0.1/Support Vector Machine_LOO_RFECV_plot.png
+tests/test_0.1/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/test_0.1/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/test_0.1/Support Vector Machine_LOO_SFS_plot.png
+tests/test_0.1/Support Vector Machine_LOO_SFS_selected_features.json
+tests/test_0.1/time.txt
+tests/test_0.1/pickled/3-Fold.pickle
+tests/test_0.1/pickled/Lasso.pickle
+tests/test_0.1/pickled/LOO.pickle
+tests/test_0.1/pickled/MinMax_Scaler.pickle
+tests/test_0.1/pickled/Partial_Least_Squares.pickle
+tests/test_0.1/pickled/Power_Transformer.pickle
+tests/test_0.1/pickled/Ridge.pickle
+tests/test_0.1/pickled/Support_Vector_Machine.pickle
+tests/test_MAE/all_results.csv
+tests/test_MAE/feat_select_rmse_scores.json
+tests/test_MAE/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/test_MAE/Lasso_3-Fold_RFECV_plot.png
+tests/test_MAE/Lasso_3-Fold_RFECV_selected_features.json
+tests/test_MAE/Lasso_3-Fold_SFS_mean_scores.csv
+tests/test_MAE/Lasso_3-Fold_SFS_plot.png
+tests/test_MAE/Lasso_3-Fold_SFS_selected_features.json
+tests/test_MAE/Lasso_LOO_RFECV_mean_scores.csv
+tests/test_MAE/Lasso_LOO_RFECV_plot.png
+tests/test_MAE/Lasso_LOO_RFECV_selected_features.json
+tests/test_MAE/Lasso_LOO_SFS_mean_scores.csv
+tests/test_MAE/Lasso_LOO_SFS_plot.png
+tests/test_MAE/Lasso_LOO_SFS_selected_features.json
+tests/test_MAE/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+tests/test_MAE/Partial Least Squares_3-Fold_RFECV_plot.png
+tests/test_MAE/Partial Least Squares_3-Fold_RFECV_selected_features.json
+tests/test_MAE/Partial Least Squares_3-Fold_SFS_mean_scores.csv
+tests/test_MAE/Partial Least Squares_3-Fold_SFS_plot.png
+tests/test_MAE/Partial Least Squares_3-Fold_SFS_selected_features.json
+tests/test_MAE/Partial Least Squares_LOO_RFECV_mean_scores.csv
+tests/test_MAE/Partial Least Squares_LOO_RFECV_plot.png
+tests/test_MAE/Partial Least Squares_LOO_RFECV_selected_features.json
+tests/test_MAE/Partial Least Squares_LOO_SFS_mean_scores.csv
+tests/test_MAE/Partial Least Squares_LOO_SFS_plot.png
+tests/test_MAE/Partial Least Squares_LOO_SFS_selected_features.json
+tests/test_MAE/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/test_MAE/Ridge_3-Fold_RFECV_plot.png
+tests/test_MAE/Ridge_3-Fold_RFECV_selected_features.json
+tests/test_MAE/Ridge_3-Fold_SFS_mean_scores.csv
+tests/test_MAE/Ridge_3-Fold_SFS_plot.png
+tests/test_MAE/Ridge_3-Fold_SFS_selected_features.json
+tests/test_MAE/Ridge_LOO_RFECV_mean_scores.csv
+tests/test_MAE/Ridge_LOO_RFECV_plot.png
+tests/test_MAE/Ridge_LOO_RFECV_selected_features.json
+tests/test_MAE/Ridge_LOO_SFS_mean_scores.csv
+tests/test_MAE/Ridge_LOO_SFS_plot.png
+tests/test_MAE/Ridge_LOO_SFS_selected_features.json
+tests/test_MAE/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/test_MAE/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/test_MAE/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/test_MAE/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/test_MAE/Support Vector Machine_3-Fold_SFS_plot.png
+tests/test_MAE/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/test_MAE/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/test_MAE/Support Vector Machine_LOO_RFECV_plot.png
+tests/test_MAE/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/test_MAE/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/test_MAE/Support Vector Machine_LOO_SFS_plot.png
+tests/test_MAE/Support Vector Machine_LOO_SFS_selected_features.json
+tests/test_MAE/time.txt
+tests/test_MAE/pickled/3-Fold.pickle
+tests/test_MAE/pickled/Lasso.pickle
+tests/test_MAE/pickled/LOO.pickle
+tests/test_MAE/pickled/MinMax_Scaler.pickle
+tests/test_MAE/pickled/Partial_Least_Squares.pickle
+tests/test_MAE/pickled/Power_Transformer.pickle
+tests/test_MAE/pickled/Ridge.pickle
+tests/test_MAE/pickled/Support_Vector_Machine.pickle
+tests/test_ddg_0.1/all_results.csv
+tests/test_ddg_0.1/feat_select_rmse_scores.json
+tests/test_ddg_0.1/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/test_ddg_0.1/Lasso_3-Fold_RFECV_plot.png
+tests/test_ddg_0.1/Lasso_3-Fold_RFECV_selected_features.json
+tests/test_ddg_0.1/Lasso_3-Fold_SFS_mean_scores.csv
+tests/test_ddg_0.1/Lasso_3-Fold_SFS_plot.png
+tests/test_ddg_0.1/Lasso_3-Fold_SFS_selected_features.json
+tests/test_ddg_0.1/Lasso_LOO_RFECV_mean_scores.csv
+tests/test_ddg_0.1/Lasso_LOO_RFECV_plot.png
+tests/test_ddg_0.1/Lasso_LOO_RFECV_selected_features.json
+tests/test_ddg_0.1/Lasso_LOO_SFS_mean_scores.csv
+tests/test_ddg_0.1/Lasso_LOO_SFS_plot.png
+tests/test_ddg_0.1/Lasso_LOO_SFS_selected_features.json
+tests/test_ddg_0.1/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+tests/test_ddg_0.1/Partial Least Squares_3-Fold_RFECV_plot.png
+tests/test_ddg_0.1/Partial Least Squares_3-Fold_RFECV_selected_features.json
+tests/test_ddg_0.1/Partial Least Squares_3-Fold_SFS_mean_scores.csv
+tests/test_ddg_0.1/Partial Least Squares_3-Fold_SFS_plot.png
+tests/test_ddg_0.1/Partial Least Squares_3-Fold_SFS_selected_features.json
+tests/test_ddg_0.1/Partial Least Squares_LOO_RFECV_mean_scores.csv
+tests/test_ddg_0.1/Partial Least Squares_LOO_RFECV_plot.png
+tests/test_ddg_0.1/Partial Least Squares_LOO_RFECV_selected_features.json
+tests/test_ddg_0.1/Partial Least Squares_LOO_SFS_mean_scores.csv
+tests/test_ddg_0.1/Partial Least Squares_LOO_SFS_plot.png
+tests/test_ddg_0.1/Partial Least Squares_LOO_SFS_selected_features.json
+tests/test_ddg_0.1/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/test_ddg_0.1/Ridge_3-Fold_RFECV_plot.png
+tests/test_ddg_0.1/Ridge_3-Fold_RFECV_selected_features.json
+tests/test_ddg_0.1/Ridge_3-Fold_SFS_mean_scores.csv
+tests/test_ddg_0.1/Ridge_3-Fold_SFS_plot.png
+tests/test_ddg_0.1/Ridge_3-Fold_SFS_selected_features.json
+tests/test_ddg_0.1/Ridge_LOO_RFECV_mean_scores.csv
+tests/test_ddg_0.1/Ridge_LOO_RFECV_plot.png
+tests/test_ddg_0.1/Ridge_LOO_RFECV_selected_features.json
+tests/test_ddg_0.1/Ridge_LOO_SFS_mean_scores.csv
+tests/test_ddg_0.1/Ridge_LOO_SFS_plot.png
+tests/test_ddg_0.1/Ridge_LOO_SFS_selected_features.json
+tests/test_ddg_0.1/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/test_ddg_0.1/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/test_ddg_0.1/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/test_ddg_0.1/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/test_ddg_0.1/Support Vector Machine_3-Fold_SFS_plot.png
+tests/test_ddg_0.1/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/test_ddg_0.1/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/test_ddg_0.1/Support Vector Machine_LOO_RFECV_plot.png
+tests/test_ddg_0.1/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/test_ddg_0.1/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/test_ddg_0.1/Support Vector Machine_LOO_SFS_plot.png
+tests/test_ddg_0.1/Support Vector Machine_LOO_SFS_selected_features.json
+tests/test_ddg_0.1/time.txt
+tests/test_ddg_0.1/pickled/3-Fold.pickle
+tests/test_ddg_0.1/pickled/Lasso.pickle
+tests/test_ddg_0.1/pickled/LOO.pickle
+tests/test_ddg_0.1/pickled/MinMax_Scaler.pickle
+tests/test_ddg_0.1/pickled/Partial_Least_Squares.pickle
+tests/test_ddg_0.1/pickled/Power_Transformer.pickle
+tests/test_ddg_0.1/pickled/Ridge.pickle
+tests/test_ddg_0.1/pickled/Support_Vector_Machine.pickle
+tests/test_ddg_no_opt/all_results.csv
+tests/test_ddg_no_opt/feat_select_rmse_scores.json
+tests/test_ddg_no_opt/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/test_ddg_no_opt/Lasso_3-Fold_RFECV_plot.png
+tests/test_ddg_no_opt/Lasso_3-Fold_RFECV_selected_features.json
+tests/test_ddg_no_opt/Lasso_3-Fold_SFS_mean_scores.csv
+tests/test_ddg_no_opt/Lasso_3-Fold_SFS_plot.png
+tests/test_ddg_no_opt/Lasso_3-Fold_SFS_selected_features.json
+tests/test_ddg_no_opt/Lasso_LOO_RFECV_mean_scores.csv
+tests/test_ddg_no_opt/Lasso_LOO_RFECV_plot.png
+tests/test_ddg_no_opt/Lasso_LOO_RFECV_selected_features.json
+tests/test_ddg_no_opt/Lasso_LOO_SFS_mean_scores.csv
+tests/test_ddg_no_opt/Lasso_LOO_SFS_plot.png
+tests/test_ddg_no_opt/Lasso_LOO_SFS_selected_features.json
+tests/test_ddg_no_opt/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+tests/test_ddg_no_opt/Partial Least Squares_3-Fold_RFECV_plot.png
+tests/test_ddg_no_opt/Partial Least Squares_3-Fold_RFECV_selected_features.json
+tests/test_ddg_no_opt/Partial Least Squares_3-Fold_SFS_mean_scores.csv
+tests/test_ddg_no_opt/Partial Least Squares_3-Fold_SFS_plot.png
+tests/test_ddg_no_opt/Partial Least Squares_3-Fold_SFS_selected_features.json
+tests/test_ddg_no_opt/Partial Least Squares_LOO_RFECV_mean_scores.csv
+tests/test_ddg_no_opt/Partial Least Squares_LOO_RFECV_plot.png
+tests/test_ddg_no_opt/Partial Least Squares_LOO_RFECV_selected_features.json
+tests/test_ddg_no_opt/Partial Least Squares_LOO_SFS_mean_scores.csv
+tests/test_ddg_no_opt/Partial Least Squares_LOO_SFS_plot.png
+tests/test_ddg_no_opt/Partial Least Squares_LOO_SFS_selected_features.json
+tests/test_ddg_no_opt/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/test_ddg_no_opt/Ridge_3-Fold_RFECV_plot.png
+tests/test_ddg_no_opt/Ridge_3-Fold_RFECV_selected_features.json
+tests/test_ddg_no_opt/Ridge_3-Fold_SFS_mean_scores.csv
+tests/test_ddg_no_opt/Ridge_3-Fold_SFS_plot.png
+tests/test_ddg_no_opt/Ridge_3-Fold_SFS_selected_features.json
+tests/test_ddg_no_opt/Ridge_LOO_RFECV_mean_scores.csv
+tests/test_ddg_no_opt/Ridge_LOO_RFECV_plot.png
+tests/test_ddg_no_opt/Ridge_LOO_RFECV_selected_features.json
+tests/test_ddg_no_opt/Ridge_LOO_SFS_mean_scores.csv
+tests/test_ddg_no_opt/Ridge_LOO_SFS_plot.png
+tests/test_ddg_no_opt/Ridge_LOO_SFS_selected_features.json
+tests/test_ddg_no_opt/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/test_ddg_no_opt/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/test_ddg_no_opt/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/test_ddg_no_opt/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/test_ddg_no_opt/Support Vector Machine_3-Fold_SFS_plot.png
+tests/test_ddg_no_opt/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/test_ddg_no_opt/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/test_ddg_no_opt/Support Vector Machine_LOO_RFECV_plot.png
+tests/test_ddg_no_opt/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/test_ddg_no_opt/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/test_ddg_no_opt/Support Vector Machine_LOO_SFS_plot.png
+tests/test_ddg_no_opt/Support Vector Machine_LOO_SFS_selected_features.json
+tests/test_ddg_no_opt/time.txt
+tests/test_ddg_no_opt/pickled/3-Fold.pickle
+tests/test_ddg_no_opt/pickled/Lasso.pickle
+tests/test_ddg_no_opt/pickled/LOO.pickle
+tests/test_ddg_no_opt/pickled/MinMax_Scaler.pickle
+tests/test_ddg_no_opt/pickled/Partial_Least_Squares.pickle
+tests/test_ddg_no_opt/pickled/Power_Transformer.pickle
+tests/test_ddg_no_opt/pickled/Ridge.pickle
+tests/test_ddg_no_opt/pickled/Support_Vector_Machine.pickle
+tests/test_is_it_ddg/all_results.csv
+tests/test_is_it_ddg/feat_select_rmse_scores.json
+tests/test_is_it_ddg/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/test_is_it_ddg/Lasso_3-Fold_RFECV_plot.png
+tests/test_is_it_ddg/Lasso_3-Fold_RFECV_selected_features.json
+tests/test_is_it_ddg/Lasso_3-Fold_SFS_mean_scores.csv
+tests/test_is_it_ddg/Lasso_3-Fold_SFS_plot.png
+tests/test_is_it_ddg/Lasso_3-Fold_SFS_selected_features.json
+tests/test_is_it_ddg/Lasso_LOO_RFECV_mean_scores.csv
+tests/test_is_it_ddg/Lasso_LOO_RFECV_plot.png
+tests/test_is_it_ddg/Lasso_LOO_RFECV_selected_features.json
+tests/test_is_it_ddg/Lasso_LOO_SFS_mean_scores.csv
+tests/test_is_it_ddg/Lasso_LOO_SFS_plot.png
+tests/test_is_it_ddg/Lasso_LOO_SFS_selected_features.json
+tests/test_is_it_ddg/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+tests/test_is_it_ddg/Partial Least Squares_3-Fold_RFECV_plot.png
+tests/test_is_it_ddg/Partial Least Squares_3-Fold_RFECV_selected_features.json
+tests/test_is_it_ddg/Partial Least Squares_3-Fold_SFS_mean_scores.csv
+tests/test_is_it_ddg/Partial Least Squares_3-Fold_SFS_plot.png
+tests/test_is_it_ddg/Partial Least Squares_3-Fold_SFS_selected_features.json
+tests/test_is_it_ddg/Partial Least Squares_LOO_RFECV_mean_scores.csv
+tests/test_is_it_ddg/Partial Least Squares_LOO_RFECV_plot.png
+tests/test_is_it_ddg/Partial Least Squares_LOO_RFECV_selected_features.json
+tests/test_is_it_ddg/Partial Least Squares_LOO_SFS_mean_scores.csv
+tests/test_is_it_ddg/Partial Least Squares_LOO_SFS_plot.png
+tests/test_is_it_ddg/Partial Least Squares_LOO_SFS_selected_features.json
+tests/test_is_it_ddg/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/test_is_it_ddg/Ridge_3-Fold_RFECV_plot.png
+tests/test_is_it_ddg/Ridge_3-Fold_RFECV_selected_features.json
+tests/test_is_it_ddg/Ridge_3-Fold_SFS_mean_scores.csv
+tests/test_is_it_ddg/Ridge_3-Fold_SFS_plot.png
+tests/test_is_it_ddg/Ridge_3-Fold_SFS_selected_features.json
+tests/test_is_it_ddg/Ridge_LOO_RFECV_mean_scores.csv
+tests/test_is_it_ddg/Ridge_LOO_RFECV_plot.png
+tests/test_is_it_ddg/Ridge_LOO_RFECV_selected_features.json
+tests/test_is_it_ddg/Ridge_LOO_SFS_mean_scores.csv
+tests/test_is_it_ddg/Ridge_LOO_SFS_plot.png
+tests/test_is_it_ddg/Ridge_LOO_SFS_selected_features.json
+tests/test_is_it_ddg/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/test_is_it_ddg/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/test_is_it_ddg/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/test_is_it_ddg/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/test_is_it_ddg/Support Vector Machine_3-Fold_SFS_plot.png
+tests/test_is_it_ddg/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/test_is_it_ddg/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/test_is_it_ddg/Support Vector Machine_LOO_RFECV_plot.png
+tests/test_is_it_ddg/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/test_is_it_ddg/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/test_is_it_ddg/Support Vector Machine_LOO_SFS_plot.png
+tests/test_is_it_ddg/Support Vector Machine_LOO_SFS_selected_features.json
+tests/test_is_it_ddg/time.txt
+tests/test_is_it_ddg/pickled/3-Fold.pickle
+tests/test_is_it_ddg/pickled/Lasso.pickle
+tests/test_is_it_ddg/pickled/LOO.pickle
+tests/test_is_it_ddg/pickled/MinMax_Scaler.pickle
+tests/test_is_it_ddg/pickled/Partial_Least_Squares.pickle
+tests/test_is_it_ddg/pickled/Power_Transformer.pickle
+tests/test_is_it_ddg/pickled/Ridge.pickle
+tests/test_is_it_ddg/pickled/Support_Vector_Machine.pickle
+tests/test_no_ddg_or_opt/all_results.csv
+tests/test_no_ddg_or_opt/feat_select_rmse_scores.json
+tests/test_no_ddg_or_opt/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/test_no_ddg_or_opt/Lasso_3-Fold_RFECV_plot.png
+tests/test_no_ddg_or_opt/Lasso_3-Fold_RFECV_selected_features.json
+tests/test_no_ddg_or_opt/Lasso_3-Fold_SFS_mean_scores.csv
+tests/test_no_ddg_or_opt/Lasso_3-Fold_SFS_plot.png
+tests/test_no_ddg_or_opt/Lasso_3-Fold_SFS_selected_features.json
+tests/test_no_ddg_or_opt/Lasso_LOO_RFECV_mean_scores.csv
+tests/test_no_ddg_or_opt/Lasso_LOO_RFECV_plot.png
+tests/test_no_ddg_or_opt/Lasso_LOO_RFECV_selected_features.json
+tests/test_no_ddg_or_opt/Lasso_LOO_SFS_mean_scores.csv
+tests/test_no_ddg_or_opt/Lasso_LOO_SFS_plot.png
+tests/test_no_ddg_or_opt/Lasso_LOO_SFS_selected_features.json
+tests/test_no_ddg_or_opt/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+tests/test_no_ddg_or_opt/Partial Least Squares_3-Fold_RFECV_plot.png
+tests/test_no_ddg_or_opt/Partial Least Squares_3-Fold_RFECV_selected_features.json
+tests/test_no_ddg_or_opt/Partial Least Squares_3-Fold_SFS_mean_scores.csv
+tests/test_no_ddg_or_opt/Partial Least Squares_3-Fold_SFS_plot.png
+tests/test_no_ddg_or_opt/Partial Least Squares_3-Fold_SFS_selected_features.json
+tests/test_no_ddg_or_opt/Partial Least Squares_LOO_RFECV_mean_scores.csv
+tests/test_no_ddg_or_opt/Partial Least Squares_LOO_RFECV_plot.png
+tests/test_no_ddg_or_opt/Partial Least Squares_LOO_RFECV_selected_features.json
+tests/test_no_ddg_or_opt/Partial Least Squares_LOO_SFS_mean_scores.csv
+tests/test_no_ddg_or_opt/Partial Least Squares_LOO_SFS_plot.png
+tests/test_no_ddg_or_opt/Partial Least Squares_LOO_SFS_selected_features.json
+tests/test_no_ddg_or_opt/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/test_no_ddg_or_opt/Ridge_3-Fold_RFECV_plot.png
+tests/test_no_ddg_or_opt/Ridge_3-Fold_RFECV_selected_features.json
+tests/test_no_ddg_or_opt/Ridge_3-Fold_SFS_mean_scores.csv
+tests/test_no_ddg_or_opt/Ridge_3-Fold_SFS_plot.png
+tests/test_no_ddg_or_opt/Ridge_3-Fold_SFS_selected_features.json
+tests/test_no_ddg_or_opt/Ridge_LOO_RFECV_mean_scores.csv
+tests/test_no_ddg_or_opt/Ridge_LOO_RFECV_plot.png
+tests/test_no_ddg_or_opt/Ridge_LOO_RFECV_selected_features.json
+tests/test_no_ddg_or_opt/Ridge_LOO_SFS_mean_scores.csv
+tests/test_no_ddg_or_opt/Ridge_LOO_SFS_plot.png
+tests/test_no_ddg_or_opt/Ridge_LOO_SFS_selected_features.json
+tests/test_no_ddg_or_opt/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/test_no_ddg_or_opt/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/test_no_ddg_or_opt/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/test_no_ddg_or_opt/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/test_no_ddg_or_opt/Support Vector Machine_3-Fold_SFS_plot.png
+tests/test_no_ddg_or_opt/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/test_no_ddg_or_opt/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/test_no_ddg_or_opt/Support Vector Machine_LOO_RFECV_plot.png
+tests/test_no_ddg_or_opt/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/test_no_ddg_or_opt/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/test_no_ddg_or_opt/Support Vector Machine_LOO_SFS_plot.png
+tests/test_no_ddg_or_opt/Support Vector Machine_LOO_SFS_selected_features.json
+tests/test_no_ddg_or_opt/time.txt
+tests/test_no_ddg_or_opt/pickled/3-Fold.pickle
+tests/test_no_ddg_or_opt/pickled/Lasso.pickle
+tests/test_no_ddg_or_opt/pickled/LOO.pickle
+tests/test_no_ddg_or_opt/pickled/MinMax_Scaler.pickle
+tests/test_no_ddg_or_opt/pickled/Partial_Least_Squares.pickle
+tests/test_no_ddg_or_opt/pickled/Power_Transformer.pickle
+tests/test_no_ddg_or_opt/pickled/Ridge.pickle
+tests/test_no_ddg_or_opt/pickled/Support_Vector_Machine.pickle
+tests/test_no_k_features_0.1/all_results.csv
+tests/test_no_k_features_0.1/feat_select_rmse_scores.json
+tests/test_no_k_features_0.1/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/test_no_k_features_0.1/Lasso_3-Fold_RFECV_plot.png
+tests/test_no_k_features_0.1/Lasso_3-Fold_RFECV_selected_features.json
+tests/test_no_k_features_0.1/Lasso_3-Fold_SFS_mean_scores.csv
+tests/test_no_k_features_0.1/Lasso_3-Fold_SFS_plot.png
+tests/test_no_k_features_0.1/Lasso_3-Fold_SFS_selected_features.json
+tests/test_no_k_features_0.1/Lasso_LOO_RFECV_mean_scores.csv
+tests/test_no_k_features_0.1/Lasso_LOO_RFECV_plot.png
+tests/test_no_k_features_0.1/Lasso_LOO_RFECV_selected_features.json
+tests/test_no_k_features_0.1/Lasso_LOO_SFS_mean_scores.csv
+tests/test_no_k_features_0.1/Lasso_LOO_SFS_plot.png
+tests/test_no_k_features_0.1/Lasso_LOO_SFS_selected_features.json
+tests/test_no_k_features_0.1/Partial Least Squares_3-Fold_RFECV_mean_scores.csv
+tests/test_no_k_features_0.1/Partial Least Squares_3-Fold_RFECV_plot.png
+tests/test_no_k_features_0.1/Partial Least Squares_3-Fold_RFECV_selected_features.json
+tests/test_no_k_features_0.1/Partial Least Squares_3-Fold_SFS_mean_scores.csv
+tests/test_no_k_features_0.1/Partial Least Squares_3-Fold_SFS_plot.png
+tests/test_no_k_features_0.1/Partial Least Squares_3-Fold_SFS_selected_features.json
+tests/test_no_k_features_0.1/Partial Least Squares_LOO_RFECV_mean_scores.csv
+tests/test_no_k_features_0.1/Partial Least Squares_LOO_RFECV_plot.png
+tests/test_no_k_features_0.1/Partial Least Squares_LOO_RFECV_selected_features.json
+tests/test_no_k_features_0.1/Partial Least Squares_LOO_SFS_mean_scores.csv
+tests/test_no_k_features_0.1/Partial Least Squares_LOO_SFS_plot.png
+tests/test_no_k_features_0.1/Partial Least Squares_LOO_SFS_selected_features.json
+tests/test_no_k_features_0.1/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/test_no_k_features_0.1/Ridge_3-Fold_RFECV_plot.png
+tests/test_no_k_features_0.1/Ridge_3-Fold_RFECV_selected_features.json
+tests/test_no_k_features_0.1/Ridge_3-Fold_SFS_mean_scores.csv
+tests/test_no_k_features_0.1/Ridge_3-Fold_SFS_plot.png
+tests/test_no_k_features_0.1/Ridge_3-Fold_SFS_selected_features.json
+tests/test_no_k_features_0.1/Ridge_LOO_RFECV_mean_scores.csv
+tests/test_no_k_features_0.1/Ridge_LOO_RFECV_plot.png
+tests/test_no_k_features_0.1/Ridge_LOO_RFECV_selected_features.json
+tests/test_no_k_features_0.1/Ridge_LOO_SFS_mean_scores.csv
+tests/test_no_k_features_0.1/Ridge_LOO_SFS_plot.png
+tests/test_no_k_features_0.1/Ridge_LOO_SFS_selected_features.json
+tests/test_no_k_features_0.1/Support Vector Machine_3-Fold_RFECV_mean_scores.csv
+tests/test_no_k_features_0.1/Support Vector Machine_3-Fold_RFECV_plot.png
+tests/test_no_k_features_0.1/Support Vector Machine_3-Fold_RFECV_selected_features.json
+tests/test_no_k_features_0.1/Support Vector Machine_3-Fold_SFS_mean_scores.csv
+tests/test_no_k_features_0.1/Support Vector Machine_3-Fold_SFS_plot.png
+tests/test_no_k_features_0.1/Support Vector Machine_3-Fold_SFS_selected_features.json
+tests/test_no_k_features_0.1/Support Vector Machine_LOO_RFECV_mean_scores.csv
+tests/test_no_k_features_0.1/Support Vector Machine_LOO_RFECV_plot.png
+tests/test_no_k_features_0.1/Support Vector Machine_LOO_RFECV_selected_features.json
+tests/test_no_k_features_0.1/Support Vector Machine_LOO_SFS_mean_scores.csv
+tests/test_no_k_features_0.1/Support Vector Machine_LOO_SFS_plot.png
+tests/test_no_k_features_0.1/Support Vector Machine_LOO_SFS_selected_features.json
+tests/test_no_k_features_0.1/time.txt
+tests/test_no_k_features_0.1/pickled/3-Fold.pickle
+tests/test_no_k_features_0.1/pickled/Lasso.pickle
+tests/test_no_k_features_0.1/pickled/LOO.pickle
+tests/test_no_k_features_0.1/pickled/MinMax_Scaler.pickle
+tests/test_no_k_features_0.1/pickled/Partial_Least_Squares.pickle
+tests/test_no_k_features_0.1/pickled/Power_Transformer.pickle
+tests/test_no_k_features_0.1/pickled/Ridge.pickle
+tests/test_no_k_features_0.1/pickled/Support_Vector_Machine.pickle
+tests/test_outlier/all_results.csv
+tests/test_outlier/feat_select_mae_scores.json
+tests/test_outlier/None_Ridge_3-Fold_RFECV_mean_scores.csv
+tests/test_outlier/None_Ridge_3-Fold_RFECV_plot.png
+tests/test_outlier/None_Ridge_3-Fold_RFECV_selected_features.json
+tests/test_outlier/None_Ridge_3-Fold_SFS_mean_scores.csv
+tests/test_outlier/None_Ridge_3-Fold_SFS_plot.png
+tests/test_outlier/None_Ridge_3-Fold_SFS_selected_features.json
+tests/test_outlier/None_Ridge_LOO_RFECV_mean_scores.csv
+tests/test_outlier/None_Ridge_LOO_RFECV_plot.png
+tests/test_outlier/None_Ridge_LOO_RFECV_selected_features.json
+tests/test_outlier/None_Ridge_LOO_SFS_mean_scores.csv
+tests/test_outlier/None_Ridge_LOO_SFS_plot.png
+tests/test_outlier/None_Ridge_LOO_SFS_selected_features.json
+tests/test_outlier/time.txt
+tests/test_outlier/pickled/3-Fold.pickle
+tests/test_outlier/pickled/LOO.pickle
+tests/test_outlier/pickled/MinMax_Scaler.pickle
+tests/test_outlier/pickled/Power_Transformer.pickle
+tests/test_outlier/pickled/Ridge.pickle
+tests/why_crash/all_results.csv
+tests/why_crash/Elastic Net_3-Fold_RFECV_mean_scores.csv
+tests/why_crash/Elastic Net_3-Fold_RFECV_plot.png
+tests/why_crash/Elastic Net_3-Fold_RFECV_selected_features.json
+tests/why_crash/Elastic Net_3-Fold_SFS_mean_scores.csv
+tests/why_crash/Elastic Net_3-Fold_SFS_plot.png
+tests/why_crash/Elastic Net_3-Fold_SFS_selected_features.json
+tests/why_crash/Elastic Net_LOO_RFECV_mean_scores.csv
+tests/why_crash/Elastic Net_LOO_RFECV_plot.png
+tests/why_crash/Elastic Net_LOO_RFECV_selected_features.json
+tests/why_crash/Elastic Net_LOO_SFS_mean_scores.csv
+tests/why_crash/Elastic Net_LOO_SFS_plot.png
+tests/why_crash/Elastic Net_LOO_SFS_selected_features.json
+tests/why_crash/feat_select_mae_scores.json
+tests/why_crash/Lasso_3-Fold_RFECV_mean_scores.csv
+tests/why_crash/Lasso_3-Fold_RFECV_plot.png
+tests/why_crash/Lasso_3-Fold_RFECV_selected_features.json
+tests/why_crash/Lasso_3-Fold_SFS_mean_scores.csv
+tests/why_crash/Lasso_3-Fold_SFS_plot.png
+tests/why_crash/Lasso_3-Fold_SFS_selected_features.json
+tests/why_crash/Lasso_LOO_RFECV_mean_scores.csv
+tests/why_crash/Lasso_LOO_RFECV_plot.png
+tests/why_crash/Lasso_LOO_RFECV_selected_features.json
+tests/why_crash/Lasso_LOO_SFS_mean_scores.csv
+tests/why_crash/Lasso_LOO_SFS_plot.png
+tests/why_crash/Lasso_LOO_SFS_selected_features.json
+tests/why_crash/Ridge_3-Fold_RFECV_mean_scores.csv
+tests/why_crash/Ridge_3-Fold_RFECV_plot.png
+tests/why_crash/Ridge_3-Fold_RFECV_selected_features.json
+tests/why_crash/Ridge_3-Fold_SFS_mean_scores.csv
+tests/why_crash/Ridge_3-Fold_SFS_plot.png
+tests/why_crash/Ridge_3-Fold_SFS_selected_features.json
+tests/why_crash/Ridge_LOO_RFECV_mean_scores.csv
+tests/why_crash/Ridge_LOO_RFECV_plot.png
+tests/why_crash/Ridge_LOO_RFECV_selected_features.json
+tests/why_crash/Ridge_LOO_SFS_mean_scores.csv
+tests/why_crash/Ridge_LOO_SFS_plot.png
+tests/why_crash/Ridge_LOO_SFS_selected_features.json
+tests/why_crash/time.txt
+tests/why_crash/pickled/3-Fold.pickle
+tests/why_crash/pickled/LOO.pickle
+tests/why_crash/pickled/MinMax_Scaler.pickle
+tests/why_crash/pickled/Power_Transformer.pickle

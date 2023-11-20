@@ -13,10 +13,13 @@ from mlxtend.feature_selection import SequentialFeatureSelector as SFS
 from matplotlib import pyplot as plt
 import numpy as np
 import pandas as pd
-from helpers import pickler, to_json
+from helpers import pickler, to_json, scrape_selected_model, filter_feats
 from copy import deepcopy
 from math import log
 from itertools import product
+
+# From Isolation Forest on full grid ASO
+full_aso_outliers = ['171_2_2_17','22_4_4_28','252_1_1_8','90_1_1_17']
 
 # for ridge/lasso/elastic net
 alpha_scores = [0.0001, 0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 2, 10, 100]
@@ -28,12 +31,12 @@ Cs = [0.01, 0.1, 0.5, 1, 5, 10, 100]
 
 # hyperparams determined manually, implementing automated search later
 default_models = [  # TO DO: initialize these correctly
-    ("Ridge", Ridge(1, random_state=42)), # alpha, solver? , {"alpha": alpha_scores}   OLD VALUE: 1
-    ("Lasso", Lasso(0.005, random_state=42)), # alpha? , {"alpha": alpha_scores}   OLD VALUE: 0.005
-#    ("Support Vector Machine", SVR(kernel="rbf", C=0.01, epsilon=0.001))
+#    ("Ridge", Ridge(1, random_state=42)), # alpha, solver? , {"alpha": alpha_scores}   OLD VALUE: 1
+#    ("Lasso", Lasso(0.005, random_state=42)), # alpha? , {"alpha": alpha_scores}   OLD VALUE: 0.005
+#    ("Support Vector Machine", SVR(kernel="rbf", epsilon=0.01, C=5))
 #    ("Partial Least Squares", PLSRegression(1, scale=False)), # already scaled
 #    ("Partial Least Squares Scaled", PLSRegression(1, scale=True))  # REMOVED
-#    ("Elastic Net", ElasticNet(0.0001, l1_ratio=0.5, random_state=42)) # alpha, L1 ratio? , {"alpha": alpha_scores, "l1_ratio": l1_ratios}    # OLD VALUES: 0.0001, 0.5
+    ("Elastic Net", ElasticNet(0.001, l1_ratio=0.75, random_state=42)) # alpha, L1 ratio? , {"alpha": alpha_scores, "l1_ratio": l1_ratios}    # OLD VALUES: 0.0001, 0.5
 #    ("Random Forest", RandomForestRegressor(criterion='absolute_error', random_state=42)),  # more params?
 #    ("Gradient Boosting", GradientBoostingRegressor(random_state=42)),
 #    ("Gaussian Process", GaussianProcessRegressor(random_state=42))     # just using base state for now, look into other kernels
@@ -46,26 +49,26 @@ default_metrics = [
 ]
 
 default_cv = [
-    ("3-Fold", KFold(n_splits=3, shuffle=True, random_state=42)),
+#    ("3-Fold", KFold(n_splits=3, shuffle=True, random_state=42)),
     ("LOO", LeaveOneOut())
 ]
 
 default_selectors = [
     ("RFECV", RFECV, {}),
-    ("SFS", SFS, {}), # select best subset of features between 1 and 50 features (inclusive) (necessary?) k_features: best
+#    ("SFS", SFS, {}), # select best subset of features between 1 and 50 features (inclusive) (necessary?) k_features: best
 ]
 
 default_outliers = [
     ("Isolation Forest", IsolationForest, {"random_state": 42}),
-    ("LOF", LocalOutlierFactor, {}),
-    ("", None, {})
+#    ("LOF", LocalOutlierFactor, {}),
+#    ("", None, {})
 ]
 
 default_hyperparams = { # for hyperparameter tuning
-#    "epsilon": epsilons,
-#    "C": Cs
-    "alpha": alpha_scores,
-    "l1_ratio": l1_ratios
+    "epsilon": epsilons,
+    "C": Cs
+#    "alpha": alpha_scores,
+#    "l1_ratio": l1_ratios
 }
 
 class Pipes:    # ADD PARALLELIZATION
@@ -154,7 +157,7 @@ class Pipes:    # ADD PARALLELIZATION
             pickler(ob, output, name + ".pickle")
 
 
-    @staticmethod
+    @staticmethod   # why do I have this here and not in helpers?
     def ee_transform(target: pd.DataFrame) -> None: # assuming temp is room temp, 293 K
         # delta delta G = -RTln(abs(ee))
         # modifies in place
@@ -335,35 +338,44 @@ class Pipes:    # ADD PARALLELIZATION
         Using just RFECV and 3-fold (the fastest of their respective methods),
         Evaluate the END performance of models (scored based on performance after feature selection)
         Not generalizable yet, manually change code depending on models and number of hyperparams
+        Can test multiple models, but only if they share the same hyperparameters to be tested
         """
         #testing_models = [("Ridge", Ridge), ("Lasso", Lasso)] # have to do this differently than the way stored in self._models
         testing_models = [("Elastic Net", ElasticNet)]
+        #testing_models = [("SVR", SVR)]
 
         best_params = {}
 
         combos = list(product(*self._hyperparameters.values()))
+        param1, param2 = self._hyperparameters.keys()
+        best_params["parameter 1"] = param1
+        best_params["parameter 2"] = param2 
 
         for detector_name, detector, kwargs in self._detectors:
             best_params[detector_name] = {}
             df, target = self.outlier_detection(detector, detector_name, kwargs)
             for name, model in testing_models:
                 best_params[detector_name][name] = {}
-                for param, vals in self._hyperparameters.items():
-                    best_params[detector_name][name][param] = {}
-                    best_score = float("-inf")
-                    for i in vals:
+                best_params[detector_name][name]["best"] = {}
+                best_score = float("-inf")
+                for val1, val2 in combos:
+                    if val1 not in best_params[detector_name][name].keys(): # As val1 will be repeated, make sure not to overwrite!
+                        best_params[detector_name][name][val1] = {}
                 #search = GridSearchCV(model, params, cv=LeaveOneOut(), n_jobs=self._n_jobs, scoring="neg_mean_absolute_error")
-                        temp = {param: i, "random_state": 42}
-                        #pipe = self.make_pipe(model(**temp), name)     NOT NECESSARY? (SFS makes pipeline)
+                    temp = {param1: val1, param2: val2}     #  "random_state": 42
 
-                        mae, n_feat, mean_scores, subset = self.feat_rank(model(**temp), f"{detector_name}_{name}_{param}_{i}", df, target,  KFold(3), RFECV, {}) # KWARGS IS LEFT BLANK
+                    # SFS for SVR because it doesn't work with RFECV
+                    mae, n_feat, mean_scores, subset = self.feat_rank(model(**temp), f"{detector_name}_{name}_{val1}_{val2}", df, target,  KFold(3), RFECV, {}) # KWARGS IS LEFT BLANK
 
-                        pipe = self.make_pipe(model(**temp), name)
-                        pipe.fit(subset, target.values.ravel())
-                        best_params[detector_name][name][param][i] = mae
-                        if mae > best_score:
-                            best_params[detector_name][name][param]["best"] = i
-                            best_score = mae
+                    #pipe = self.make_pipe(model(**temp), name)     pointless ??
+                    #pipe.fit(subset, target.values.ravel())
+
+                    best_params[detector_name][name][val1][val2] = mae  # val2 will be unique for each val1, so no need to check
+                    
+                    if mae > best_score:
+                        best_params[detector_name][name]["best"]["values"] = (val1, val2)
+                        best_params[detector_name][name]["best"]["score"] = mae
+                        best_score = mae
                         #best = pipe.named_steps[name].best_params_
                         #best_params[detector_name][name]["best params"] = best
                         #best_params[detector_name][name]["best score"] = best = pipe.named_steps[name].best_score_
@@ -378,8 +390,15 @@ class Pipes:    # ADD PARALLELIZATION
     def outlier_detection(self, detector, name, kwargs) -> tuple:
         if detector == None:
             return self.features, self.target
+        
+        if name == "Isolation Forest":
+            np.array(full_aso_outliers).tofile(self._output + name + "_outliers.csv", ",")
+            df = self.features.drop(full_aso_outliers)
+            target = self.target.drop(full_aso_outliers)
+            return df, target
 
 
+        # Skipping below for IF for halved ASO runs
         detector = detector(**kwargs)
         mask = detector.fit_predict(self.features)
         inliers = [val == 1 for val in mask]
@@ -495,16 +514,40 @@ class Pipes:    # ADD PARALLELIZATION
         return results
     
 
-    def final_opt(self, selected_features: np.ndarray) -> pd.DataFrame:
+    # IN PROGRESS
+    def final_opt(self, run_all_directory: str) -> pd.DataFrame:
         """
         Intended to optimize model after feature selection has been run with run_all.
         Will perform step by step hyperparameter tuning, then feature selection from
         list of all selected features, for all given pipelines.
         Will return results and save best parameters and features for each model.
+        Like hyperparam_tuning, only models w/ the same params to be tuned can be run
         """
 
+        best_mae = {}
 
+        for detector_name, detector, detect_kwargs in self._detectors:
+            df, target = self.outlier_detection(detector, detector_name, detect_kwargs)
+            best_mae[detector_name] = {}
+            for name, model in self._models:
+                best_mae[detector_name][name] = {}
+                # array of all features selected by this model more than once in all runs 
+                select_array = filter_feats(scrape_selected_model(run_all_directory, name))
+                select_df = df.loc[:, select_array[:, 0].astype("str").tolist()]
+                
+                for cv_name, cv in self._cvs:
+                    best_mae[detector_name][name][cv_name] = {}
 
+                    for select_name, selector, select_kwargs in self._selectors:
+                        long_name = f"{detector_name}_{name}_{cv_name}_{select_name}"
+
+                        # IS THIS EVEN REALLY NECESSARY?
+                        
+
+                        mae, n_feat, mean_scores, subset = self.feat_rank(model, long_name, df, target, cv, selector, select_kwargs)
+                        best_mae[detector_name][name][cv_name][select_name] = mae
+                        plotter([-x for x in mean_scores], n_feat, "MAE scores vs n features", f"{self._output}{long_name}_plot.png")
+                        to_json(subset.columns.to_list(), f"{self._output}{long_name}_selected_features.json")
                     
 
 
@@ -526,6 +569,13 @@ def plotter(values: list, selected: int, name: str, savepath: str):
 
     fig.savefig(savepath)
     plt.close()
+
+
+def head_to_head_run():
+    """
+    For comparing two runs directly against each other (C1 v C2)
+    """
+
 
 
     # TO-DO: Functionality for sorting and cleaning feature/target data
