@@ -28,6 +28,7 @@ def model(feature_data: str | Path, target_data: str | Path, output: str | Path)
     Pipes.ee_transform(ee_df)
     print("ddG data (" + str(len(ee_df.index.to_list())) + " catalysts)")
     print(ee_df)
+#    ee_df.to_csv("aso-ddg-data.csv")
 
     steps = [("Power Transformer", PowerTransformer()), ("MinMax Scaler", MinMaxScaler())]
     all_pipes = Pipes(aso_df, ee_df, output, steps, n_jobs = 20)

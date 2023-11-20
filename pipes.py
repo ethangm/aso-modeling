@@ -33,10 +33,10 @@ Cs = [0.01, 0.1, 0.5, 1, 5, 10, 100]
 default_models = [  # TO DO: initialize these correctly
 #    ("Ridge", Ridge(1, random_state=42)), # alpha, solver? , {"alpha": alpha_scores}   OLD VALUE: 1
 #    ("Lasso", Lasso(0.005, random_state=42)), # alpha? , {"alpha": alpha_scores}   OLD VALUE: 0.005
-#    ("Support Vector Machine", SVR(kernel="rbf", epsilon=0.01, C=5))
+    ("Support Vector Machine", SVR(kernel="rbf", epsilon=0.01, C=5))
 #    ("Partial Least Squares", PLSRegression(1, scale=False)), # already scaled
 #    ("Partial Least Squares Scaled", PLSRegression(1, scale=True))  # REMOVED
-    ("Elastic Net", ElasticNet(0.001, l1_ratio=0.75, random_state=42)) # alpha, L1 ratio? , {"alpha": alpha_scores, "l1_ratio": l1_ratios}    # OLD VALUES: 0.0001, 0.5
+#    ("Elastic Net", ElasticNet(0.0001, l1_ratio=0.5, random_state=42)) # alpha, L1 ratio? , {"alpha": alpha_scores, "l1_ratio": l1_ratios}    # OLD VALUES: 0.0001, 0.5
 #    ("Random Forest", RandomForestRegressor(criterion='absolute_error', random_state=42)),  # more params?
 #    ("Gradient Boosting", GradientBoostingRegressor(random_state=42)),
 #    ("Gaussian Process", GaussianProcessRegressor(random_state=42))     # just using base state for now, look into other kernels
@@ -49,18 +49,18 @@ default_metrics = [
 ]
 
 default_cv = [
-#    ("3-Fold", KFold(n_splits=3, shuffle=True, random_state=42)),
+    ("3-Fold", KFold(n_splits=3, shuffle=True, random_state=42)),
     ("LOO", LeaveOneOut())
 ]
 
 default_selectors = [
-    ("RFECV", RFECV, {}),
-#    ("SFS", SFS, {}), # select best subset of features between 1 and 50 features (inclusive) (necessary?) k_features: best
+#    ("RFECV", RFECV, {}),
+    ("SFS", SFS, {}), # select best subset of features between 1 and 50 features (inclusive) (necessary?) k_features: best
 ]
 
 default_outliers = [
     ("Isolation Forest", IsolationForest, {"random_state": 42}),
-#    ("LOF", LocalOutlierFactor, {}),
+    ("LOF", LocalOutlierFactor, {}),
 #    ("", None, {})
 ]
 
@@ -157,12 +157,15 @@ class Pipes:    # ADD PARALLELIZATION
             pickler(ob, output, name + ".pickle")
 
 
-    @staticmethod   # why do I have this here and not in helpers?
+    @staticmethod 
     def ee_transform(target: pd.DataFrame) -> None: # assuming temp is room temp, 293 K
-        # delta delta G = -RTln(abs(ee))
+        # delta delta G = -RTln(e.r)
+        # e.r. = (1 + ee) / (1 - ee)
+        # 10.1038/s41586-019-1384-z
         # modifies in place
         for idx, i in target.iterrows():
-            temp = log(abs(i[0])) * 293 * -0.0019872
+            dec = i[0] / 100 # convert from xx% to 0.xx
+            temp = log((1 + dec) / (1 - dec)) * 293 * -0.0019872036 # gas constant in kcal/mol
             target.loc[idx] = temp
 
         target.rename(columns={"ee": "ddGTS"}, inplace=True)
