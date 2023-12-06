@@ -33,10 +33,10 @@ Cs = [0.01, 0.1, 0.5, 1, 5, 10, 100]
 default_models = [  # TO DO: initialize these correctly
 #    ("Ridge", Ridge(1, random_state=42)), # alpha, solver? , {"alpha": alpha_scores}   OLD VALUE: 1
 #    ("Lasso", Lasso(0.005, random_state=42)), # alpha? , {"alpha": alpha_scores}   OLD VALUE: 0.005
-    ("Support Vector Machine", SVR(kernel="rbf", epsilon=0.01, C=5))
+#    ("Support Vector Machine", SVR(kernel="rbf", epsilon=0.01, C=5))
 #    ("Partial Least Squares", PLSRegression(1, scale=False)), # already scaled
 #    ("Partial Least Squares Scaled", PLSRegression(1, scale=True))  # REMOVED
-#    ("Elastic Net", ElasticNet(0.0001, l1_ratio=0.5, random_state=42)) # alpha, L1 ratio? , {"alpha": alpha_scores, "l1_ratio": l1_ratios}    # OLD VALUES: 0.0001, 0.5
+    ("Elastic Net", ElasticNet(0.001, l1_ratio=0.75, random_state=42)) # alpha, L1 ratio? , {"alpha": alpha_scores, "l1_ratio": l1_ratios}    # OLD VALUES: 0.0001, 0.5
 #    ("Random Forest", RandomForestRegressor(criterion='absolute_error', random_state=42)),  # more params?
 #    ("Gradient Boosting", GradientBoostingRegressor(random_state=42)),
 #    ("Gaussian Process", GaussianProcessRegressor(random_state=42))     # just using base state for now, look into other kernels
@@ -49,7 +49,7 @@ default_metrics = [
 ]
 
 default_cv = [
-    ("3-Fold", KFold(n_splits=3, shuffle=True, random_state=42)),
+#    ("3-Fold", KFold(n_splits=3, shuffle=True, random_state=42)),
     ("LOO", LeaveOneOut())
 ]
 
@@ -60,7 +60,7 @@ default_selectors = [
 
 default_outliers = [
     ("Isolation Forest", IsolationForest, {"random_state": 42}),
-    ("LOF", LocalOutlierFactor, {}),
+#    ("LOF", LocalOutlierFactor, {}),
 #    ("", None, {})
 ]
 

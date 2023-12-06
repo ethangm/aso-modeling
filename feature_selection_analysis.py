@@ -16,47 +16,57 @@ def scrape_selected(directory: str | Path) -> np.ndarray:
 
     selected = []
     for file in listdir(directory):
-        if file.split("/")[-1][0] != "_": # ONLY IF LOF DOESNT DETECT OUTLIERS
-            split = file.split(".")
-            if split[-1] == "json":
-                underscore = split[0].split("_")
-                if(underscore[-1] != "scores"):  # only json files in directory should be feat_select_mae_scores and all selected feat
-                    path = join(directory, file)
-                    with open(path, "r") as f:
-                        temp = json.load(f)
-                    if len(selected) == 0:
-                        for mol in temp:
+#        if file.split("/")[-1][0] != "_": # ONLY IF LOF DOESNT DETECT OUTLIERS and if separate no outlier run is used
+        split = file.split(".")
+        if split[-1] == "json":
+            underscore = split[0].split("_")
+            if(underscore[-1] != "scores"):  # only json files in directory should be feat_select_mae_scores and all selected feat
+                path = join(directory, file)
+                with open(path, "r") as f:
+                    temp = json.load(f)
+                if len(selected) == 0:
+                    for mol in temp:
+                        selected.append([mol, 1])
+                else:
+                    for mol in temp:
+                        for set in selected:
+                            add = True
+                            if mol == set[0]:
+                                set[1] += 1
+                                add = False
+                                break
+                        if add:
                             selected.append([mol, 1])
-                    else:
-                        for mol in temp:
-                            for set in selected:
-                                add = True
-                                if mol == set[0]:
-                                    set[1] += 1
-                                    add = False
-                                    break
-                            if add:
-                                selected.append([mol, 1])
-                                
+                            
  
     selected = sorted(selected, key=lambda x: int(x[0]))
 
 
     result = np.array(selected, np.int32)
-    np.save(directory + "all_features_skip.npy", result)    # _SKIP FOR SKIPPING NO OUTLIER RUN
+    np.save(directory + "all_features.npy", result)    # _SKIP FOR SKIPPING NO OUTLIER RUN
     return result
 
 
-def bar_chart(input: np.ndarray, directory: str | Path, save_name: str = "feature_selection", cutoff: int = 2) -> None:
-    subset = [i for i in input if i[1] > cutoff]
-    labels = [i[0].astype(int).astype(str) for i in subset]
-    count = [i[1] for i in subset]
+def bar_chart(input: np.ndarray, directory: str | Path, num_pipes: int, save_name: str = "feature_selection", cutoff: float=0.5, idw=False) -> None:
+    temp = input.astype("float64").tolist()
+    for i in temp:
+        i[1] = i[1] / num_pipes
 
-    plt.bar(labels, count)
+    subset = [i for i in temp if i[1] > cutoff]
+    labels = [str(int(i[0])) for i in subset]
+    freq = [i[1] for i in subset]
+
+    plt.bar(labels, freq)
     plt.xlabel("ASO gridpoints")
-    plt.ylabel("# times selected")
-    plt.title(f"All features selected more than {cutoff} times ({len(input)} selected total)")
+    plt.xticks(rotation=25)
+    if idw:
+        plt.ylabel("frequency + IDW weight")
+        plt.title(f"All features with weights greater than {cutoff} ({len(input)} selected features)")
+    else:
+        plt.ylabel("Feature selection frequency")
+        plt.title(f"Features with selection frequencies > {cutoff} out of {num_pipes} pipelines")
 
+    plt.tight_layout()
     plt.savefig(directory + f"{save_name}.png")
     plt.close()
 
@@ -77,7 +87,7 @@ def feature_region_selectivity(features: np.ndarray, grid: np.ndarray, directory
         temp = numer / denom
         regional_feats[i][1] = weight + temp
 
-    np.save(directory + f"all_features_IDW_{power_factor}_skip.npy", regional_feats) # # _SKIP FOR SKIPPING NO OUTLIER RUN
+    np.save(directory + f"all_features_IDW_{power_factor}.npy", regional_feats)
         
     return regional_feats
 
@@ -153,25 +163,29 @@ def plot_elbow(distortions: list, elbow: int, directory: str | Path):
 
     
 
-if __name__ == "__main__":  # idw/kmeans, directory of pipes.py output, filepath to grid.np
+if __name__ == "__main__":  # idw/kmeans, directory of pipes.py output, filepath to grid.npy, # of pipelines (dont count no_feat_select)
     features = scrape_selected(sys.argv[2])
     print(features)
     print(len(features))
     grid = np.load(sys.argv[3])
+
     match sys.argv[1]:
         case "idw":
-            bar_chart(features, sys.argv[2], cutoff=5)
+            bar_chart(features, sys.argv[2], int(sys.argv[4]), cutoff=0.25)
 
-            region_1 = feature_region_selectivity(features, grid, sys.argv[2], 1)
-            bar_chart(region_1, sys.argv[2], "feature_selection_IDW_1_skip", 7)  # _SKIP FOR SKIPPING NO OUTLIER RUN
+            #region_1 = feature_region_selectivity(features, grid, sys.argv[2], 1)
+            region_1 = np.load(sys.argv[2] + "all_features_IDW_1.npy")
+            bar_chart(region_1, sys.argv[2], "feature_selection_IDW_1", 16, True)
             print(region_1)
 
-            region_2 = feature_region_selectivity(features, grid, sys.argv[2])
-            bar_chart(region_2, sys.argv[2], "feature_selection_IDW_2_skip", 7)  # _SKIP FOR SKIPPING NO OUTLIER RUN
+            #region_2 = feature_region_selectivity(features, grid, sys.argv[2])
+            region_2 = np.load(sys.argv[2] + "all_features_IDW_2.npy")
+            bar_chart(region_2, sys.argv[2], "feature_selection_IDW_2", 16, True)
             print(region_2)
 
-            region_3 = feature_region_selectivity(features, grid, sys.argv[2], 3)
-            bar_chart(region_3, sys.argv[2], "feature_selection_IDW_3_skip", 7)  # _SKIP FOR SKIPPING NO OUTLIER RUN
+            #region_3 = feature_region_selectivity(features, grid, sys.argv[2], 3)
+            region_3 = np.load(sys.argv[2] + "all_features_IDW_3.npy")
+            bar_chart(region_3, sys.argv[2], "feature_selection_IDW_3", 16, True)
             print(region_3)
 
             differences = []

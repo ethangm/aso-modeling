@@ -31,7 +31,8 @@ def shap_analysis(model, name: str, cv, features: pd.DataFrame, target: pd.DataF
     df = features.loc[:, selected]
     df = df.drop(outliers)
     target = target.drop(outliers)
-    t_df = ee_transform(target)
+    #t_df = ee_transform(target)    NO LONGER NECESSARY
+    t_df = target
 
     print(df)
     print(t_df)
@@ -83,6 +84,11 @@ def shap_analysis(model, name: str, cv, features: pd.DataFrame, target: pd.DataF
     shap.summary_plot(np.array(all_values), df) # df.reindex(new_index)
     plt.savefig(save_path)
     plt.close()
+
+    shap.summary_plot(np.array(all_values) * -1, df) # REVERSED VALUES (POSTIVE ON CHART MEANS POSITIVE CHANGE TO DDG)
+    plt.savefig(".".join(save_path.split(".")[:-1]) + "_reversed.png")
+    plt.close()
+
     shap.plots.waterfall(explainer(test_X)[-2], max_display=20) # for our go-to example, aa_1 and last cv test X split
     #shap.plots.waterfall(explainer(df.loc["aa_1", :])[-2], max_display=20)
     plt.savefig(".".join(save_path.split(".")[:-1]) + "_waterfall.png", bbox_inches='tight')
@@ -221,9 +227,18 @@ def cv_unpack(pickled: str | Path):
     return None
 
 
+def feat_target_unpack(feat_path: str | Path, targ_path: str | Path) -> tuple:
+    with open(targ_path) as f:
+        target = pd.read_csv(f, index_col=0)
+
+    catalysts = target.index
+    df = helpers._unpack_aso(feat_path, catalysts)
+
+    return df, target
+
 if __name__ == "__main__":  
     # filepath to pickled pipeline, fp of selected features,
-    # fp of outliers, filepath of aso and ee data, savepath of png
+    # fp of outliers, filepath of aso and ddG data, savepath of png
     
 
     #pickled = unpickler(sys.argv[1])
@@ -234,7 +249,7 @@ if __name__ == "__main__":
     #model, cv, steps, name = correct_pickled_unpack(pickled, sys.argv[2])
     
 
-    features, target = helpers.unpack_data(sys.argv[4], sys.argv[5])
+    features, target = feat_target_unpack(sys.argv[4], sys.argv[5])
     features = features.astype(float)
 
     shap_analysis(pipe, name, cv, features, target, selected, outliers, sys.argv[6])
