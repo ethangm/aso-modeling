@@ -19,6 +19,7 @@ from math import log
 from itertools import product
 
 # From Isolation Forest on full grid ASO
+# this was used for the halved grid ASO runs for the thesis paper
 full_aso_outliers = ['171_2_2_17','22_4_4_28','252_1_1_8','90_1_1_17']
 
 # for ridge/lasso/elastic net
@@ -250,37 +251,10 @@ class Pipes:    # ADD PARALLELIZATION
     @cv.setter
     def cv(self, new_cvs: list) -> None:
         self._cvs = new_cvs
-
-
-    def run_all_feat_rank(self) -> pd.DataFrame: # DEPRECATED
-        '''
-        Selects selects features from best MSE score of all combinations of RFECV/SFS, CVs, and models
-        (ONLY RFECV IMPLEMENTED)
-        '''
-        df = pd.DataFrame
-        best_score = -float('inf')
-        num = int
-        for name, model in self._models:
-            for cv_name, cv in self._cvs:
-                new_name = name + "_RFECV_" + cv_name
-                mae, n_feat, mean_scores, temp_df = self.feat_rank(model, new_name, cv, RFECV)
-                if mae > best_score:
-                    best_score = mae
-                    num = n_feat
-                    scores = mean_scores
-                    df = temp_df
-                    best_name = new_name
-
-        plotter(scores.tolist(),
-                num,
-                best_name + " MAE scores vs n_features",
-                self._output + "plot.png")
-        return df
     
 
     def feat_rank_RFECV(self, features: pd.DataFrame, target: pd.DataFrame, model, model_name: str, cv: BaseCrossValidator, selector, steps: int | float, min_feat: int, store: bool, kwargs) -> tuple:
         select_model = selector(model, cv=cv, scoring="neg_mean_absolute_error", step=steps, min_features_to_select=min_feat, **kwargs)
-        print(select_model) # REMOVE
 
         pipe = self.make_pipe(select_model, model_name)
         pipe.fit(features, target.values.ravel())
@@ -299,7 +273,6 @@ class Pipes:    # ADD PARALLELIZATION
 
     def feat_rank_SFS(self, features: pd.DataFrame, target: pd.DataFrame, model, model_name: str, cv: BaseCrossValidator, selector, range: tuple, kwargs) -> tuple:
         select_model = selector(model, cv=cv, scoring="neg_mean_absolute_error", k_features=range, **kwargs)
-        print(select_model) # REMOVE
 
         pipe = self.make_pipe(select_model, model_name)
         pipe.fit(features, target.values.ravel())
@@ -349,8 +322,8 @@ class Pipes:    # ADD PARALLELIZATION
 
         best_params = {}
 
-        combos = list(product(*self._hyperparameters.values()))
-        param1, param2 = self._hyperparameters.keys()
+        combos = list(product(*self._hyperparameters.values())) # list of tuples, each tuple a combo of possible hyperparams
+        param1, param2 = self._hyperparameters.keys()   # currently hardcoded for only 2 hyperparams
         best_params["parameter 1"] = param1
         best_params["parameter 2"] = param2 
 
@@ -361,7 +334,7 @@ class Pipes:    # ADD PARALLELIZATION
                 best_params[detector_name][name] = {}
                 best_params[detector_name][name]["best"] = {}
                 best_score = float("-inf")
-                for val1, val2 in combos:
+                for val1, val2 in combos:   # manual GridSearchCV
                     if val1 not in best_params[detector_name][name].keys(): # As val1 will be repeated, make sure not to overwrite!
                         best_params[detector_name][name][val1] = {}
                 #search = GridSearchCV(model, params, cv=LeaveOneOut(), n_jobs=self._n_jobs, scoring="neg_mean_absolute_error")
@@ -416,6 +389,7 @@ class Pipes:    # ADD PARALLELIZATION
 
 
     def run_all(self) -> pd.DataFrame:
+        # prepping results dataframe
         cols = []
         for tup in self._metrics:
             cols.append(tup[0])
@@ -480,6 +454,8 @@ class Pipes:    # ADD PARALLELIZATION
 
     
     def run_pipe_loo_r2(self, pipe: Pipeline, features: pd.DataFrame, target: pd.DataFrame, cv: BaseCrossValidator) -> float:
+        # needed b.c. sklearn's r2 function does not work with LOO cv (calculates r2 with more than 1 sample)
+        # circumvents this by calculating r2 from all test folds
         scorers = {}
         for metric_name, metric, kwargs in self._metrics:
             if metric_name != "R**2":
@@ -516,41 +492,6 @@ class Pipes:    # ADD PARALLELIZATION
 
         return results
     
-
-    # IN PROGRESS
-    def final_opt(self, run_all_directory: str) -> pd.DataFrame:
-        """
-        Intended to optimize model after feature selection has been run with run_all.
-        Will perform step by step hyperparameter tuning, then feature selection from
-        list of all selected features, for all given pipelines.
-        Will return results and save best parameters and features for each model.
-        Like hyperparam_tuning, only models w/ the same params to be tuned can be run
-        """
-
-        best_mae = {}
-
-        for detector_name, detector, detect_kwargs in self._detectors:
-            df, target = self.outlier_detection(detector, detector_name, detect_kwargs)
-            best_mae[detector_name] = {}
-            for name, model in self._models:
-                best_mae[detector_name][name] = {}
-                # array of all features selected by this model more than once in all runs 
-                select_array = filter_feats(scrape_selected_model(run_all_directory, name))
-                select_df = df.loc[:, select_array[:, 0].astype("str").tolist()]
-                
-                for cv_name, cv in self._cvs:
-                    best_mae[detector_name][name][cv_name] = {}
-
-                    for select_name, selector, select_kwargs in self._selectors:
-                        long_name = f"{detector_name}_{name}_{cv_name}_{select_name}"
-
-                        # IS THIS EVEN REALLY NECESSARY?
-                        
-
-                        mae, n_feat, mean_scores, subset = self.feat_rank(model, long_name, df, target, cv, selector, select_kwargs)
-                        best_mae[detector_name][name][cv_name][select_name] = mae
-                        plotter([-x for x in mean_scores], n_feat, "MAE scores vs n features", f"{self._output}{long_name}_plot.png")
-                        to_json(subset.columns.to_list(), f"{self._output}{long_name}_selected_features.json")
                     
 
 
@@ -573,12 +514,3 @@ def plotter(values: list, selected: int, name: str, savepath: str):
     fig.savefig(savepath)
     plt.close()
 
-
-def head_to_head_run():
-    """
-    For comparing two runs directly against each other (C1 v C2)
-    """
-
-
-
-    # TO-DO: Functionality for sorting and cleaning feature/target data
