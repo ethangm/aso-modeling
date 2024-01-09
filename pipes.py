@@ -43,6 +43,11 @@ default_models = [  # TO DO: initialize these correctly
 #    ("Gaussian Process", GaussianProcessRegressor(random_state=42))     # just using base state for now, look into other kernels
 ]
 
+default_tunings = [
+    ("Ridge", Ridge),
+    ("Lasso", Lasso)
+]
+
 default_metrics = [
     ("MAE", mean_absolute_error, {}),
     ("RMSE", mean_squared_error, {"squared": False}),
@@ -88,6 +93,7 @@ class Pipes:    # ADD PARALLELIZATION
                  metrics: list = default_metrics,
                  cvs: list = default_cv,
                  models: list = default_models,
+                 tuning_models: list = default_tunings,
                  selectors: list = default_selectors,
                  detectors: list = default_outliers,
                  hyperparams: dict = default_hyperparams,
@@ -103,6 +109,7 @@ class Pipes:    # ADD PARALLELIZATION
         self._metrics = metrics
         self._cvs = cvs
         self._models = models
+        self._tuning_models = tuning_models
         self._selectors = selectors
         self._detectors = detectors
         self._n_features = n_features
@@ -245,6 +252,28 @@ class Pipes:    # ADD PARALLELIZATION
 
     
     @property
+    def models(self) -> list:
+        return self._models
+    
+    @models.setter
+    def models(self, new_models: list) -> None:
+        try:
+            self._models = new_models
+            self._all_pipes = self._init_pipelines(self._steps, self._models)
+        except Exception as exp:
+            print(f"Error with setting new models, please try again: {exp}")
+
+    
+    @property
+    def tuning_models(self) -> list:
+        return self._tuning_models
+    
+    @tuning_models.setter
+    def tuning_models(self, new_tunings: list) -> None:
+        self._tuning_models = new_tunings
+
+    
+    @property
     def cv(self) -> list:
         return self._cvs
     
@@ -309,21 +338,28 @@ class Pipes:    # ADD PARALLELIZATION
         return mae, n_feat, mean_scores, subset
     
 
-    def hyperparam_tuning(self): #, features: pd.DataFrame, model, model_name: str, cv: BaseCrossValidator
+    def hyperparam_tuning(self, testing_models=None, hyperparams=None): #, features: pd.DataFrame, model, model_name: str, cv: BaseCrossValidator
         """
         Using just RFECV and 3-fold (the fastest of their respective methods),
         Evaluate the END performance of models (scored based on performance after feature selection)
         Not generalizable yet, manually change code depending on models and number of hyperparams
         Can test multiple models, but only if they share the same hyperparameters to be tested
         """
+        # JANKY WAY I CHANGED HYPERPARAM_TUNING RUNS FOR MY THESIS
         #testing_models = [("Ridge", Ridge), ("Lasso", Lasso)] # have to do this differently than the way stored in self._models
-        testing_models = [("Elastic Net", ElasticNet)]
+        #testing_models = [("Elastic Net", ElasticNet)]
         #testing_models = [("SVR", SVR)]
+
+        if testing_models is None:
+            testing_models = self._tuning_models
+
+        if hyperparams is None:
+            hyperparams = self._hyperparameters
 
         best_params = {}
 
-        combos = list(product(*self._hyperparameters.values())) # list of tuples, each tuple a combo of possible hyperparams
-        param1, param2 = self._hyperparameters.keys()   # currently hardcoded for only 2 hyperparams
+        combos = list(product(*hyperparams.values())) # list of tuples, each tuple a combo of possible hyperparams
+        param1, param2 = hyperparams.keys()   # currently hardcoded for only 2 hyperparams
         best_params["parameter 1"] = param1
         best_params["parameter 2"] = param2 
 
@@ -341,6 +377,7 @@ class Pipes:    # ADD PARALLELIZATION
                     temp = {param1: val1, param2: val2}     #  "random_state": 42
 
                     # SFS for SVR because it doesn't work with RFECV
+                    # make_pipe inside of feat_rank handles preprocessing steps and pipeline
                     mae, n_feat, mean_scores, subset = self.feat_rank(model(**temp), f"{detector_name}_{name}_{val1}_{val2}", df, target,  KFold(3), RFECV, {}) # KWARGS IS LEFT BLANK
 
                     #pipe = self.make_pipe(model(**temp), name)     pointless ??

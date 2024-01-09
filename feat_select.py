@@ -3,6 +3,8 @@ from sklearn.feature_selection import f_regression, RFE, SequentialFeatureSelect
 import pandas as pd
 from pathlib import Path
 
+# I never used this file in the thesis
+
 def ANOVA_one_way(data: pd.DataFrame, target: pd.DataFrame, output: str | Path) -> pd.DataFrame:
     best_feats = SelectKBest(score_func=f_regression, k='all') # just get all features
 
