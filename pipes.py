@@ -98,8 +98,6 @@ class Pipes:    # ADD PARALLELIZATION
                  detectors: list = default_outliers,
                  hyperparams: dict = default_hyperparams,
                  n_features: int | None = None, # defaults to half of features
-                 init_params: dict = None, # keys must be in format *model name*__*parameter name*
-                 fit_params: dict = None, # to be passed during the fit step. Format is {"step_name":{"param_name":value}} (DONT INCLUDE FINAL ESTIMATOR STEP)
                  n_jobs: int = 1
                 ) -> None:
         
@@ -113,8 +111,6 @@ class Pipes:    # ADD PARALLELIZATION
         self._selectors = selectors
         self._detectors = detectors
         self._n_features = n_features
-        self._init_params = init_params     # delete these later, initializing in _init_pipelines now
-        self._fit_params = fit_params
         self._n_jobs = n_jobs
         self._hyperparameters = hyperparams
         
@@ -370,11 +366,11 @@ class Pipes:    # ADD PARALLELIZATION
                 best_params[detector_name][name] = {}
                 best_params[detector_name][name]["best"] = {}
                 best_score = float("-inf")
-                for val1, val2 in combos:   # manual GridSearchCV
+                for val1, val2 in combos:   # manual GridSearchCV   CHANGE THIS IF YOU CHANGE NUM HYPERPARAMS
                     if val1 not in best_params[detector_name][name].keys(): # As val1 will be repeated, make sure not to overwrite!
                         best_params[detector_name][name][val1] = {}
                 #search = GridSearchCV(model, params, cv=LeaveOneOut(), n_jobs=self._n_jobs, scoring="neg_mean_absolute_error")
-                    temp = {param1: val1, param2: val2}     #  "random_state": 42
+                    temp = {param1: val1, param2: val2}     # CHANGE THIS IF YOU CHANGE NUM HYPERPARAMS
 
                     # SFS for SVR because it doesn't work with RFECV
                     # make_pipe inside of feat_rank handles preprocessing steps and pipeline
